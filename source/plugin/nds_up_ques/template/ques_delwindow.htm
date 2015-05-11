@@ -1,0 +1,32 @@
+<!--{template common/header}-->
+
+<!--{if !$_G[inajax]}-->
+	<div id="ct" class="ct2_a wp cl">
+		<div class="mn">
+			<div class="bm">
+<!--{/if}-->
+
+	<h3 class="flb">
+		<em id="return_$_G[gp_handlekey]">{$ndsquesname} - {lang nds_up_ques:admin6}</em>
+		<!--{if $_G[inajax]}--><span><a href="javascript:;" onclick="hideWindow('$_G[gp_handlekey]');" class="flbc" title="{lang close}">{lang close}</a></span><!--{/if}-->
+	</h3>
+	<form method="post" autocomplete="off" id="delwindow_{$qid}" name="delwindow_{$qid}"  action="plugin.php?id=nds_up_ques&action=admincp&cp={$cp}&topicid={$topicid}&qid={$qid}" {if $_G[inajax]} onsubmit="ajaxpost(this.id, 'return_$_G[gp_handlekey]', null, null, null,null);"{/if}>
+		<input type="hidden" name="delsubmit" value="true" />
+		<input type="hidden" name="referer" value="$_G[referer]" />
+		<input type="hidden" name="formhash" value="{FORMHASH}" />
+		<!--{if $_G[inajax]}--><input type="hidden" name="handlekey" value="$_G[gp_handlekey]" /><!--{/if}-->
+    <div class="c altw">
+        <div class="alert_info">
+        {lang nds_up_ques:nds_deletesheet}
+        </div>
+	</div>
+		<p class="o pns">
+			<button type="submit" name="delsubmit_btn" id="delsubmit_btn" class="pn pnc" value="true"><strong>{lang confirms}</strong></button>
+		</p>
+	</form>
+<!--{if !$_G[inajax]}-->
+		</div>
+	</div>
+</div>
+<!--{/if}-->
+<!--{template common/footer}-->

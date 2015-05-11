@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2012-02-04 12:01]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/bbs/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[Saion SEO 神馬優化]]></item>
+			<item id="identifier"><![CDATA[saion_seo]]></item>
+			<item id="description"><![CDATA[神馬SEO，用了你就知道。
+
+建議使用http://mytool.chinaz.com/分析論壇SEO情況。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[saion_seo/]]></item>
+			<item id="copyright"><![CDATA[cwk32]]></item>
+			<item id="version"><![CDATA[新起點 1.4]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[tools]]></item>
+					<item id="menu"><![CDATA[工具]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X2]]></item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="viewthread_hook_none"><![CDATA[<div class="notice">Saion SEO助手提醒您︰未監視到搜索引擎來訪，請耐心觀察。（本信息僅管理員可見）</div>]]></item>
+				<item id="viewthread_hook_baidu"><![CDATA[<div class="notice">Saion SEO助手提醒您︰百度來訪{time}次 上次訪問︰{dateline}（本信息僅管理員可見）</div>]]></item>
+				<item id="viewthread_hook_google"><![CDATA[<div class="notice">Saion SEO助手提醒您︰Google來訪{time}次 上次訪問︰{dateline}（本信息僅管理員可見）</div>]]></item>
+				<item id="viewthread_hook_sogou"><![CDATA[<div class="notice">Saion SEO助手提醒您︰搜狗來訪{time}次 上次訪問︰{dateline}（本信息僅管理員可見）</div>]]></item>
+				<item id="viewthread_hook_163"><![CDATA[<div class="notice">Saion SEO助手提醒您︰有道來訪{time}次 上次訪問︰{dateline}（本信息僅管理員可見）</div>]]></item>
+				<item id="viewthread_hook_360"><![CDATA[<div class="notice">Saion SEO助手提醒您︰360來訪{time}次 上次訪問︰{dateline}（本信息僅管理員可見）</div>]]></item>
+				<item id="viewthread_hook_soso"><![CDATA[<div class="notice">Saion SEO助手提醒您︰SOSO來訪{time}次 上次訪問︰{dateline}（本信息僅管理員可見）</div>]]></item>
+				<item id="viewthread_hook_yahoo"><![CDATA[<div class="notice">Saion SEO助手提醒您︰雅虎來訪{time}次 上次訪問︰{dateline}（本信息僅管理員可見）</div>]]></item>
+				<item id="viewthread_hook_bing"><![CDATA[<div class="notice">Saion SEO助手提醒您︰必應來訪{time}次 上次訪問︰{dateline}（本信息僅管理員可見）</div>]]></item>
+				<item id="operation"><![CDATA[請選擇您需要的操作]]></item>
+				<item id="operation_flag"><![CDATA[近期方向標]]></item>
+				<item id="operation_flag_data"><![CDATA[今日百度來訪 {bt} 頁面，首次來訪 {btt} 頁面，Google來訪 {gg} 頁面，首次來訪 {ggt} 頁面。<br/>至今12~24小時範圍內的主題 {atp} 中，百度已經來訪 {btp} 頁，佔全部頁面的 {btpatp} %，Google已經來訪 {gtp} 頁，佔全部頁面的 {gtpatp} %。]]></item>
+				<item id="operation_total"><![CDATA[監視總計]]></item>
+				<item id="operation_total_data"><![CDATA[一共統計了 {time} 次記錄，非重復訪問 {time1} 次。<br/>訪問過 {tt} 主題，佔全部主題({ttt})的 {ttttt} %.]]></item>
+				<item id="operation_clean"><![CDATA[數據清理]]></item>
+				<item id="operation_clean_successful"><![CDATA[數據清理完成.]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

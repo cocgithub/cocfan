@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.man_show .com-1 { width: 34%; height: 245px; float: left; border-right: solid 1px #b1c9dc;}
+.man_show .com-2 { width:50%; height: 245px; float: left; border-right: solid 1px #b1c9dc; }
+.man_show .com-1-top { width:15%; height: 32px; }
+.man_show .com-1-top span { float: left; height: 32px; line-height: 32px; text-align: left; cursor: pointer; padding-left: 15px; color: #336699; font-weight: bold; }
+.man_show .com-3-top { width:15%; height: 32px; }
+.man_show .com-3-top span { float: left; height: 32px; line-height: 32px; text-align: left; cursor: pointer; padding-left: 15px; color: #336699; font-weight: bold; }
+.man_show .com-3 { width: 15%; height: 245px; float: left; }
+.hdm-top ul { height: 32px; }
+.man_show { width:99.7%; height: 245px; margin: 0 0 10px 0; border: solid 1px #b1c9dc;background: url(../images/titlebg.png) repeat-x top;  }
+.hdm-top { width:98%; height: 32px;background: url(../images/titlebg.png) repeat-x top;}
+.hdm-topm { width: 148px; height: 32px;background: url(../images/titlebg.png) repeat-x top;}
+.hdm-top li { float: left; height: 32px; line-height: 32px; text-align: center; width: 80px; cursor: pointer; }
+.hdm-topm ul { height: 32px; }
+.hdm-topm li { float: left; height: 32px; line-height: 32px; text-align: center; width: 80px; cursor: pointer; }
+.hdm-normal { background-repeat: no-repeat; color: #336699; font-weight: bold; border-right: solid 1px #b1c9dc; }
+.hdm-hover { background-repeat: no-repeat; color: #ff6600; font-weight: bold;background-image: url(../images/hdm_top_hover.jpg); }
+.hdm-dis { display: block; }
+.hdm-undis { display: none; }
+
+.hdm-dism { display: block; }
+.hdm-undism { display: none; }
+.man_show .txt td { padding: 0; vertical-align: top; }
+.man_show .txt div { width: 100%; height: 20px; overflow: hidden; background: url(../images/listbg.gif) repeat-x; }
+.man_show .txt span { float: right; color: #07519a; }

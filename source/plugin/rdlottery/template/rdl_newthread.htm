@@ -1,0 +1,241 @@
+<!--{block return}-->
+
+<style type="text/css">
+	<!--{if $_G['gp_action'] == 'edit'}-->
+	#rdl_op input,#rdl_type_ctrl,#rdl_virtual_ctrl,#rdl_message_ctrl{background-color:#efefef;}
+	<!--{/if}-->
+	.specialpost b{color:#F26C4F;}
+</style>
+
+<div class="exfm cl" id="rdl_op">
+	<!--left-->
+	<input type="hidden" name="attachnew" value="1" />
+	<div class="sinf sppoll z">
+		<dl>
+			<!--name-->
+			<dt><span class="rq">*</span><label for="rdl_name">{lang rdlottery:rdl_name}:</label></dt>
+			<dd>
+			<span class="ftid"><input name="rdl_name" id="rdl_name" tabindex="2" type="text" class="px oinf" {if $rdlottery['name']}value="{$rdlottery['name']}"{/if} onkeyup="showtypeoption();" style="background-color: #FFF;"/></span>
+			</dd>
+			<!--time-->
+			<dt><span class="rq">*</span><label for="rdl_starttimefrom">{lang rdlottery:rdl_time}:</label></dt>
+			<dd><span class="ftid">
+				<input type="text" name="rdl_starttimefrom" id="rdl_starttimefrom" tabindex="2" class="px" onclick="showcalendar(event, this, true)" autocomplete="off" value="$rdlottery[starttimefrom]" {if $_G['gp_action'] == 'edit'}disabled="disabled"{/if}/><span> ~ </span><input onclick="showcalendar(event, this, true)" type="text" autocomplete="off" id="rdl_starttimeto" name="rdl_starttimeto" tabindex="2" class="px" value="{if $rdlottery['starttimeto']}$rdlottery[starttimeto]{/if}" {if $_G['gp_action'] == 'edit'}style="background-color:#FFF;" {/if}/>
+			</span>
+			</dd>
+			<!--market price-->
+			<dt><span class="rq">*</span><label for="rdl_real_price">{lang rdlottery:rdl_real_price}:</label></dt>
+			<dd><span class="ftid">
+				<input name="rdl_real_price" id="rdl_real_price" tabindex="2" type="text" class="px" {if $rdlottery['real_price']}value="{$rdlottery['real_price']}"{/if}  onkeyup="checkvalue(this.value, 'rdl_real_price_message')" style="background-color: #FFF;"/> {lang rdlottery:rdl_yuan} <span id="rdl_real_price_message"></span>
+			</span>
+			</dd>
+			<!--is virtual or not-->
+			<dt><span class="rq">*</span><label for="rdl_virtual">{lang rdlottery:rdl_virtual}:</label></dt>
+			<dd>
+				<span class="ftid">
+					<select name="rdl_virtual" id="rdl_virtual" width="50" class="ps" selecti="0" style="display: none;">
+						<!--{if $_G['gp_action'] == 'newthread'}-->
+						<option value="0" {if $rdlottery['virtual'] == 1}selected="selected"{/if}>{lang rdlottery:rdl_virtual_0}</option>
+						<option value="1" {if $rdlottery['virtual'] == 1}selected="selected"{/if}>{lang rdlottery:rdl_virtual_1}</option>
+						<!--{elseif $_G['gp_action'] == 'edit'}-->
+						<option value="{$rdlottery[virtual]}" selected="selected"><!--{if $rdlottery[virtual] == 0}-->{lang rdlottery:rdl_virtual_0}<!--{elseif $rdlottery[virtual] == 1}-->{lang  rdlottery:rdl_virtual_1}<!--{/if}--></option>
+						<!--{/if}-->
+					</select>
+				</span>
+			</dd>
+			<!--info-->
+			<dt><span class="rq">*</span><label for="rdl_isinfo">{lang rdlottery:rdl_isinfo}:</label></dt>
+			<dd>
+				<span class="ftid">
+					<select name="rdl_isinfo" id="rdl_isinfo" width="50" class="ps" selecti="0" style="display: none;">
+						<!--{if $rdlottery[isinfo]==0 || $rdlottery[isinfo]==''}-->
+						<option value="0">{lang rdlottery:rdl_isinfo_0}</option>
+						<option value="1">{lang rdlottery:rdl_isinfo_1}</option>
+						<!--{else}-->
+						<option value="1">{lang rdlottery:rdl_isinfo_1}</option>
+						<option value="0">{lang rdlottery:rdl_isinfo_0}</option>						
+						<!--{/if}-->
+					</select>					
+				</span>
+				{lang rdlottery:rdl_isinfo_desc}
+			</dd>
+			<!--message-->
+			<dt id="rdl_message_t" style="display:none;"><span class="rq">*</span><label for="rdl_message">{lang rdlottery:rdl_message}:</label></dt>
+			<dd id="rdl_message_c" style="display:none;"><span class="ftid">
+			        <!--{if $_G['gp_action'] == 'newthread'}-->
+					<textarea id="rdl_message" name="rdl_message" class="pt" style="width:290px;" ondblclick="textareasize(this, 1)"></textarea>
+					<!--{elseif $_G['gp_action'] == 'edit'}-->
+					<textarea id="rdl_message" name="rdl_message" class="pt" style="width:290px;background-color:#efefef;" disabled="disabled">{lang rdlottery:rdl_message_ban}</textarea>
+					<!--{/if}-->
+					<p class="x cl">{lang rdlottery:rdl_message_message}<span id="rdl_message_message"></span></p>
+				</span>
+			</dd>
+			<!--ext_price-->
+			<dt id="rdl_ext_price_t" ><span class="rq">*</span><label for="rdl_ext_price">{lang rdlottery:rdl_ext_price}:</label></dt>
+			<dd id="rdl_ext_price_c" ><span class="ftid">
+				<input name="rdl_ext_price" id="rdl_ext_price" tabindex="2" type="text" class="px" value="{$rdlottery['ext_price']}" onkeyup="checkvalue(this.value, 'rdl_ext_price_message')" style="background-color: #FFF;"/> <em class="xi1">{$_G['setting']['extcredits'][$_G['cache']['plugin']['rdlottery']['rdl_extcredit']]['title']}</em> <span id="rdl_ext_price_message"></span>
+				</span>
+			</dd>
+			<!--number-->
+			<dt id="rdl_number_t" style="display:none;"><span class="rq">*</span><label for="rdl_number">{lang rdlottery:rdl_number}:</label></dt>
+			<dd id="rdl_number_c" style="display:none;"><span class="ftid">
+				<input name="rdl_number" id="rdl_number" tabindex="2" type="text" class="px" value="$rdlottery['number']" onkeyup="checkvalue(this.value, 'rdl_number_message')" style="background-color: #FFF;"/><span id="rdl_number_message"></span>
+			</span>
+			</dd>
+			<!--rand-->
+			<dt id="rdl_rand_t" ><span class="rq">*</span><label for="rdl_rand">{lang rdlottery:rdl_rand}:</label></dt>
+			<dd id="rdl_rand_c" ><span class="ftid">
+				<input name="rdl_rand" id="rdl_rand" tabindex="2" type="text" class="px" value="$rdlottery['rand']" onkeyup="checkvalue(this.value, 'rdl_rand_message')" style="background-color: #FFF;"/><span id="rdl_rand_message"></span>
+			</span>
+			{lang rdlottery:rdl_rand_desc}
+			</dd>			
+		</dl>
+	</div>
+	<!--right-->
+	<div class="sadd z">
+		<dl>
+			<dt>
+				<span class="rq"></span><label for="">{lang rdlottery:rdl_cover}:</label></dt>
+			</dt>
+			<dd><p><button type="button" class="pn" onclick="uploadWindow(function (aid, url){rdlotteryaid_upload(aid, url);ATTACHORIMAGE = 1;})"><span><!--{if $rdlotteryatt[attachment]}-->{lang update}<!--{else}-->{lang upload}<!--{/if}--></span></button></p>
+			<input type="hidden" name="rdlotteryaid" id="rdlotteryaid" {if $rdlottery[aid]}value="$rdlottery[aid]" {/if}/>
+			<input type="hidden" name="rdlotteryaid_url" id="rdlotteryaid_url" />
+			<div id="rdlotteryattach_image">
+				<span class="xg1">
+					<!--{if $rdlotteryatt[attachment]}-->{lang rdlottery:rdl_cover_update}<!--{else}-->{lang rdlottery:rdl_cover_tips}<!--{/if}-->
+				</span>
+				<!--{if $rdlotteryatt[attachment]}-->
+				<a href="$rdlotteryatt[attachment]" target="_blank"><img class="spimg" src="$rdlotteryatt[attachment]" alt="" /></a>
+				<!--{/if}-->
+			</div>
+			</dd>
+		</dl>
+	</div>
+</div>
+<script type="text/javascript" reload="1">
+	simulateSelect('rdl_virtual');
+	simulateSelect('rdl_isinfo');
+</script>
+<script type="text/javascript" reload="1">
+function getid_rdl(id) {
+	return document.getElementById(id);
+}
+function checkvalue(value, message){
+	if(!value.search(/^\d+$/)) {
+		getid_rdl(message).innerHTML = '';
+	} else {
+		getid_rdl(message).innerHTML = '<b>{lang rdlottery:input_invalid}</b>';
+	}
+	if(message=="rdl_rand_message"){
+		if(value<0||value>1000){
+			getid_rdl(message).innerHTML = '<b>{lang rdlottery:input_invalid}</b>';
+		}
+	}
+}
+
+function showtypeoption() {
+	var v = 0;
+	v = getid_rdl('rdl_virtual').value;
+	
+	if(v==0){
+		showoptionExc(['rdl_number']);
+	}else{
+		showoptionExc(['rdl_message']);
+	}
+	
+	setTimeout("showtypeoption()", 1000);
+}
+function showoptionExc(show) {    //控制隐藏部分的显示
+	var options = ['rdl_message','rdl_number'];
+
+	for(var i=0;i<options.length;i++) {
+			if(in_array(options[i], show)) {
+				getid_rdl(options[i]+'_t').style.display = 'block';
+				getid_rdl(options[i]+'_c').style.display = 'block';
+			} else {
+				getid_rdl(options[i]+'_t').style.display = 'none';
+				getid_rdl(options[i]+'_c').style.display = 'none';
+			}
+	}
+}
+EXTRAFUNC['validator']['special'] = 'validateextra1';
+function validateextra1() {
+	var rdl_name = getid_rdl('rdl_name');
+	var rdl_starttimefrom = getid_rdl('rdl_starttimefrom');
+	var rdl_starttimeto = getid_rdl('rdl_starttimeto');
+	var rdl_virtual = getid_rdl('rdl_virtual');	
+	var rdl_message = getid_rdl('rdl_message');
+	var rdl_number = getid_rdl('rdl_number');
+	var rdl_base_price = getid_rdl('rdl_base_price');	
+	var rdl_real_price = getid_rdl('rdl_real_price');
+	var rdl_rand = getid_rdl('rdl_rand');
+	if(rdl_name.value == '') {
+		showDialog('{lang rdlottery:rdl_post_error_name}', 'alert', '', function () { rdl_name.focus(); });
+		return false;
+	}
+	if(rdl_starttimefrom.value == '') {
+		showDialog('{lang rdlottery:rdl_post_error_starttimefrom}', 'alert', '', function () { rdl_starttimefrom.focus() });
+		return false;
+	}
+	if(rdl_starttimeto.value == '') {
+		showDialog('{lang rdlottery:rdl_post_error_starttimeto}', 'alert', '', function () { rdl_starttimeto.focus() });
+		return false;
+	}
+	if(rdl_real_price.value == '') {
+		showDialog('{lang rdlottery:rdl_post_error_real_price}', 'alert', '', function () { rdl_real_price.focus() });
+		return false;
+	}
+	
+	if(rdl_ext_price.value == '' || rdl_ext_price.value.search(/^\d+$/)) {
+		showDialog('{lang rdlottery:rdl_post_error_ext_price}', 'alert', '', function () { rdl_ext_price.focus() });
+		return false;
+	}	
+	if(rdl_virtual.value == 0){
+		if(rdl_number.value == '' || rdl_number.value.search(/^\d+$/)) {
+			showDialog('{lang rdlottery:rdl_post_error_number}', 'alert', '', function () { rdl_number.focus() });
+			return false;
+		}
+	}
+	if(rdl_virtual.value == 1){
+		if(rdl_message.value == '') {
+			showDialog('{lang rdlottery:rdl_post_error_message}', 'alert', '', function () { rdl_message.focus() });
+			return false;
+		}
+	}
+	if(rdl_rand.value == ''){
+		showDialog('{lang rdlottery:rdl_post_error_rand}', 'alert', '', function () { rdl_rand.focus() });
+		return false;
+	}
+	return true;
+}
+function rdlotteryaid_upload(aid, url) {
+	getid_rdl('rdlotteryaid_url').value = url;
+	updaterdlotteryattach(aid, url, '{$_G['setting']['attachurl']}forum');
+}
+function updaterdlotteryattach(aid, url, attachurl) {
+	getid_rdl('rdlotteryaid').value = aid;
+	getid_rdl('rdlotteryattach_image').innerHTML = '<img src="' + attachurl + '/' + url + '" class="spimg" />';
+}
+function textareasize(obj, op) {
+	if(!op) {
+		if(obj.scrollHeight > 70) {
+			obj.style.height = (obj.scrollHeight < 300 ? obj.scrollHeight - heightag: 300) + 'px';
+			if(obj.style.position == 'absolute') {
+				obj.parentNode.style.height = (parseInt(obj.style.height) + 20) + 'px';
+			}
+		}
+	} else {
+		if(obj.style.position == 'absolute') {
+			obj.style.position = '';
+			obj.style.width = '290px';
+			obj.parentNode.style.height = '';
+		} else {
+			obj.parentNode.style.height = obj.parentNode.offsetHeight + 'px';
+			obj.style.width = BROWSER.ie > 6 || !BROWSER.ie ? '50%' : '600px';
+			obj.style.position = 'absolute';
+		}
+	}
+}
+showtypeoption();
+</script>
+<!--{/block}-->

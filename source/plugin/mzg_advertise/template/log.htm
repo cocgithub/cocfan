@@ -1,0 +1,44 @@
+<!--{template common/header}-->
+<link href="source/plugin/mzg_advertise/template/style.css" rel="stylesheet" type="text/css" />
+<div class="advertise_cen">
+  <div class="al">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="advertise_table">
+    <tr>
+      <td height="40" class="advertisel_title">广告名称</td>
+      <td class="advertisel_title">点击奖励</td>
+      <td class="advertisel_title">点击时间</td>
+      <td class="advertisel_title">点击IP</td>
+    </tr>
+    {loop $list $value}
+    <tr>
+      <td height="25">$value[name]</td>
+      <td>{if $value[price]}<strong class="advertise_red">{$value[price]}</strong> {$_G['setting']['extcredits'][$value[price_type]][title]}{else}-{/if}</td>
+      <td>{eval echo dgmdate($value[time],'dt');}</td>
+      <td>$value[ip]</td>
+    </tr>
+    {/loop}
+    <tr>
+      <td height="35" colspan="4">$multi</td>
+    </tr>
+    </table>
+  </div>
+  <div class="ar">
+    <h2 class="ar_title">
+      赚取积分
+    </h2>
+    <div class="ar_list">
+      <ul>
+        <li>
+          <a href="$pageurl">点广告赚积分</a>
+        </li>
+        <li class="av">
+          <a href="$pageurl&mod=log">点击记录</a>
+        </li>
+        <li>
+          <a href="home.php?mod=spacecp&ac=credit&op=log">奖励记录</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--{template common/footer}-->

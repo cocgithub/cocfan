@@ -1,0 +1,46 @@
+<table class="tb tb2 " id="tips">
+	<tr>
+		<th  class="partition">{$lang['tips']}</th>
+	</tr>
+	<tr>
+		<td class="tipsblock" s="1">
+			<ul id="tipslis">
+				<li>{$lang['tip1']}</li>
+				<li>{$lang['tip2']}</li>
+				<li>{$lang['tip3']}</li>
+			</ul>
+		</td>
+	</tr>
+</table>
+<table class="tb tb2 ">
+	<tr class="header">
+		<th>{$lang['item1']}</th>
+		<th>{$lang['item2']}</th>
+		<th>{$lang['item3']}</th>
+		<th>{$lang['item4']}</th>
+		<th>{$lang['item5']}</th>
+		<th>{$lang['item6']}</th>
+		<th>{$lang['item7']}</th>
+	</tr>
+	<!--{if $userlist}-->
+		<!--{loop $userlist $user}-->	
+	<tr class="hover">
+		<td><a href="home.php?mod=space&uid={$user['uid']}" target="_blank">{$user['username']}</a></td>
+		<td>{$user['uid']}</td>
+		<td>{$user['group']}</td>
+		<td>{$user['regdate']}</td>
+		<td class="td26">{$user['email']}</td>
+		<td class="td26">{$user['addr']}</td>
+		<td>{$user['ip']}</td>
+	</tr>
+		<!--{/loop}-->
+	<!--{else}-->
+	<tr class="hover">
+	<td></td>
+	<td>{$lang['nodata']}</td>
+	<td></td>
+	</tr>		
+	<!--{/if}-->
+	<!--{if $multipage}--><tr><td></td><td colspan="3"><div>$multipage</div></td></tr><!--{/if}-->
+<script type="text/JavaScript">_attachEvent(document.documentElement, 'keydown', function (e) { entersubmit(e, 'linksubmit'); });</script></table>
+</form>

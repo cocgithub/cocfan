@@ -1,0 +1,30 @@
+/** forum::index **/
+.mn{overflow:visible;}
+#vfitips {margin-bottom:10px;position:relative;cursor:pointer;}
+	#vfitips input{height:30px;line-height:30px;width:70%;cursor:pointer;color:#AAA;border:1px solid #C2D5E3;background:none;}
+	#vfitips img{vertical-align:top;padding-right:10px;}
+	#vitip {line-height:33px;}
+#f_pst{position:relative;}
+#vfclose_i{display:block;position:absolute;top:0;right:15px;color:#369;cursor:pointer;}
+
+.tig_bottom{color:#B1B1B1;display:block;height:8px;top:56px;margin-left:20px;position:absolute;z-index:99;}
+.tig_bottom1{color:#FEFEE9;display:block;height:8px;top:55px;margin-left:20px;position:absolute;z-index:111;}
+.vct{font: 12px/1.5 Tahoma;margin:0;}
+.container{border:1px solid #B1B1B1;margin-top:8px;margin-right:80px;background-color:#FEFEE9;border-radius: 3px;padding: 5px;width:120px;position:absolute;top:-80px;left:57%;}
+/** end **/
+/** forum::viewthread,group::viewthread **/
+#vfpop_menu{ visibility: hidden; position: fixed; bottom: 254px; display: block; margin: -30px 0 0; width: 26px; height: 81px; background: url(../../source/plugin/vfastpost/image/vpopup.png) no-repeat 50% 0; line-height: 999px; overflow: hidden; cursor: pointer; } 
+.ie6 #vfpop_menu { position: absolute;}
+#vfastpost{background:#E5EDF2;padding:3px;margin:10px 30px;position:relative;}
+#vfastpost td{height:38px;}
+	#vfastpost #vf_l{width:5px;background: url(../../source/plugin/vfastpost/image/v.png) no-repeat -30px -39px;}
+	#vfastpost #vf_m{background: url(../../source/plugin/vfastpost/image/v.png) repeat-x 0px -79px;}
+	#vfastpost #vf_m input{border:1px solid white; width: 100%; border: 1px solid white; outline: none; font-size: 14px; }
+	#vfastpost #vf_r{width:10px;background: url(../../source/plugin/vfastpost/image/v.png) no-repeat -47px -119px;}
+	#vfastpost #vf_b{width:120px;}
+		#vfastpost #vf_b button{width:120px;display:block;height:38px;line-height:100px;overflow:hidden;background: url(../../source/plugin/vfastpost/image/v.png) no-repeat 0 0; margin: 0; padding: 0; border: none;}
+.tig_bottom{color:#B1B1B1;display:block;height:8px;top:56px;margin-left:20px;position:absolute;z-index:99;}
+.tig_bottom1{color:#FEFEE9;display:block;height:8px;top:55px;margin-left:20px;position:absolute;z-index:111;}
+.vct{font: 12px/1.5 Tahoma;margin:0;}
+.container{border:1px solid #B1B1B1;margin-top:8px;margin-right:80px;background-color:#FEFEE9;border-radius: 3px;padding: 5px;width:120px;position:absolute;top:-80px;right:0;}
+/** end **/

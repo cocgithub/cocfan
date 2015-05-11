@@ -1,0 +1,104 @@
+<!--{template common/header}-->
+<!--{if $_GET['op'] == 'report'}-->
+<div id="pt" class="bm cl">
+	<div class="z">
+        <a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em>
+        <a href="forum.php">$_G[setting][bbname]</a><em>&raquo;</em>
+	<a href="javascript:;">管理团队考勤和工资查询</a>
+	</div>
+</div>
+
+<div class="wp cl mbm">
+<!--{if $_G['uid'] && in_array($_G['groupid'],$admingroup) }-->
+<p>尊敬的<strong>$_G['setting']['sitename']</strong>团队成员，<strong class="vwmy{if $_G['setting']['connect']['allow'] && $_G[member][conisbind]} qq{/if}"><a href="home.php?mod=space&uid=$_G[uid]" target="_blank" title="{lang visit_my_space}">{$_G[member][username]}</a></strong> 欢迎您来查看版主考勤和工资查询。</p>
+<!--{if $enddate }--><p class="mtn xs1"><font color=#F27B21>您的管理工资奖励上次发放时间是：{echo date('Y-m-d',$enddate);}，工资奖励发放周期为30天，下次工资发放时间是：{echo date('Y-m-d',$startdate);}。</font></p><!--{/if}-->
+<!--{else}-->
+您还不是 <strong>$_G['setting']['sitename']</strong> 管理团队成员。想申请版主吗？ <a href="plugin.php?id=team&op=addteam" id="addteam" onclick="showWindow(this.id, this.href, 'get', 0);" class="xi1 xs2">&rsaquo; 申请管理员</a>
+<!--{/if}-->
+
+<p class="mtn">
+欢迎您加入我们的管理团队，网络和现实社会其实是一样的，出色的管理人员就应该表现出活跃、热心，与网友关系融恰，所管辖的版面气氛活跃，会员积极发帖回帖。
+一个优秀的管理人员是我们论坛的“灵魂”，管理人员的辛勤劳动和积极负责，造就了论坛的繁荣与人气。
+</p>
+<p class="mtn">管理包括对帖子进行编辑、删除、加入精华、关闭、置顶、合并、设置高亮、提升、下沉、移动、分类、审核、推送主题、屏蔽帖子、推荐、警告、解除警告、添加图章、添加图标、生成文章、道具、推送等操作。  </p>
+
+<div class="mbm mtm">
+<table cellspacing="0" cellpadding="0" class="dt">
+<tr>
+<th width="30">序号</th>
+<th width="100">用户名</th>
+<th width="100"><strong>工资奖励</strong></th>
+<th width="100">当月发帖</th>
+<th width="100">当月精华帖</th>
+<th width="100">当月管理</th>
+<th width="100">当月在线时间</th>
+<th width="100">发放时间</th>
+<th width="100">
+<select onchange="location.href='plugin.php?id=team&op=report&month='+this.value">
+<option value="">按月份查询</option>
+<option value="1" {if $_GET['month'] == 1}selected="selected"{/if}>1 月份</option>
+<option value="2" {if $_GET['month'] == 2}selected="selected"{/if}>2 月份</option>
+<option value="3" {if $_GET['month'] == 3}selected="selected"{/if}>3 月份</option>
+<option value="4" {if $_GET['month'] == 4}selected="selected"{/if}>4 月份</option>
+<option value="5" {if $_GET['month'] == 5}selected="selected"{/if}>5 月份</option>
+<option value="6" {if $_GET['month'] == 6}selected="selected"{/if}>6 月份</option>
+<option value="7" {if $_GET['month'] == 7}selected="selected"{/if}>7 月份</option>
+<option value="8" {if $_GET['month'] == 8}selected="selected"{/if}>8 月份</option>
+<option value="9" {if $_GET['month'] == 9}selected="selected"{/if}>9 月份</option>
+<option value="10" {if $_GET['month'] == 10}selected="selected"{/if}>10 月份</option>
+<option value="11" {if $_GET['month'] == 11}selected="selected"{/if}>11 月份</option>
+<option value="12" {if $_GET['month'] == 12}selected="selected"{/if}>12 月份</option>
+</select>
+</th>
+</tr>
+
+<!--{loop $list $key $value}-->
+<tr>
+	<td width="30">{echo $key+1}</td>
+	<td width="100"><a href="home.php?uid=$value[uid]" title="$value[username]" class="xi2" target="_blank">$value[username]</a></td>
+	<td width="100"><em class="xi1">$value[alldata]</em> $_G['setting']['extcredits'][$money]['title']</td>
+	<td width="100">$value[monthpost] 帖</td>
+	<td width="100">$value[digestposts] 帖</td>
+	<td width="100">$value[modactions] 次</td>
+	<td width="100">$value[thismonth] 小时</td>
+	<td width="100">$value[dateline]</td>
+	<td width="100">$value[month] 月份</td>
+</tr>
+<!--{/loop}-->
+
+</table>
+</div>
+<div class="bm bw0 pgs cl" style="padding-right:8px;">$multi</div>
+</div>
+
+<!--{elseif $_GET['op'] == 'addteam'}-->
+<h3 class="flb">
+	<em>您正在申请管理！</em>
+	<span><a href="javascript:;" onclick="hideWindow('$_GET['handlekey']');" class="flbc" title="{lang close}">{lang close}</a></span>
+</h3>
+<form action="plugin.php?id=team&op=addteam" onsubmit="ajaxpost(this.id, 'form_addteam');" id="form_addteam" name="form_addteam" method="POST">
+<input type="hidden" value="{FORMHASH}" name="formhash" />
+<input type="hidden" name="inajax" value="1">
+<input type="hidden" name="handlekey" value="$_GET['handlekey']">
+<div class="c bart">
+<table cellspacing="0" cellpadding="0" class="dt">
+<tr>
+<td><p>申请管理的栏目</p><input type="text" name="forum" value="" size="60" class="px vm" /></td>
+</tr>
+<tr>
+<td>
+<p>管理方向发展建议</p>
+<div class="area">
+	<textarea rows="5" cols="80" name="summary" class="pt">请谈谈您对这个栏目的管理方向及发展的建议！</textarea>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="o pns">
+	<button type="submit" class="pn pnc xs2"><strong>{lang submit}申请管理员</strong></button>
+</div>
+</form>
+
+<!--{/if}-->
+<!--{template common/footer}-->

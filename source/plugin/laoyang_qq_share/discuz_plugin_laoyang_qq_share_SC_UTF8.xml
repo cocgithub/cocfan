@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2013-04-02 07:06]]></item>
+	<item id="From"><![CDATA[吉他社 (http://www.jitashe.net/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[分享到QQ好友和群]]></item>
+			<item id="identifier"><![CDATA[laoyang_qq_share]]></item>
+			<item id="description"><![CDATA[分享到QQ是QQ互联分享组件的重要基础功能之一，网站只需要在页面上加入一个按钮，便可让用户将内容分享到QQ好友/群/讨论组。分享到QQ组件具有优秀的回流能力，由于采用QQ消息的形式，故无论是好友或群组，到达率和回流率都有强力的保证。藉由接入分享到QQ，网站得以利用腾讯强大的社交关系链，在海量用户中迅速传播，拉升流量！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[laoyang_qq_share/]]></item>
+			<item id="copyright"><![CDATA[吉他社(www.jitashe.net)]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[laoyang_qq_share]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+									<item id="1">
+					<item id="name"><![CDATA[youhui]]></item>
+					<item id="menu"><![CDATA[优惠插件]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5]]></item>
+	</item>
+</root>

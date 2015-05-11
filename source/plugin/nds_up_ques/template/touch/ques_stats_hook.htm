@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<base href="$_G['siteurl']" />		
+	<!--{csstemplate}-->
+   </head>
+   <body>
+<style type="text/css">
+body{background:#FFFFFF url("../../static/image/common/bg.gif") center 0;}
+</style>    
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" /> 
+   <div class="mn">
+   <div class="bm bml">
+   <div class="bm_h cl">
+<span class="y">
+<!--{if !$secret && ($havedone || !$questopic['postmust'])}-->
+<a href="plugin.php?id=nds_up_ques&action=viewanswer&topicid=$topicid" class="fa_ques" target="_blank">{lang nds_up_ques:admin1}</a>
+<span class="pipe">|</span>
+<!--{/if}-->
+<a href="plugin.php?id=nds_up_ques&action=viewques&hook=1&topicid=$topicid"  class="fa_back">{lang nds_up_ques:return}</a>
+</span>
+<h1 class="xs2">
+{lang nds_up_ques:action_4}<span class="xs1 xw0 i">{lang nds_up_ques:statscount}: <strong class="xi1">$magiccount</strong></span>
+</h1>
+
+</div>
+</div>
+
+
+<div class="fl bm">
+<div class="bm bmw  cl">
+<div class="bm_h cl"  align="center">
+<h2>$questopic['subject']</h2>
+</div>
+
+<div id="category_1" class="bm_c" style="">
+
+	       <table cellspacing="0" cellpadding="0" class="fl_tb">         	
+              <thead><tr><td>{lang nds_up_ques:hint}:
+              <div class="pbm xg2" style="width:740px;word-break:break-all;">
+              $questopic['message']
+              </div>
+              </td></tr></thead>
+             <!--{if $isprivate }-->
+              <tbody><tr class="fl_row"><td><h2 style="color:#FF0000">$questopic['isprivatetext']</h2></td></tr></tbody>
+                <!--{elseif $postmust}-->
+              <tbody><tr class="fl_row"><td><h2 style="color:#FF0000">{lang nds_up_ques:notsee}</h2></td></tr></tbody>   
+                <!--{else}-->
+                 $optionlist 
+                 <!--{/if}-->
+           </table>
+   </div>
+  </div>
+ </div>
+        
+           
+		   <div class="notice">{lang nds_up_ques:notice5}</div>
+	
+    
+  </div>
+</body>
+ <script type="text/javascript">
+  parent.document.getElementById("nds_ques").style.height = document.body.scrollHeight +"px";
+ </script>
+</html>
+

@@ -1,0 +1,49 @@
+{subtemplate common/header}
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" /> 
+<div id="pt" class="wp">
+   <div class="z">
+     <a href="./" class="nvhm">$_G['setting']['bbname']</a><em>&rsaquo;</em><a href="{$homeurl}"><!--{if !empty($ndsquesname)}-->$ndsquesname<!--{else}-->{lang nds_up_ques:ques}<!--{/if}--></a><em>&rsaquo;</em>{lang nds_up_ques:action_4}
+   </div>
+</div>
+<div id="ct" class="wp cl">
+   <div class="mn">
+   <div class="bm bml">
+   <div class="bm_h cl">
+<span class="y">
+<!--{if $_G['adminid'] == 1 || $_G['adminid'] == 2 || $questopics['authorid'] == $_G['uid'] }--><a href="plugin.php?id=nds_up_ques&action=expques&topicid=$topicid&hook=1" class="fa_excel">{lang nds_up_ques:expques}</a><span class="pipe">|</span><!--{/if}-->
+<a href="{$vqurl}" class="fa_back">{lang nds_up_ques:return}</a>
+</span>
+<h1 class="xs2">
+{lang nds_up_ques:action_4}<span class="xs1 xw0 i">{lang nds_up_ques:statscount}: <strong class="xi1">$magiccount</strong></span>
+</h1>
+</div>
+</div>
+
+
+<div class="fl bm">
+<div class="bm bmw  cl">
+<div class="bm_h cl">
+<h2 align="center">$questopic['subject']</a></h2>
+</div>
+<div id="category_1" class="bm_c" style="">
+
+	       <table cellspacing="0" cellpadding="0" class="fl_tb">         	
+              <thead><tr><td>{lang nds_up_ques:hint}:
+              <div class="pbm xg2">
+              $questopic['message']
+              </div>
+              </td></tr></thead>
+                  $optionlist 
+           </table>
+   </div>
+  </div>
+ </div>
+        
+           
+		   <div class="notice">{lang nds_up_ques:notice5}</div>
+	
+    
+ </div>
+</div>
+{subtemplate common/footer}
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5]]></item>
+	<item id="Time"><![CDATA[2012-05-07 10:39]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost:90/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[¡i¤T·ç¡j¼s§i¹LÂo¾÷]]></item>
+			<item id="identifier"><![CDATA[sanree_filterword]]></item>
+			<item id="description"><![CDATA[°w¹ï½×¾Â¼s§iªxÀÝ¡A¡i¤T·ç¬ì§Þ¡j±j¶Õ±À¥X¼s§i¹LÂo¾÷¡A¯Âºñ¦â´¡¥ó¡A¥i¥H¦³®Ä¨¾¤î¼s§iÃöÁäµüµo©«¡I¸T¤îªº¼s§iÃöÁäµü¥i¥H¦b«á¥x¦Û¦æ­×§ï¡A¤@¦æ¤@±ø¡A«K¤_­×§ï¡C]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[sanree_filterword/]]></item>
+			<item id="copyright"><![CDATA[¤T·ç¬ì§Þ(sanree.com)]]></item>
+			<item id="version"><![CDATA[1.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[main]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[help]]></item>
+					<item id="menu"><![CDATA[¨Ï¥ÎÀ°§U]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[copyright]]></item>
+					<item id="menu"><![CDATA[ª©ÅvÁn©ú]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[¶}±Ò¼s§iÀË´ú¥\¯à]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[»Ý­nÃöÁä¦rÀË¬dªº¥Î¤á²Õ]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[checkgroups]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[10]]></item>
+					<item id="1"><![CDATA[11]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[§t¦³ÃöÁä¦r´£¥Ü«H®§]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[filtermessage]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[±z´£¥æªº¤º®e§t¦³±Ó·P«H®§¡A½Ð§ó¥¿«á´£¥æ¡C]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[¹LÂoÃöÁä¦r]]></item>
+				<item id="description"><![CDATA[¤@¦æ¤@±ø¡A¥Î¦^¨®¤À³Î]]></item>
+				<item id="variable"><![CDATA[filtword]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[sigline]]></item>
+				<item id="extra"><![CDATA[1=sigline]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[¶}±ÒÀY¹³»{ÃÒµo©«]]></item>
+				<item id="description"><![CDATA[¶}±Ò¦¹¥\¯à¥H«á¡A¨S¦³¤W¶ÇÀY¹³ªº¥Î¤á±N¤£¯àµo©«¡C¼s§i¾÷¾¹¤H¦h¼Æ³£¬O¨S¦³ÀY¹³ªº¥Î¤á¡A¥i¥H¦³®Ä¨¾¤î¾÷¾¹¼s§i¡C]]></item>
+				<item id="variable"><![CDATA[isface]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[¨S³]¸mÀY¹³´£¥Ü«H®§]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[infoface]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[¥u¦³³]¸mÀY¹³¤~¯àµo©«!]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[¹LÂo°Ê§@]]></item>
+				<item id="description"><![CDATA[¥Î¤á´£¥æ©«¤l¥]§t¹LÂoÃöÁäµü«áªº°Ê§@¡C
+¦p»Ý¸T¤îIP¥\¯à¡A½ÐÁp¨tQQ:436101]]></item>
+				<item id="variable"><![CDATA[action]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=Åã¥Ü¸T¤î´£¥Ü«H®§
+2=¸T¤î¥Î¤á¡A´£¥Ü¥Î¤á³Q¥[¤J¸T¤î¥Î¤á¦W³æ
+3=¸T¤îIP¡A´£¥Ü¥Î¤áIP³Q¥[¤J¸T¤îIP¦Cªí]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="header"><![CDATA[¦w¸Ë¨BÆJ]]></item>
+				<item id="stopuid"><![CDATA[¥Ñ¤_±z´£¥æªº¦r²Å¥]§t¼s§i¦r²Å¡A±z³Q¥[¤J¸T¤î¥Î¤á¦W³æ¡I]]></item>
+				<item id="stopip"><![CDATA[¥Ñ¤_±z´£¥æªº¦r²Å¥]§t¼s§i¦r²Å¡A±z³Q¥[¤J¸T¤îIP¦W³æ]]></item>
+				<item id="adminname"><![CDATA[filterword]]></item>
+				<item id="clearselfip"><![CDATA[²M²z¦Û¨­IP]]></item>
+				<item id="sanree"><![CDATA[¡i¤T·ç¥X«~¡j]]></item>
+				<item id="deleteip"><![CDATA[§R°£ºÞ²z¦Û¨­ªºIP]]></item>
+				<item id="copyrighthtml"><![CDATA[<ul>
+<li>¥»´¡¥óª©ÅvÂkÄÝ¡i¤T·çºôµ¸¬ì§Þ¦³­­¤½¥q(sanree.com)¡j©Ò¦³. </li>
+<li><strong>§K³dÁn©ú¡J¥»´¡¥ó¬°ºñ¦â´¡¥ó¡A¹ï¤_´¡¥ó¨Ï¥Î«á²£¥Íªº¥ô¦ó«áªG¡A§@ªÌ¤£©Ó¾á¥ô¦ó³d¥ô¡C</strong> </li>
+<li>¥¼¸g´¡¥ó§@ªÌ³\¥i,¥ô¦ó¤H¤£±o¥H¥ô¦ó§Î¦¡¦b¥ô¦ó¦a¤èµo¥¬/Âàµo­ìª©¥H¤Î¨ä­l¥Íªº­×§ïª©. </li>
+<li><strong>´¡¥ó¦WºÙ:</strong>¼s§i¹LÂo¾÷</li>
+<li><strong>´¡¥ó§@ªÌ:</strong>¤T·çºôµ¸¬ì§Þ¦³­­¤½¥q </li>
+<li><strong>¤½¥qºô§}:</strong><a href="http://www.sanree.com/" target="_blank">www.sanree.com</a></li>
+<li><strong>´¡¥óª©¥»:</strong>V1.3 </li>
+<li><strong>±ÂÅv»ù®æ:</strong>1.00¤¸</li>
+<li><strong>¥æ¬y½×¾Â:</strong><a href="http://dx.sanree.com/" target="_blank">http://dx.sanree.com/</a> </li>
+<li><strong>µo¥¬¦a§}:</strong><a href="http://dx.sanree.com/forum-39-1.html" target="_blank">http://dx.sanree.com/forum-39-1.html</a> </li>
+<li><strong>¨Ï¥ÎÀ°§U:</strong><a href="http://dx.sanree.com/forum-39-1.html" target="_blank">http://dx.sanree.com/forum-39-1.html</a> </li>
+<li>¦p¦³¥ô¦óÃö¤_¨Ï¥Î¤WªººÃ°Ý,½Ð¦Ü<a href="http://dx.sanree.com/forum-39-1.html" target="_blank">http://dx.sanree.com/forum-39-1.html</a>´£¥X. </li>
+<li>«ÈªAQQ±M­û[80065602]: <A href="http://wpa.qq.com/msgrd?v=3&amp;uin=80065602&amp;site=qq&amp;menu=yes" target=_blank><IMG title=ÂIÀ»³o¨½µ¹§Úµo®ø®§ border=0 alt=ÂIÀ»³o¨½µ¹§Úµo®ø®§ src="http://wpa.qq.com/pa?p=2:80065602:41"></A> Áp¨t®É¡A½Ðª`©ú¡J¼s§i¹LÂo¾÷</li>
+</ul>]]></item>
+				<item id="sanree_filterword_copyright"><![CDATA[ª©ÅvÁn©ú]]></item>
+				<item id="sanree_filterword_help"><![CDATA[¨Ï¥ÎÀ°§U]]></item>
+				<item id="helphtml"><![CDATA[<ul >
+<li><strong>¼s§i¹LÂo­ì²z¡J</strong></li>
+<li>§PÂ_¥Î¤áµo©«´£¥æ¤º®e¬O§_§t¦³¹LÂoÃöÁä¦r¡A¤ñ¦p¡J¡§sigline¡¨¡A</li>
+<li>·í¥Î¤á´£¥æªº©«¤l¼ÐÃD©ÎªÌ¤º®e¤¤§t¦³¡§sigline¡¨³o­ÓÃöÁäµü¡A</li>
+<li>³n¥ó®Ú¾Ú«á¥x³]¸m¶i¦æ´£¿ô,ªý¤î´£¥æ¡A¥i¥H¦³®Äªº¨¾¤î¼s§iªxÀÝ¡C</li>
+</ul>]]></item>
+				<item id="sanree_filterword_Donation"><![CDATA[§Ú­nÃÙ§U]]></item>
+				<item id="Donationhtml"><![CDATA[<ul >
+<li>¦³±zªº¤ä«ù¡A§Ú­Ì¤~¯à¶}µo¥X§ó¦h§ó¦nªº²£«~¡A·PÁÂ±z¹ï§Ú­ÌªºÃÙ§U¡I</li>
+<li>°Ó°È¦X§@QQ[80065602]: <A href="http://wpa.qq.com/msgrd?v=3&amp;uin=80065602&amp;site=qq&amp;menu=yes" target=_blank><IMG title=ÂIÀ»³o¨½µ¹§Úµo®ø®§ border=0 alt=ÂIÀ»³o¨½µ¹§Úµo®ø®§ src="http://wpa.qq.com/pa?p=2:80065602:41"></A> Áp¨t®É¡A½Ðª`©ú¡J°Ó°È¦X§@</li>
+<li>
+<p style="text-align:center"><a href="http://www.sanree.com/tel114/Donation.aspx" target="_blank" id="buy" style="display:none"><STRONG>§Ú­n¥I´Ú</strong></a>
+<input type="button" onclick="javascript:buywin();" class="btn" id="submit_submit" name="submit" title="¦b½uÃÙ§U" value="¦b½uÃÙ§U" /></p>
+</ul>]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="header"><![CDATA[¦w¸Ë¨BÆJ]]></item>
+			</item>
+			<item id="installlang">
+				<item id="header"><![CDATA[¦w¸Ë¨BÆJ]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="license"><![CDATA[[list]
+[*][color=Red]¦pªGºÞ²z­ûIP³Q¸T¤îµn¿ýºô¯¸¡A½ÐÁp¨tQQ:436101[/color]
+[*]¥»´¡¥óª©ÅvÂkÄÝ´¡¥ó§@ªÌ©Ò¦³.
+[*][b]§K³dÁn©ú¡J¥»´¡¥ó¬°ºñ¦â´¡¥ó¡A¹ï¤_´¡¥ó¨Ï¥Î«á²£¥Íªº¥ô¦ó«áªG¡A§@ªÌ¤£©Ó¾á¥ô¦ó³d¥ô¡C[/b]
+[*]¥¼¸g´¡¥ó§@ªÌ³\¥i,¥ô¦ó¤H¤£±o¥H¥ô¦ó§Î¦¡¦b¥ô¦ó¦a¤èµo¥¬/Âàµo­ìª©¥H¤Î¨ä­l¥Íªº­×§ïª©.
+[*][b]´¡¥ó§@ªÌ:[/b]¤T·çºôµ¸¬ì§Þ¦³­­¤½¥q www.sanree.com
+[*][b]§@«~Â²¤¶:[/b]°w¹ï½×¾Â¼s§iªxÀÝ¡A¡i¤T·ç¬ì§Þ¡j±j¶Õ±À¥X¼s§i¹LÂo¾÷¡A¯Âºñ¦â´¡¥ó¡A¥i¥H¦³®Ä¨¾¤î¼s§iÃöÁäµüµo©«¡I¸T¤îªº¼s§iÃöÁäµü¥i¥H¦b«á¥x¦Û¦æ­×§ï¡A¤@¦æ¤@±ø¡A«K¤_­×§ï¡C
+[*][b]µo¥¬¦a§}:[/b][url]http://dx.sanree.com/forum-39-1.html[/url]
+[*]¦p¦³¥ô¦óÃö¤_¨Ï¥Î¤WªººÃ°Ý,½Ð¦Ü[url]http://dx.sanree.com/forum-39-1.html[/url]´£¥X.
+[*][color=Red]½Ð±z¦b¦w¸Ë«e¾\Åª¤T·ç¬ì§Þ³n¥ó²£«~³Ì²×¥Î¤á³q¥Î±ÂÅv¨óÄ³[/color]¡A¦a§}¡J[url]http://www.sanree.com/filterword/xieyi.html[/url].
+[*][color=Red]¦pªG±zÄ@·N¸ê§U§Ú­Ì,½Ð¦Ü[url]http://www.sanree.com/tel114/Donation.aspx[/url]¹ï§Ú­Ì¶i¦æÃÙ§U.[/color]
+[*]³Ì«á,·PÁÂ±z¨Ï¥Î§Ú­Ìªº´¡¥ó,¤]§Æ±æ±z¯à°÷µ¹§Ú­Ì´£¨Ñ§ó¦nªº·N¨£([url=http://www.sanree.com/]½ÐÂIÀ»³o¨½¶i¤J¤T·ç¬ì§Þ©x¤è¯¸ÂI[/url]).
+[/list]]]></item>
+	</item>
+</root>

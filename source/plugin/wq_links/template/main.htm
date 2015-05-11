@@ -1,0 +1,93 @@
+{subtemplate common/header}
+
+<div id="pt" class="bm cl">
+<div class="z"><a href="./" class="nvhm">$_G[setting][bbname]</a><em>&rsaquo;</em><a href="./">$_G[setting][bbname]</a> <em>&rsaquo;</em><a href="plugin.php?id=wq_links:main">{lang wq_links:plugin_name}</a> <em>&rsaquo;</em>$plugin_nav</div>
+</div>
+
+<div id="ct" class="ct2 wp cl">
+<div class="mn">
+    	<div class="bm bw0">
+
+            <div class="bm bw0">
+			<ul class="tb cl">
+				<li <!--{if $_G[gp_mod] == 'apply' || empty($_G[gp_mod])}-->class="a"<!--{/if}-->><a href="plugin.php?id=wq_links:main&mod=apply">{lang wq_links:tab_apply}</a></li>
+				<!--{if !empty($_G[uid])}--><li <!--{if $_G[gp_mod] == 'log'}-->class="a"<!--{/if}-->><a href="plugin.php?id=wq_links:main&mod=log">{lang wq_links:tab_log}</a></li><!--{/if}-->
+			</ul>
+
+			<div class="datalist" style="margin:20px 0 0 0;">
+				<!--{if $_G[gp_mod] == 'apply' || empty($_G[gp_mod])}-->
+
+				<!--{if empty($_G[uid])}-->
+				<div style="border:1px dashed #f60; background-color:#FFC" class="notice">{$nologin_notice}</div>
+				<!--{/if}-->
+
+				<form method="post" action="plugin.php?id=wq_links:main&mod=apply&applysubmit=true" name="applyform">
+				<input type="hidden" name="referer" value="$_G[referer]">
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<table width="100%" border="1" bordercolor="#cccccc">
+
+					<tr>
+						<td width="100" height="35" bgcolor="#F2F2F2" align="center"><span style="color:red;">*</span> {lang wq_links:sitename}</td>
+						<td colspan="2">&nbsp;&nbsp;&nbsp;<input type="text" name="sitename" style="width:220px; height:22px; line-height22px;" /> $site_name</td>
+					</tr>
+					<tr>
+						<td height="35" bgcolor="#F2F2F2" align="center"><span style="color:red;">*</span>{lang wq_links:siteurl}</td>
+						<td colspan="2">&nbsp;&nbsp;&nbsp;<input type="text" name="siteurl" value="http://" style="width:220px; height:22px; line-height22px;" /> $site_url</td>
+					</tr>
+					<tr>
+						<td height="35" bgcolor="#F2F2F2" align="center">{lang wq_links:logo}</td>
+						<td colspan="2">&nbsp;&nbsp;&nbsp;<input type="text" name="logo" style="width:220px; height:22px; line-height22px;" /> $site_logo</td>
+					</tr>
+					<tr>
+						<td bgcolor="#F2F2F2" align="center">{lang wq_links:intro}</td>
+						<td colspan="2">
+							<div class="tedt" style="width:96%;margin:5px auto;">
+							<div class="area">
+								<textarea rows="5" cols="20" name="description" class="pt" id="replymessage"></textarea>
+							</div>
+						</div>
+						</td>
+					</tr>
+				</table>
+                <div style="text-align:center; margin-top:20px;">
+					<button type="submit" name="applysubmit" id="applysubmit" value="true" class="pn pnp" /><strong>{lang wq_links:submit}</strong></button>
+				    <button type="reset" name="sendreset" class="pn pnp" /><strong>{lang wq_links:reset}</strong></button>
+				</div>
+				</form>
+				<!--{elseif $_G[gp_mod] == 'log' && $_G['uid']!=''}-->
+				<table width="100%" border="1" bordercolor="#cccccc">
+
+					<tr bgcolor="#F2F2F2" align="center">
+						<td width="140">{lang wq_links:log_title1}</td>
+						<td height="35">{lang wq_links:log_title2}</td>
+						<td width="60">{lang wq_links:log_title3}</td>
+						<td width="80">{lang wq_links:log_title4}</td>
+						<td width="100">{lang wq_links:log_title5}</td>
+						<td width="60">{lang wq_links:log_title6}</td>
+					</tr>
+					<!--{loop $loglists $loglist}-->
+					<tr align="center">
+						<td height="35">{$loglist['sitename']}</td>
+						<td>{$loglist['siteurl']}</td>
+						<td>{$loglist['logo']}</td>
+						<td><span id="viewmsg_$loglist[id]" onmouseover="showMenu(this.id);"><a href="javascript:;" class="red">{lang wq_links:viewintro}</a></span>
+						<div id="viewmsg_$loglist[id]_menu" style="display:none; border:1px solid #ccc; background-color:#F2F2F2; padding:10px; text-align:left">$loglist[description]</div></td>
+						<td>{$loglist[dateline]}</td>
+						<td>{$loglist[status]}</td>
+					</tr>
+					<!--{/loop}-->
+				</table>
+				<div style="clear:both"></div>
+				<div style="margin-top:20px;">$multipage</div>
+                <!--{/if}-->
+
+			</div></div>
+
+
+		</div>
+	</div>
+
+	{template wq_links:side}
+</div>
+
+{subtemplate common/footer}

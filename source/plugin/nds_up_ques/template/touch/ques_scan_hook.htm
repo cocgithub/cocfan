@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<base href="$_G['siteurl']" />		
+	<!--{csstemplate}-->
+   </head>
+   <body>
+<style type="text/css">
+  body{background:#FFFFFF url("/static/image/common/bg.gif") center 0;}
+</style>
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" />
+<script type="text/javascript"> 
+      function $(id){return document.getElementById(id);}
+      function Showstar(setv,chmax){
+  		  var imax = parseInt(chmax);
+		  var isetv = parseInt(setv);
+           for(var i=0;i<imax;i++) {
+             if (i < isetv){      
+		         document.write('<img width="25" height="27" src="source/plugin/nds_up_ques/images/star02.jpg" style="cursor:pointer" />')
+		          }else { document.write('<img width="25" height="27" src="source/plugin/nds_up_ques/images/star01.jpg" style="cursor:pointer" />') } 
+		      } }
+</script> 
+   <div class="mn">
+   <div class="bm bml">
+   <div class="bm_h cl">
+<span class="y">
+<a href="plugin.php?id=nds_up_ques&module=nds_up_ques&action=viewques&hook=1&topicid=$topicid"  class="fa_back">{lang nds_up_ques:return}</a>
+</span>
+<h1 class="xs2">
+{lang nds_up_ques:ansview}<span class="xs1 xw0 i"> 
+{lang nds_up_ques:data1} <a href="home.php?mod=space&uid=$data[authorid]">{$data['author']}</a> {lang nds_up_ques:data2} {$data['dateline']} {lang nds_up_ques:data3}
+</span></h1>
+</div>
+</div>
+<div class="fl bm">
+<div class="bm bmw  cl">
+<div align="center" class="bm_h cl">
+<h2>$questopic['subject']</h2>
+</div>
+<div id="category_1" class="bm_c" style="">
+        <table cellspacing="0" cellpadding="0" class="fl_tb">         	
+              <thead><tr><td>{lang nds_up_ques:hint}:
+              <div class="pbm xg2">
+              $questopic['message']
+              </div>
+{lang nds_up_ques:q_info}{lang nds_up_ques:author}:$questopic['author']  {lang nds_up_ques:dateline}:$questopic['dateline']<!--{if !empty($questopic['copyauthor']) && $questopic['copyauthor'] != 'Unknown' }--> , {lang nds_up_ques:copyauthor}: $questopic['copyauthor']  <!--{/if}-->  
+<!--{if  !empty($questopic['opcheckauthor']) && $questopic['opcheckauthor'] != 'Unknown' }--> , {lang nds_up_ques:q_checkath}: $questopic['opcheckauthor']<!--{/if}--><!--{if $data['authorid'] == $_G['uid'] && $questopic['ques_mode']==2 }--> <span class="redh2">{lang nds_up_ques:nds_totalscore}$data['mark']{lang nds_up_ques:mark2}</span><!--{/if}--> <span style="color:#FF0000;" >{lang nds_up_ques:nds_scantimer} {$data['timer']} {lang nds_up_ques:nds_scantimer2}</span>
+<!--{if $questopic['nwds']==2 && !empty($postdo) }-->
+<div>
+<span style="color:#FF0000;font-size: 14px;" >{lang nds_up_ques:nds_postdo}</span><span style="font-size: 14px;" >{$postdo}</span>
+</div>
+<!--{/if}-->
+              </td></tr></thead>
+                 $optionlist 
+           </table>
+
+     </div>
+     </div>
+    </div>    
+ 
+ </div>
+</body>
+ <script type="text/javascript">
+  parent.document.getElementById("nds_ques").style.height = document.body.scrollHeight +"px";
+ </script>
+</html>

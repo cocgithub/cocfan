@@ -1,0 +1,45 @@
+{subtemplate common/header}
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" /> 
+<div class="box">
+<a href="./" class="nvhm">$_G['setting']['bbname']</a><em> &gt; </em><a href="plugin.php?id=nds_up_ques"><!--{if !empty($ndsquesname)}-->$ndsquesname<!--{else}-->{lang nds_up_ques:ques}<!--{/if}--></a><em> &gt; </em>{lang nds_up_ques:action_4}
+</div>
+
+
+<div class="vt">
+<div class="bm">
+<div class="tz mtn">
+<a href="plugin.php?id=nds_up_ques&action=viewques&topicid=$topicid" class="fa_back">{lang nds_up_ques:return}</a>
+</div>
+ <div class="bm_h">
+{lang nds_up_ques:action_4}
+ </div>
+<h2 class="xs2">
+<span class="xs1 xw0 i">{lang nds_up_ques:statscount}: <strong class="xi1">$magiccount</strong></span>
+</h2>
+<div class="fl bm">
+<div class="bm bmw  cl">
+<div class="bm_h cl">
+<h2 align="center">$questopic['subject']</a></h2>
+</div>
+<div id="category_1" class="bm_c" style="">
+
+	       <table cellspacing="0" cellpadding="0" class="fl_tb">         	
+              <thead><tr><td>{lang nds_up_ques:hint}:
+              <div class="pbm xg2">
+              $questopic['message']
+              </div>
+              </td></tr></thead>
+                  $optionlist 
+           </table>
+   </div>
+  </div>
+ </div>
+        
+           
+		   <div class="notice">{lang nds_up_ques:notice5}</div>
+	
+    
+ </div>
+</div>
+{subtemplate common/footer}
+

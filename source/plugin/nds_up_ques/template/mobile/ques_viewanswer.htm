@@ -1,0 +1,62 @@
+{subtemplate common/header}
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" /> 
+
+<div class="box">
+<a href="./" class="nvhm">$_G['setting']['bbname']</a><em> &gt; </em><a href="plugin.php?id=nds_up_ques"><!--{if !empty($ndsquesname)}-->$ndsquesname<!--{else}-->{lang nds_up_ques:ques}<!--{/if}--></a><em> &gt; </em>{lang nds_up_ques:action_6}
+</div>
+
+<div class="vt">
+<div class="bm">
+
+<div class="tz mtn">
+<a href="plugin.php?id=nds_up_ques&action=viewanswer&topicid=$topicid&orderby=dateline&imes=DESC" class="fa_down">{lang nds_up_ques:order1}</a>
+<span class="pipe">|</span><a href="plugin.php?id=nds_up_ques&action=viewanswer&topicid=$topicid&orderby=mark&imes=DESC" class="fa_down">{lang nds_up_ques:order2}</a>
+<span class="pipe">|</span><a href="plugin.php?id=nds_up_ques&action=viewanswer&topicid=$topicid&orderby=dateline&imes=ASC" class="fa_up">{lang nds_up_ques:order3}</a>
+<span class="pipe">|</span><a href="plugin.php?id=nds_up_ques&action=viewanswer&topicid=$topicid&orderby=mark&imes=ASC" class="fa_up">{lang nds_up_ques:order4}</a>
+ <span class="pipe">|</span><a href="plugin.php?id=nds_up_ques&action=viewques&topicid=$topicid" class="fa_back">{lang nds_up_ques:return}</a>
+</div>
+ <div class="bm_h">
+{lang nds_up_ques:action_6}
+</div>
+<h2 class="xs2">
+<span class="xs1 xw0 i">{lang nds_up_ques:viewanswercount}: <strong class="xi1">$magiccount </strong></span>
+</h2>
+
+ <div id="threadlist" class="tl bm bmw">
+   <div class="th">
+       <table width="100%"cellspacing="0" cellpadding="0" class="th">
+           <tr>
+           <div class="tf">
+                <td width="40%">{lang nds_up_ques:subject}</td>	
+               	<td width="20%">{lang nds_up_ques:postdate}</td>
+                <td width="20%">{lang nds_up_ques:answerr}</td>
+                 <!--{if $sysmode  == 2}--> 
+                 	<td width="10%">{lang nds_up_ques:mark}</td>
+                 <!--{else}--> 
+                      <td width="10%">{lang nds_up_ques:txt_jfjl}</td>
+                  <!--{/if}--> 
+            </div>
+           </tr>
+         </table>
+   </div> 
+   <table width="100%" cellspacing="0" cellpadding="0">
+        <!--{loop $quesuserlist  $key $queslist}-->  
+         <tr>   		
+           <td width="40%"><span style="padding-left:6px;padding-right:4px;">$queslist['nid'].</span><a href="plugin.php?id=nds_up_ques&action=scan&topicid=$topicid&qid=$key">$questopics['subject']</a></td>
+           <td width="20%">$queslist['dateline']</td>
+           <td width="20%"><a href="home.php?mod=space&uid=$queslist[authorid]">$queslist['author']</a></td>
+           <td width="10%">$queslist['mark']</td>
+                    </tr>
+	<!--{/loop}-->
+
+   </table>
+ </div>
+
+     <div id="pgt" class="bm bw0 pgs cl">
+	    $multipage
+      </div>
+
+ </div>
+ </div>
+{subtemplate common/footer}
+

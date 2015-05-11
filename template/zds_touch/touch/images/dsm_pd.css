@@ -1,0 +1,166 @@
+/* -----------------------
+ÆµµÀ
+----------------------- */
+/*ÁÐ±í*/
+.ttp a.cats,.ttp a.cato {
+color: #fff;
+background: #44ADFF;
+}
+.clt {
+padding: 10px 0;
+border-top: 1px solid #fff;
+border-bottom: 1px solid #e5e5e5;
+}
+.clt h1 {
+padding: 2px 0 8px;
+font-size: 18px;
+max-height: 40px;
+line-height: 23px;
+font-weight: 500;
+font-family: Microsoft Yahei;
+overflow: hidden;
+
+}
+.clt .mess {
+line-height: 20px;
+font-size: 14px;
+color: #666;
+overflow: hidden;
+text-indent: 2em;
+}
+.clt .sp {
+padding: 8px 0 0;
+text-align: right;
+}
+.clt .sp,.clt .sp a{color: #aaa !important;}
+.clt img {
+float: left;
+width: 120px;
+height: 92px;
+margin: 3px 9px 0 1px;
+}
+/*ÏêÏ¸Ò³*/
+.vt_th {
+line-height: 28px;
+font-size: 18px;
+padding: 10px 0;
+font-weight: 500;
+border-top: 1px solid #fff;
+font-family: Microsoft Yahei;
+}
+.user_first {
+padding-bottom: 12px;
+color: #888;
+border-bottom: 1px solid #e3e3e3;
+line-height: 14px;
+font-size: 14px;
+}
+.user_first a.fav {
+float: right;
+height: 11px;
+padding: 3px 5px;
+margin-top: -2px;
+line-height: 11px;
+background: #e5e5e5;
+overflow: hidden;
+border-radius: 3px;
+}
+.user_first a {
+color: #005088;
+}
+.ctt .mess {
+padding: 10px 0;
+line-height: 150%;
+font-size: 15px;
+color: #666;
+border-top: 1px solid #fff;
+}
+.atd {
+margin: 10px auto 0px;
+}
+.atd a {
+display: block;
+padding: 0px 5px;
+}
+.atd td {
+padding: 25px 2px 20px;
+text-align: center;
+vertical-align: bottom;
+font-size: 10px;
+}
+.atd td a {
+color: #aaa;
+}
+.atd img {
+width: 18px;
+height: 18px;
+}
+.mess img {
+max-width: 100% !important;
+}
+.atd p {
+line-height: 10px;
+height: 10px;
+}
+.nsj {
+padding: 9px 0;
+overflow: hidden;
+border-top: 1px solid #fff;
+border-bottom: 1px solid #e5e5e5;
+}
+.nsj, .nsj a {
+color: #777;
+}
+.nsj li {
+padding: 4px 0px 4px 1px;
+overflow: hidden;
+}
+.titls {
+padding: 10px 10px 8px;
+background-color: #f4f4f4;
+}
+.bb {
+border-bottom: 1px #e5e5e5 solid !important;
+}
+.ipc {
+font-size: 15px;
+padding: 10px 10px 15px;
+}
+
+.celi {
+padding: 0px 10px 8px 48px;
+min-height: 70px;
+position: relative;
+border-top: 1px solid #fff;
+border-bottom: 1px solid #e5e5e5;
+}
+.celi .avatar img {
+width: 28px;
+height: 28px;
+position: absolute;
+left: 10px;
+top: 10px;
+}
+.celi .user {
+padding: 8px 0px;
+}
+.user .p_dl {
+color: #bbb;
+}
+.celi .mess {
+padding-bottom: 3px;
+line-height: 20px;
+color: #555;
+}
+.celi .vtrim {
+margin-top: 5px;
+height: 22px;
+overflow: hidden;
+}
+.vtrim a {
+float: right;
+margin-left: 5px;
+padding: 5px 7px;
+color: #fff;
+background: #ccc;
+}

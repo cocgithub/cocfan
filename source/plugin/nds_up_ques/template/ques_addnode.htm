@@ -1,0 +1,117 @@
+		   <div id="quesbodyhidden" name="quesbodyhidden" style="display:none"> 
+           <a href="javascript:void(0)" onclick= "deleteRow(this);"><img src="{$imgurl}del.gif" alt="{lang nds_up_ques:delopa}" /> {lang nds_up_ques:del}</a>
+                <label><b>{lang nds_up_ques:order}</b>&nbsp;</label><input type="text" name="neworder[]" size="1" value="0">&nbsp;&nbsp;<label><b>{lang nds_up_ques:nds_tmtypeno}</b>&nbsp;</label><input type="text" name="newtmclass[]" size="1" value="0">&nbsp;&nbsp;
+				<label><b>{lang nds_up_ques:title}</b>&nbsp;</label><input type="text" name="newtitle[]" size="80">
+                
+<div class="ndsdiv">
+            	         <select name="newleast[]">
+                <option <!--{if $ndsdefleas == 1 }-->selected="selected"<!--{/if}--> value="0">{lang nds_up_ques:least0}</option>
+				<option <!--{if $ndsdefleas == 2 }-->selected="selected"<!--{/if}--> value="1">{lang nds_up_ques:least1}</option>
+				 </select>&nbsp;&nbsp;		
+				<label><b>{lang nds_up_ques:types}</b></label>		
+			<select id="types" name="newtypes[]" onchange="Showmax2(this,this.options[this.options.selectedIndex].value,'{$action}',{$sysmode})">
+<option <!--{if $ndsdeftype == 1 }-->selected="selected"<!--{/if}--> value="1">{lang nds_up_ques:type1}</option>
+<option <!--{if $ndsdeftype == 2 }-->selected="selected"<!--{/if}--> value="2">{lang nds_up_ques:type2}</option>
+<option <!--{if $ndsdeftype == 3 }-->selected="selected"<!--{/if}--> value="3">{lang nds_up_ques:type3}</option>
+<option <!--{if $ndsdeftype == 4 }-->selected="selected"<!--{/if}--> value="4">{lang nds_up_ques:type4}</option>
+<option <!--{if $ndsdeftype == 5 }-->selected="selected"<!--{/if}--> value="5">{lang nds_up_ques:type5}</option>
+<option <!--{if $ndsdeftype == 6 }-->selected="selected"<!--{/if}--> value="6">{lang nds_up_ques:type6}</option>
+<option <!--{if $ndsdeftype == 7 }-->selected="selected"<!--{/if}--> value="7">{lang nds_up_ques:type7}</option>
+ <!--{if $sysmode  == 1}--> 
+          <option value="8">{lang nds_up_ques:type8}</option>
+		  <option value="9">{lang nds_up_ques:type9}</option>
+       	  <option value="10">{lang nds_up_ques:type10}</option>
+<!--{/if}--> 
+
+				 </select>
+                   <span id="chmaxsp"  name="chmaxsp" <!--{if !($ndsdeftype == 5 || $ndsdeftype == 4) }--> style="display:none" <!--{/if}--> >
+          <label  class="ndslable" ><b>{lang nds_up_ques:nds_chmin}</b></label><input name="newchmin[]" type="text"  size="2" maxlength="2">
+		<label class="ndslable"><b>{lang nds_up_ques:nds_chmax}</b></label><input name="newchmax[]" type="text" size="2" maxlength="2">       		     </span>
+   <span  id="chmaxsph"  name="chmaxsph"> 
+    </span>    
+        
+      <span id ="ohtinputsp" name="ohtinputsp" <!--{if $ndsdeftype > 5 || $ndsdeftype == 1 }-->style="display:none"<!--{/if}-->>
+         <label class="ndslable"><b>{lang nds_up_ques:nds_endnote}</b></label>
+                    <select id= "types" name="newothinput[]">
+<option selected="selected"  value="0">{lang nds_up_ques:nds_endnotenull}</option>
+<option value="1">{lang nds_up_ques:nds_endnotept}</option>
+ <!--{if $sysmode  == 1}--> 
+<option value="2">{lang nds_up_ques:nds_endnotetk}</option>
+<option value="3">{lang nds_up_ques:nds_endnotepttk}</option>
+<!--{/if}--> 
+ </select>
+      </span>       
+       <span id ="textsizesp" name="textsizesp" <!--{if !($ndsdeftype == 7 || $ndsdeftype == 8) }--> style="display:none"<!--{/if}-->>
+       <label class="ndslable"><b>{lang nds_up_ques:nds_textsize}</b></label><input type="text" name="newtextsize[]" size="2" maxlength="2" value="60" > 
+        </span>
+
+      
+    <span id ="textareawidthsp" name="textareawidthsp" <!--{if !($ndsdeftype == 7) }-->style="display:none"<!--{/if}-->>
+    <label class="ndslable"><b>{lang nds_up_ques:nds_textareawidth}</b></label><input type="text" name="newtextareawidth[]" size="2" maxlength="2" value="6" >    </span>
+  <span id ="hdtsp" name="hdtsp" style="display:none">
+   <label  class="ndslable" ><b>{lang nds_up_ques:nds_hdmin}</b></label><input name="newhdmin[]" type="text"  size="2" maxlength="2" value="1" />
+	<label class="ndslable"><b>{lang nds_up_ques:nds_hdmax}</b></label><input name="newhdmax[]" type="text" size="5" maxlength="5" value="100" /> 
+    <label class="ndslable"><b>{lang nds_up_ques:nds_hdkld}</b></label><input name="newhdkld[]" type="text" size="2" maxlength="2" value="1" />        <label class="ndslable"><b>{lang nds_up_ques:nds_hdstyl}</b></label>
+           <select id= "types" name="newhdtstyle[]">
+<option selected="selected"  value="1">{lang nds_up_ques:nds_hdstylsz}</option>
+<option value="2">{lang nds_up_ques:nds_hdstylxx}</option>
+		 </select>
+      </span>
+ 
+   <span id ="imgstylesp" name="imgstylesp" style="display:none">
+         <label class="ndslable"><b>{lang nds_up_ques:nds_tpstyl}</b></label>
+           <select id= "types" name="newimgstyle[]">
+<option value="3">200*240_3</option>
+<option selected="selected"  value="5">120*159_5</option>
+<option value="13">198*130_3</option>
+<option value="14">140*140_4</option>
+		 </select>
+      </span>
+      <span id ="tktsp" name="tktsp" style="display:none">
+         <label class="ndslable"><b>{lang nds_up_ques:nds_optexps}</b></label>
+           <select id= "types" name="newtktstyle[]">
+<option value="51" selected="selected">{lang nds_up_ques:nds_tkthh}</option>
+<option value="52">{lang nds_up_ques:nds_tktbhh}</option>
+		 </select>
+      </span>   
+   <span id ="selstylesp" name="selstylesp" <!--{if !($ndsdeftype == 2 || $ndsdeftype == 4) }-->style="display:none"<!--{/if}-->>
+         <label class="ndslable"><b>{lang nds_up_ques:nds_selstyle}</b></label>
+           <select id= "types" name="newselstyle[]">
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4" selected="selected" >4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+		 </select>
+      </span> 
+      
+      
+</div>          
+				<label><b>{lang nds_up_ques:desp}</b></label>
+				<label><b><span style="padding-right:102px;padding-left:40px;">{lang nds_up_ques:options}</span></b></label>
+				 <!--{if $sysmode  == 2}-->  
+                <label><b><span style="padding-right:50px;">{lang nds_up_ques:key}</span></b></label>
+				<label><b>{lang nds_up_ques:mark}</b></label>
+                 <!--{else}-->
+                 <span id="imgttsp"  name ="imgttsp" style="padding-left: 80px;display:none;"><label><b>{lang nds_up_ques:nds_imgttsp}</b></label>
+</span>
+                 <span id="jzdxtsp"  name ="jzdxtsp" style="padding-left: 80px;display:none;"><label><b>{lang nds_up_ques:nds_ty9sp}</b></label>
+</span>
+                 <!--{/if}--> 
+				<br /><textarea name="newdesp[]" wrap="off" style="width: 180px; height: 90px; font-size: 12px;"></textarea>&nbsp;&nbsp;&nbsp;
+                <!--{if $sysmode  == 2}--> 		
+<textarea name="newoptions[]" wrap="off" style="width: 168px; height: 90px; font-size: 12px;"></textarea>&nbsp;&nbsp;&nbsp;				
+<textarea name="newkeys[]" wrap="off" style="width: 120px; height: 90px; font-size: 12px;"></textarea>&nbsp;&nbsp;&nbsp;
+<textarea name="newmark[]" wrap="off" style="width: 80px; height: 90px; font-size: 12px;"></textarea>
+<!--{else}--> 
+<textarea name="newoptions[]" wrap="off" style="width: 250px; height: 90px; font-size: 12px;"></textarea>&nbsp;&nbsp;&nbsp;
+<span id="imginsp"  name ="imginsp" style="display:none">
+<textarea name="newkeys[]" wrap="off" style="width: 250px; height: 90px; font-size: 12px;"></textarea>
+</span>
+<!--{/if}-->
+ <!--{if $sysmode  == 2}--> 
+<div style="padding-top:6px;"><label><b>{lang nds_up_ques:nds_answer}</b></label><input type="text" size="111" name="newanswer[]"> </div>
+<!--{/if}-->
+            </div>

@@ -1,0 +1,54 @@
+/** forum::index **/
+.guessulike_bm .bm_c, .guessulike_bml .bm_c { overflow: hidden; padding-bottom: 0; zoom: 1; }
+.guessulike_bml .bm_h { padding-top: 8px; height: auto; line-height: 1.8; white-space: normal; }
+
+/* 关键词样式 by Pony 1205161343 */
+.guessulike_kw {}
+	.guessulike_kw span { display: inline-block; margin: 0 5px -5px 0; padding-left: 5px; height: 19px; line-height: 19px; background: #F7F6ED url({IMGDIR}/un_selector.png) no-repeat 0 0; overflow: hidden; }
+		.guessulike_kw em { display: inline-block; vertical-align: top; }
+		.guessulike_kw .x { display: inline-block; margin-left: 5px; width: 15px; height: 19px; background: url({IMGDIR}/un_selector.png) no-repeat 100% -19px; text-indent: -9999px; overflow: hidden; }
+			.guessulike_kw .x:hover { background-position: 100% -38px; }
+
+/* 关键词帖子列表样式 by Pony 1205161012 */
+.xl2 { margin: 10px -24px 0 0; padding-top: 10px; border-top: 1px dotted {COMMONBORDER}; }
+	.xl2 li { margin: 3px 0; width: 49.9%; }
+	.xl2 li i { padding-left: 5px; }
+	.xl2 li span { padding-right: 15px; }
+	.xl2 li i em { float: none; padding: 0; color: {NOTICETEXT}; }
+
+/* 版块列表样式 by Pony 1205141613 */
+.guessulike_catlist { margin-bottom: 10px; padding: 0 0 10px 150px; border-bottom: 1px dotted {COMMONBORDER}; font-size: 14px; }
+	.guessulike_fixlastchild { margin-bottom: -11px; }
+	.guessulike_catlist dt { overflow: hidden; float: left; display: inline; margin-left: -150px; width: 140px; height: 1.8em; line-height: 1.8em; color: #999; }
+		.guessulike_catlist dt a { color: #999; }
+	.guessulike_catlist dd { overflow: hidden; float: left; width: 33%; height: 1.8em; line-height: 1.8em; }
+/** end **/
+
+
+/** forum::index,forum::viewthread, group::viewthread **/
+/* 帖子列表样式 by Pony 1205141713 */
+.guessulike_threadlist { overflow: hidden; margin-bottom: -11px; }
+	.ie6 .guessulike_threadlist, .ie7 .guessulike_threadlist { margin-bottom: -2px; }
+	.guessulike_threadlist li { float: left; margin-bottom: 10px; padding-bottom: 6px; width: 49.9%; height: 44px; border-bottom: 1px dotted #DDD; }
+	.guessulike_threadlist .avt { float: left; }
+		.guessulike_threadlist .avt img { padding: 1px; width: 36px; height: 36px; }
+	.guessulike_threadlist p { overflow: hidden; margin-left: 50px; padding-right: 10px; height: 22px; }
+.guessulike_bml .guessulike_threadlist { margin-top: 6px; padding-top: 10px; border-top: 1px dotted #DDD; }
+.guessulike_loveforum li{float: left; width:25%; height: 25px; color: #999;}
+.guessulike_loveforum .avt{height: 18px; overflow: hidden;}
+.guessulike_lforumlist {width:100%;}
+.guessulike_lforumlist .guessarea {float: left;width: 50%;}
+.guessulike_lforumlist .lovearea {float:right;width: 50%;}
+.guessulike_lforumlist .lovearea .lovecon {margin-left: 5px;}
+.guessulike_lforumlist .lovearea .lovelist {min-height: 50px;}
+.count_livid {line-height: 12px;font-weight: bold;color: white;background-color: #E5E5E5;display: inline-block;padding: 2px 5px 2px 5px;-moz-border-radius: 12px;-webkit-border-radius: 12px;border-radius: 12px;text-decoration: none;margin-right: 5px;}
+/** end **/
+
+/** forum::viewthread, group::viewthread **/
+/* 看贴页帖子列表样式 by Pony 1205161311 */
+.guessulike_threadlist { margin-top: 10px; }
+	.ie6 .guessulike_threadlist { margin-bottom: -11px; }
+
+#guessLike {visibility: hidden;position: fixed;bottom: 0px;display: block;margin: -30px 0 0;width: 500px;height: 120px; no-repeat 50% 0;overflow: hidden;}
+.ie6 #guessLike{display:none;}
+/** end **/

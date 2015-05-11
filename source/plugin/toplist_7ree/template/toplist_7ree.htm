@@ -1,0 +1,272 @@
+<!--{block return}-->
+
+<!--
+	ID: toplist_7ree 
+	version: 8.15
+	(C)2007-2012 [www.7ree.com]
+	This is NOT a freeware, use is subject to license terms
+	update 16:45 2013/5/13
+	Agreement: http://addon.discuz.com/?@7.developer.doc/agreement_7ree_html
+	More Plugins: http://addon.discuz.com/?@7ree
+-->
+
+	
+
+            <div class="fl bm">
+			<div class="bm bmw cl">
+			
+<!--{if $vars_7ree[showtitle_7ree]}-->
+			<div class="bm_h cl">
+			<span class="o">
+					<img id="category_$cat[fid]_img" src="{IMGDIR}/collapsed_no.gif" title="{lang toplist_7ree:htm_lang_onoff_7ree}" alt="{lang toplist_7ree:htm_lang_onoff_7ree}" onclick="toggle_collapse('category_$cat[fid]');" <!--{if !$_G[uid] && $tiptime_7ree }-->onload="showPrompt(null, null, '<span>$vars_7ree[guesttipmsg_7ree]</span> ', '{$tiptime_7ree}');"<!--{/if}-->/>
+			</span>
+			<span class="y" <!--{if $vars_7ree[titlecolor_7ree]}-->style="color: $vars_7ree[titlecolor_7ree];"<!--{/if}-->>
+       
+			<!--{if  $right_show_7ree == "show_tools_7ree"}-->
+			<a  href="plugin.php?id=toplist_7ree:desktopshotcut_7ree" <!--{if $vars_7ree[titlecolor_7ree]}-->style="color: $vars_7ree[titlecolor_7ree];"<!--{/if}-->>{lang toplist_7ree:htm_lang_desktopshotcut_7ree}</a>
+		    <!--{elseif  $right_show_7ree == "show_time_7ree"}-->
+			{$date_7ree} {$week_7ree} {$time_7ree}
+		    <!--{else}-->
+		    <!--{/if}-->
+            </span>
+					
+		<h2 <!--{if $vars_7ree[titlecolor_7ree]}-->style="color: $vars_7ree[titlecolor_7ree];"<!--{/if}-->>					
+				<!--{if $headertitleshow_7ree == "show_time_7ree"}-->
+				{$date_7ree} {$week_7ree} {$time_7ree}
+				<!--{elseif $headertitleshow_7ree == "diymsg_7ree"}-->
+				{$vars_7ree[leftdiymsg_7ree]}
+				<!--{elseif $headertitleshow_7ree == "health_7ree" }-->
+				{lang toplist_7ree:htm_lang_healthtip_7ree}
+				<script language="JavaScript">
+<!--
+var health_message_7ree="";
+day = new Date( );
+hr = day.getHours( );
+if (( hr >= 0 ) && (hr <= 1 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip0_7ree}"
+if (( hr >= 1 ) && (hr <= 2 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip1_7ree}"
+if (( hr >= 2 ) && (hr <= 3 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip2_7ree}"
+if (( hr >= 3 ) && (hr <= 4 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip3_7ree}"
+if (( hr >= 4 ) && (hr <= 5 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip4_7ree}"
+if (( hr >= 5 ) && (hr <= 6 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip5_7ree}"
+if (( hr >= 6 ) && (hr <= 7 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip6_7ree}"
+if (( hr >= 7 ) && (hr <= 8 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip7_7ree}"
+if (( hr >= 8 ) && (hr <= 9 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip8_7ree}"
+if (( hr >= 9 ) && (hr <= 10 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip9_7ree}"
+if (( hr >= 10 ) && (hr <= 11 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip10_7ree}"
+if (( hr >= 11 ) && (hr <= 12 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip11_7ree}"
+if (( hr >= 12 ) && (hr <= 13 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip12_7ree}"
+if (( hr >= 13 ) && (hr <= 14 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip13_7ree}"
+if (( hr >= 14 ) && (hr <= 15 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip14_7ree}"
+if (( hr >= 15 ) && (hr <= 16 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip15_7ree}"
+if (( hr >= 16 ) && (hr <= 17 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip16_7ree}"
+if (( hr >= 17 ) && (hr <= 18 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip17_7ree}"
+if (( hr >= 18 ) && (hr <= 19 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip18_7ree}"
+if (( hr >= 19 ) && (hr <= 20 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip19_7ree}"
+if (( hr >= 20 ) && (hr <= 21 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip20_7ree}"
+if (( hr >= 21 ) && (hr <= 22 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip21_7ree}"
+if (( hr >= 22 ) && (hr <= 23 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip22_7ree}"
+if (( hr >= 23 ) && (hr <= 24 ))
+health_message_7ree="{lang toplist_7ree:htm_lang_healthtip23_7ree}"
+
+document.write(health_message_7ree)
+//--->
+</script>
+				
+				<!--{/if}-->
+</h2>
+	</div>
+<!--{/if}-->
+	
+	
+	<div id="category_$cat[fid]" class="bm_c" style="border-top: 1px #CDCDCD solid;">
+	<table cellspacing="0" cellpadding="0" class="fl_tb">
+	<tr <!--{if $vars_7ree[colcolor_7ree]}-->style="color: $vars_7ree[colcolor_7ree];"<!--{/if}-->>
+	<!--{if $vars_7ree[pic_on_7ree]}-->
+	<td width="{$vars_7ree[ge_width_7ree]}" align="center"><strong>$pic_title_7ree</strong></td>
+	<!--{/if}-->
+	<!--{if $vars_7ree[new_on_7ree]}-->
+	<td width="{$vars_7ree[ge_width_7ree]}" align="center"><strong>$new_title_7ree</strong</td>
+	<!--{/if}-->
+	<!--{if $vars_7ree[rep_on_7ree]}-->
+	<td width="{$vars_7ree[ge_width_7ree]}" align="center"><strong>$rep_title_7ree</strong></td>
+	<!--{/if}-->
+	<!--{if $vars_7ree[dig_on_7ree]}-->
+	<td width="{$vars_7ree[ge_width_7ree]}" align="center"><strong>$dig_title_7ree</strong></td>
+	<!--{/if}-->
+	<!--{if $vars_7ree[hot_on_7ree]}-->
+	<td width="{$vars_7ree[ge_width_7ree]}" align="center"><strong>$hot_title_7ree</strong></td>
+	<!--{/if}-->
+	</tr>
+
+						
+	<tr class="fl_row">
+	<!--{if $vars_7ree[pic_on_7ree]}-->
+   <td width="{$vars_7ree[ge_width_7ree]}" align="left" style="vertical-align:top;">
+   <div id="showpic_7ree" style="height:auto;" >
+   
+    <script type="text/javascript">
+    var swf_width='{$width_7ree}';	
+	var swf_height='{$height_7ree}';
+	var config='5|0xffffff|0x0099ff|50|0xffffff|0x0099ff|0x000000';
+	var files='{$showpicpics}';
+	var links='{$showpiclinks}';
+	var texts='{$showpictexts}';
+	document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+	document.write('<param name="movie" value="source/plugin/toplist_7ree/template/images/focus.swf" />');
+	document.write('<param name="quality" value="high" />');
+	document.write('<param name="menu" value="false" />');
+    document.write('<param name="wmode" value="transparent" />');
+	document.write('<param name="FlashVars" value="config='+config+'&bcastr_flie='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'" />');
+	document.write('<embed src="source/plugin/toplist_7ree/template/images/focus.swf" wmode="opaque" FlashVars="config='+config+'&bcastr_flie='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+	document.write('</object>');
+    </script>
+        
+   </div>
+   </td>
+	<!--{/if}-->
+	<!--{if $vars_7ree[new_on_7ree]}-->
+      <td  width="{$vars_7ree[ge_width_7ree]}" style="vertical-align:top;">
+   <div  id="new1" style="height:auto;" ><div  id="new2">
+      <!--{loop $new_post_threadlist $nthread}-->
+
+        <div style="overflow: hidden;height: 20px; width: 96%; word-break:break-all; <!--{if $vars_7ree[bordercolor_7ree]}-->border-bottom:1px dashed {$vars_7ree[bordercolor_7ree]}; <!--{/if}-->" 
+        <!--{if $linetitle_style_7ree == "on_popupmenu_7ree"}--> 
+        id="new_7ree_$nthread[tid]"  onmouseover="showMenu({'ctrlid':this.id,'duration':'1'})"
+        <!--{/if}-->
+        > <a href="forum.php?mod=viewthread&tid=$nthread[tid]"  $nthread['highlight'] $blank_7ree><!--{if $vars_7ree[showauthor_7ree]}--><span  class="y xg1" style="margin-right:5px;">[{$nthread[author]}]</span><!--{/if}--><img src="source/plugin/toplist_7ree/template/images/list_7ree.gif" border="0" align="absmiddle"/> {$nthread[view_subject]}</a>
+        </div>
+<!--{if $linetitle_style_7ree == "on_popupmenu_7ree"}-->
+       <div id="new_7ree_$nthread[tid]_menu" class="p_pop" style="width:220px;display:none">
+       &nbsp;&nbsp;<strong>$nthread[view_subject]</strong><br>
+	   &nbsp;&nbsp;{lang toplist_7ree:htm_lang_bankuai_7ree}$nthread[forumname]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_zuozhe_7ree}$nthread[author]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_shijian_7ree}$nthread[date]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_liulan_7ree}$nthread[views]{lang toplist_7ree:htm_lang_ci_7ree}&nbsp;&nbsp;{lang toplist_7ree:htm_lang_huifu_7ree}$nthread[replies]{lang toplist_7ree:htm_lang_ci_7ree}
+       
+       </ul>
+       </div>
+        <!--{/if}-->
+      <!--{/loop}-->
+      
+      </div></div> 
+   </td>
+	<!--{/if}-->
+	<!--{if $vars_7ree[rep_on_7ree]}-->
+      <td  width="{$vars_7ree[ge_width_7ree]}" style="vertical-align:top;">
+   <div  id="rep1" style="height:auto;" ><div  id="rep2">
+      <!--{loop $reply_post_threadlist $rthread}-->
+       <div style="overflow: hidden;height: 20px; width: 96%; word-break:break-all; <!--{if $vars_7ree[bordercolor_7ree]}-->border-bottom:1px dashed {$vars_7ree[bordercolor_7ree]}; <!--{/if}-->" 
+       <!--{if $linetitle_style_7ree == "on_popupmenu_7ree"}-->
+       id="rep_7ree_$rthread[tid]"  onmouseover="showMenu({'ctrlid':this.id,'duration':'1'})"
+        <!--{/if}-->
+       >  
+       <!--{if $vars_7ree[replaygoto_7ree]==1}-->
+       <a href="forum.php?mod=viewthread&tid=$rthread[tid]" $rthread['highlight'] $blank_7ree>
+       <!--{elseif $vars_7ree[replaygoto_7ree]==2}-->
+       <a href="forum.php?mod=redirect&tid=$rthread[tid]&goto=lastpost#lastpost" $rthread['highlight'] $blank_7ree>
+       <!--{/if}-->
+       <!--{if $vars_7ree[showauthor_7ree]}--><span class="y xg1" style="margin-right:5px;">[{$rthread[lastposter]}]</span><!--{/if}--><img src="source/plugin/toplist_7ree/template/images/list_7ree.gif" border="0" align="absmiddle"/> $rthread[view_subject]</a></div>
+<!--{if $linetitle_style_7ree == "on_popupmenu_7ree"}--> 
+       <div id="rep_7ree_$rthread[tid]_menu" class="p_pop" style="width:220px;display:none">
+       &nbsp;&nbsp;<strong>$rthread[view_subject]</strong><br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_bankuai_7ree}$rthread[forumname]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_huifu_7ree}$rthread[lastposter]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_shijian_7ree}$rthread[lastreplytime]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_liulan_7ree}$rthread[views]{lang toplist_7ree:htm_lang_ci_7ree}&nbsp;&nbsp;{lang toplist_7ree:htm_lang_huifu_7ree}$rthread[replies]{lang toplist_7ree:htm_lang_ci_7ree}
+       </div>
+       <!--{/if}-->
+      <!--{/loop}-->
+            </div></div>
+   </td>
+	<!--{/if}-->
+	<!--{if $vars_7ree[dig_on_7ree]}-->
+      <td width="{$vars_7ree[ge_width_7ree]}" style="vertical-align:top;">
+   <div  id="dig1" style="height:auto;" ><div  id="dig2">
+      <!--{loop $digest_post_threadlist $dthread}-->
+       <div style="overflow: hidden;height: 20px; width: 96%; word-break:break-all; <!--{if $vars_7ree[bordercolor_7ree]}-->border-bottom:1px dashed {$vars_7ree[bordercolor_7ree]}; <!--{/if}-->" 
+       <!--{if $linetitle_style_7ree == "on_popupmenu_7ree"}--> 
+       id="dig_7ree_$dthread[tid]"  onmouseover="showMenu({'ctrlid':this.id,'duration':'1'})"
+       <!--{/if}-->
+       > <a href="forum.php?mod=viewthread&tid=$dthread[tid]" $dthread['highlight'] $blank_7ree><!--{if $vars_7ree[showauthor_7ree]}--><span class="y xg1" style="margin-right:5px;">[{$dthread[author]}]</span><!--{/if}--><img src="source/plugin/toplist_7ree/template/images/list_7ree.gif" border="0" align="absmiddle"/> $dthread[view_subject]</a></div>
+<!--{if $linetitle_style_7ree == "on_popupmenu_7ree"}--> 
+       <div id="dig_7ree_$dthread[tid]_menu" class="p_pop" style="width:220px;display:none">
+       &nbsp;&nbsp;<strong>$dthread[view_subject]</strong><br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_bankuai_7ree}$dthread[forumname]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_zuozhe_7ree}$dthread[author]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_shijian_7ree}$dthread[date]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_liulan_7ree}$dthread[views]{lang toplist_7ree:htm_lang_ci_7ree}&nbsp;&nbsp;{lang toplist_7ree:htm_lang_huifu_7ree}$dthread[replies]{lang toplist_7ree:htm_lang_ci_7ree}
+       </div>
+<!--{/if}-->
+      <!--{/loop}-->
+            </div></div>
+   </td>  
+	<!--{/if}-->
+	<!--{if $vars_7ree[hot_on_7ree]}-->
+	<td width="{$vars_7ree[ge_width_7ree]}" align="left" style="vertical-align:top;">
+   <div  id="hot1" style="height:auto;"><div  id="hot2">
+      <!--{loop $hot_post_threadlist $hthread}-->
+       <div style="overflow: hidden;height: 20px; width: 96%; word-break:break-all; <!--{if $vars_7ree[bordercolor_7ree]}-->border-bottom:1px dashed {$vars_7ree[bordercolor_7ree]}; <!--{/if}-->"
+       <!--{if $linetitle_style_7ree == "on_popupmenu_7ree"}--> 
+         id="hot_7ree_$hthread[tid]" onmouseover="showMenu({'ctrlid':this.id,'duration':'1'})"
+         <!--{/if}-->
+         > <a href="forum.php?mod=viewthread&tid=$hthread[tid]" $hthread['highlight'] $blank_7ree><!--{if $vars_7ree[showauthor_7ree]}--><span class="y xg1" style="margin-right:5px;">[{$hthread[author]}]</span><!--{/if}--><img src="source/plugin/toplist_7ree/template/images/list_7ree.gif" border="0" align="absmiddle"/> $hthread[view_subject]</a></div>
+<!--{if $linetitle_style_7ree == "on_popupmenu_7ree"}--> 
+       <div id="hot_7ree_$hthread[tid]_menu" class="p_pop" style="width:220px;display:none">
+       <strong>$hthread[view_subject]</strong><br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_bankuai_7ree}$hthread[forumname]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_zuozhe_7ree}$hthread[author]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_shijian_7ree}$hthread[date]<br>
+       &nbsp;&nbsp;{lang toplist_7ree:htm_lang_liulan_7ree}$hthread[views]{lang toplist_7ree:htm_lang_ci_7ree}&nbsp;&nbsp;{lang toplist_7ree:htm_lang_huifu_7ree}$hthread[replies]{lang toplist_7ree:htm_lang_ci_7ree}
+       </div>
+<!--{/if}-->
+      <!--{/loop}-->
+            </div></div>
+	</td>
+	<!--{/if}-->
+
+						</tr>
+					</table>
+				</div>
+			</div>
+			</div>
+<!--{if $newbienum_7ree}-->
+<div style="height:56px;width:99%;margin-bottom:10px; clear:both;">
+<div style="margin-right:5px; padding:0px 3px 0px 3px; width:12px; height:56px;border:1px solid #CDCDCD; overflow:hidden; word-wrap:break-word; float:left;">
+{$vars_7ree[member_title_7ree]}
+</div>
+<div style="overflow:hidden; height:55px; float:left;">
+<!--{loop $newbie_list_7ree $newbie_list_value}-->
+<span class="avt" style="margin-left:3px; float:left;">
+<a href="home.php?mod=space&uid={$newbie_list_value[uid]}" target="_blank" title="{$newbie_list_value[username]}@{$newbie_list_value[regdate]}">{$newbie_list_value[avatar_7ree]}</a>
+</span>
+<!--{/if}-->
+</div>
+
+</div>
+<!--{/if}-->
+
+
+<!--{/block}-->

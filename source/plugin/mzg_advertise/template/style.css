@@ -1,0 +1,34 @@
+.advertise_cen { width: 100%; overflow: hidden; }
+.advertise_cen .al { float: left; width: 762px; border: 1px solid #EAEAEA; }
+.advertise_cen .al .pg { overflow: hidden; margin-top: 8px; margin-bottom: 8px; margin-left: auto; margin-right: auto; width: 60%; }
+.advertise_cen .al ul { display: inline; margin: 0px; padding: 0px; list-style-type: none; }
+.advertise_cen .al ul li { display: block; height: 160px; width: 174px; float: left; overflow: hidden; text-align: center; padding-top: 16px; padding-right: 8px; padding-bottom: 16px; padding-left: 8px; }
+.advertise_cen .al ul li a.pic { height: 120px; width: 155px; padding: 1px; border: 1px solid #EAEAEA; display: inline-block; }
+.advertise_cen .al ul li a.pic:hover { border: 1px solid #FF6600; }
+.advertise_cen .al ul li a.pic span { margin-top: 50px; display: inline-block; font-size: 16px; font-family: "Î¢ÈíÑÅºÚ"; font-weight: bold; }
+.advertise_cen .al ul li a{ color: #006699; }
+.advertise_cen .al ul li a.pic img { height: 100%; width: 100%; display: inline-block; }
+.advertise_cen .ar { float: left; width: 196px; margin-left: 0px; }
+.advertise_cen .ar_list { border: 1px solid #EAEAEA; height: auto; }
+.advertise_cen .ar_title { background-image: url(image/al_title.gif); background-repeat: no-repeat; text-align: center; padding-top: 8px; padding-bottom: 8px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 16px; color: #FFFFFF; }
+.advertise_cen .ar ul { display: inline; margin: 0px; padding: 0px; list-style-type: none; }
+.advertise_cen .ar ul li { background-color: #EAEAEA; padding: 4px; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: #CCCCCC; border-bottom-color: #CCCCCC; margin-top: 1px; border-top-width: 1px; border-top-style: solid; border-top-color: #EAEAEA; border-left-width: 1px; border-left-style: solid; border-left-color: #FFFFFF; }
+.advertise_cen .ar ul li.av { background-color: #FFFFFF; font-weight: bold; font-size: 14px; }
+.advertise_cen .ar ul li a { background-image: url(image/tb.gif); background-repeat: no-repeat; background-position: 0px center; display: inline-block; padding-left: 14px; margin-left: 20px; }
+.advertise_title { background-color: #EEEEEE; border: 1px solid #CCCCCC; padding-top: 4px; padding-bottom: 4px; padding-left: 8px; }
+.advertise_table { overflow: hidden; width: 100%; }
+.advertise_table .advertiset_title { background-color: #EBEBEB; border: 1px solid #CCCCCC; color: #333333; padding-left: 8px; }
+.advertise_table .advertiset_home { background-image: url(image/forumlink.gif); background-repeat: no-repeat; padding-left: 18px; }
+.advertise_table .advertisel_title { color: #333333; padding-left: 8px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #CCCCCC; font-weight: bold; }
+.advertise_table .advertiset_span { font-size: 10px; color: #808080; }
+.advertise_table th { text-align: right; padding-right: 8px; color: #000000; }
+.advertise_table td { padding-left: 8px; }
+.advertise_table td a { color: #006699; }
+.advertise_center { padding-top: 8px; padding-bottom: 8px; text-align: center; margin-right: auto; margin-left: auto; }
+.advertise_red { color: #FF0000; }
+.advertise_blue { color: #006699; }
+.advertise_strong { font-weight: bold; color: #990000; }
+.advertise_span { color: #999999; }
+.advertise_y { margin-right: 6px; }
+.advertise_hr { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #999999; line-height: 2px; overflow: hidden; height: 2px; }
+.advertise_av { font-weight: bold; }

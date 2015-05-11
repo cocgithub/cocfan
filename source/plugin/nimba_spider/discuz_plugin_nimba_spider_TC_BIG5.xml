@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3]]></item>
+	<item id="Time"><![CDATA[2013-03-01 16:09]]></item>
+	<item id="From"><![CDATA[¤H¤u´¼¯à¹êÅç«Ç (http://www.ailab.cn/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[»jµï²Î­p]]></item>
+			<item id="identifier"><![CDATA[nimba_spider]]></item>
+			<item id="description"><![CDATA[»jµï²Î­pv1.0.1 for Discuz X2.0,X2.5 §@ªÌ ¤gµÛ¤H¹ç¤Ú ¤H¤u´¼¯à¹êÅç«Ç ¥X«~¡]Made By Nimba, Team From AiLab.cn)¥\¯à¤¶²Ð¡J¥»´¡¥ó¥i¥H¹ê®É¹ï·j¯Á¤ÞÀº¨Ó³X¶i¦æ²Î­p¡A«ü¾É¯¸ªøªº¹BÀç¡A©Ò²Î­pªº»jµïÃþ«¬¥i¥H¦b«á¥x¦Û¥Ñ¶}±Ò¡I]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[nimba_spider/]]></item>
+			<item id="copyright"><![CDATA[¤H¤u´¼¯à¹êÅç«Ç]]></item>
+			<item id="version"><![CDATA[v1.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[spider]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[admincp]]></item>
+					<item id="menu"><![CDATA[¼Æ¾Ú²Î­p]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[readme]]></item>
+					<item id="menu"><![CDATA[¨Ï¥Î»¡©ú]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[¶}±Ò²Î­p]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[²Î­p¦Ê«×]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[baidu]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[²Î­p¨¦ºq]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[google]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[²Î­p·jª¯]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[sogou]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[²Î­p·j·j]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[soso]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[²Î­p¶®ªê]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[yahoo]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[²Î­p¥²À³]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[bing]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[²Î­p¦³¹D]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[youdao]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[²Î­pAlexa]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[alexa]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[²Î­p360]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[s360]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="license"><![CDATA[[list]
+[*]¥»´¡¥óª©ÅvÂkÄÝ´¡¥ó§@ªÌ©Ò¦³.
+[*]¥¼¸g´¡¥ó§@ªÌ³\¥i,¥ô¦ó¤H¤£±o¥H¥ô¦ó§Î¦¡¦b¥ô¦ó¦a¤èµo¥¬/Âàµo­ìª©¥H¤Î¨ä­l¥Íªº­×§ïª©.
+[*][b]´¡¥ó§@ªÌ:[/b]¤gµÛ¤H¹ç¤Ú Team from [url=http://www.ailab.cn/]¤H¤u´¼¯à¹êÅç«Ç[/url]
+[*][b]¥\¯àÂ²¤¶:[/b]¥»´¡¥ó¥i¥H¹ê®É¹ï·j¯Á¤ÞÀº¨Ó³X¶i¦æ²Î­p¡A«ü¾É¯¸ªøªº¹BÀç¡A©Ò²Î­pªº»jµïÃþ«¬¥i¥H¦b«á¥x¦Û¥Ñ¶}±Ò¡I
+[*][b]§Þ³N¤ä«ù:[/b][url=http://www.ailab.cn/]¤H¤u´¼¯à¹êÅç«Ç[/url]
+[*]¦p¦³¥ô¦óÃö¤_¨Ï¥Î¤WªººÃ°Ý,½Ð¦Üdiscuz¯¸ªøªÀ°Ï[url]http://dz.open.ailab.cn/[/url]´£¥X.
+[*][color=Red]½Ð±z¦b¦w¸Ë«e»{¯u¾\Åª´¡¥óªº¸Ô²Ó»¡©ú[/color]¡A¦a§}¡J[url]http://addon.discuz.com/?@nimba_spider.plugin[/url].
+[*][color=Red]¦pªG±zÄ@·N¸ê§U§Ú­Ì,½Ð¦Ü[url]http://me.alipay.com/lih062624[/url]¹ï§Ú­Ì¶i¦æÃÙ§U.[/color]
+[*]³Ì«á,·PÁÂ±z¨Ï¥Î§Ú­Ìªº´¡¥ó,¤]§Æ±æ±z¯à°÷µ¹§Ú­Ì´£¨Ñ§ó¦nªº·N¨£([url=http://www.ailab.cn/]½ÐÂIÀ»³o¨½¶i¤J¤H¤u´¼¯à¹êÅç«Ç[/url]).
+[/list]]]></item>
+	</item>
+</root>

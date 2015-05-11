@@ -1,0 +1,55 @@
+{subtemplate common/header}
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" /> 
+<div class="box">
+<a href="./" class="nvhm">$_G['setting']['bbname']</a><em> &gt; </em><a href="plugin.php?id=nds_up_ques"><!--{if !empty($ndsquesname)}-->$ndsquesname<!--{else}-->{lang nds_up_ques:ques}<!--{/if}--></a><em> &gt; </em>{lang nds_up_ques:action_8}
+</div>
+<div class="vt">
+<div class="bm">
+<div class="tz mtn">
+<a href="plugin.php?id=nds_up_ques&action=ranklist&view=ms">{lang nds_up_ques:mslist}</a>
+<span class="pipe">|</span><a href="plugin.php?id=nds_up_ques&action=ranklist&view=qs">{lang nds_up_ques:qslist}</a>
+<span class="pipe">|</span><a href="plugin.php?id=nds_up_ques&action=ranklist&view=all">{lang nds_up_ques:alllist}</a>
+ <span class="pipe">|</span><a href="plugin.php?id=nds_up_ques">{lang nds_up_ques:return}</a>
+</div>
+
+<div class="bm_h">
+{lang nds_up_ques:action_8}
+</div>
+<h2 class="xs2">
+<span class="xs1 xw0 i"><strong class="xi1">{$lanlist}{lang nds_up_ques:top10}</strong></span>
+</h2>
+ <div id="threadlist" class="tl bm bmw">
+   <div class="th">
+       <table width="100%"cellspacing="0" cellpadding="0" class="th">
+           <tr>
+           <div class="tf">
+                <td width="20%"><div align="right">{lang nds_up_ques:action_8}</div></td>	
+              <td width="50%"><div align="center">{lang nds_up_ques:answerr}</div></td>
+              <td width="30%"><div align="left">{lang nds_up_ques:mark}</div></td>
+            </div>
+          </tr>
+        </table>
+   </div> 
+   <table width="100%" cellspacing="0" cellpadding="0">
+        <!--{loop $quesuserlist  $key $queslist}-->  
+         <tr>   
+           <!--{if $key < 4 }-->		
+           <td width="20%"><div align="right"><img  src="{IMGDIR}/rank_{$key}.gif"}</div></td>
+           <!--{else}-->
+           <td width="20%"><div align="right">$key</div></td>
+           <!--{/if}-->
+           <td width="50%">
+             <div align="center"><img  src="$_G['setting']['ucenterurl']/avatar.php?uid=$queslist[authorid]&size=small" width="16" height="16" alt="test1" /> <a href="home.php?mod=space&uid=$queslist[authorid]" title="$queslist['author']" target="_blank">$queslist['author']</a>                </div></td>
+           <td width="30%"><div align="left">$queslist['mark']</div></td>
+        </tr>
+	<!--{/loop}-->
+   </table>
+ </div>
+
+     <div id="pgt" class="bm bw0 pgs cl">
+      </div>
+
+ </div>
+ </div>
+{subtemplate common/footer}
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5]]></item>
+	<item id="Time"><![CDATA[2012-05-07 10:39]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost:90/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【三瑞】广告过滤机]]></item>
+			<item id="identifier"><![CDATA[sanree_filterword]]></item>
+			<item id="description"><![CDATA[针对论坛广告泛滥，【三瑞科技】强势推出广告过滤机，纯绿色插件，可以有效防止广告关键词发帖！禁止的广告关键词可以在后台自行修改，一行一条，便于修改。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[sanree_filterword/]]></item>
+			<item id="copyright"><![CDATA[三瑞科技(sanree.com)]]></item>
+			<item id="version"><![CDATA[1.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[main]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[help]]></item>
+					<item id="menu"><![CDATA[使用帮助]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[copyright]]></item>
+					<item id="menu"><![CDATA[版权声明]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[开启广告检测功能]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[isopen]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[需要关键字检查的用户组]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[checkgroups]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[10]]></item>
+					<item id="1"><![CDATA[11]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[含有关键字提示信息]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[filtermessage]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[您提交的内容含有敏感信息，请更正后提交。]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[过滤关键字]]></item>
+				<item id="description"><![CDATA[一行一条，用回车分割]]></item>
+				<item id="variable"><![CDATA[filtword]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[sigline]]></item>
+				<item id="extra"><![CDATA[1=sigline]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[开启头像认证发帖]]></item>
+				<item id="description"><![CDATA[开启此功能以后，没有上传头像的用户将不能发帖。广告机器人多数都是没有头像的用户，可以有效防止机器广告。]]></item>
+				<item id="variable"><![CDATA[isface]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[没设置头像提示信息]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[infoface]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[只有设置头像才能发帖!]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[过滤动作]]></item>
+				<item id="description"><![CDATA[用户提交帖子包含过滤关键词后的动作。
+如需禁止IP功能，请联系QQ:436101]]></item>
+				<item id="variable"><![CDATA[action]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1=显示禁止提示信息
+2=禁止用户，提示用户被加入禁止用户名单
+3=禁止IP，提示用户IP被加入禁止IP列表]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="header"><![CDATA[安装步骤]]></item>
+				<item id="stopuid"><![CDATA[由于您提交的字符包含广告字符，您被加入禁止用户名单！]]></item>
+				<item id="stopip"><![CDATA[由于您提交的字符包含广告字符，您被加入禁止IP名单]]></item>
+				<item id="adminname"><![CDATA[filterword]]></item>
+				<item id="clearselfip"><![CDATA[清理自身IP]]></item>
+				<item id="sanree"><![CDATA[【三瑞出品】]]></item>
+				<item id="deleteip"><![CDATA[删除管理自身的IP]]></item>
+				<item id="copyrighthtml"><![CDATA[<ul>
+<li>本插件版权归属【三瑞网络科技有限公司(sanree.com)】所有. </li>
+<li><strong>免责声明：本插件为绿色插件，对于插件使用后产生的任何后果，作者不承担任何责任。</strong> </li>
+<li>未经插件作者许可,任何人不得以任何形式在任何地方发布/转发原版以及其衍生的修改版. </li>
+<li><strong>插件名称:</strong>广告过滤机</li>
+<li><strong>插件作者:</strong>三瑞网络科技有限公司 </li>
+<li><strong>公司网址:</strong><a href="http://www.sanree.com/" target="_blank">www.sanree.com</a></li>
+<li><strong>插件版本:</strong>V1.3 </li>
+<li><strong>授权价格:</strong>1.00元</li>
+<li><strong>交流论坛:</strong><a href="http://dx.sanree.com/" target="_blank">http://dx.sanree.com/</a> </li>
+<li><strong>发布地址:</strong><a href="http://dx.sanree.com/forum-39-1.html" target="_blank">http://dx.sanree.com/forum-39-1.html</a> </li>
+<li><strong>使用帮助:</strong><a href="http://dx.sanree.com/forum-39-1.html" target="_blank">http://dx.sanree.com/forum-39-1.html</a> </li>
+<li>如有任何关于使用上的疑问,请至<a href="http://dx.sanree.com/forum-39-1.html" target="_blank">http://dx.sanree.com/forum-39-1.html</a>提出. </li>
+<li>客服QQ专员[80065602]: <A href="http://wpa.qq.com/msgrd?v=3&amp;uin=80065602&amp;site=qq&amp;menu=yes" target=_blank><IMG title=点击这里给我发消息 border=0 alt=点击这里给我发消息 src="http://wpa.qq.com/pa?p=2:80065602:41"></A> 联系时，请注明：广告过滤机</li>
+</ul>]]></item>
+				<item id="sanree_filterword_copyright"><![CDATA[版权声明]]></item>
+				<item id="sanree_filterword_help"><![CDATA[使用帮助]]></item>
+				<item id="helphtml"><![CDATA[<ul >
+<li><strong>广告过滤原理：</strong></li>
+<li>判断用户发帖提交内容是否含有过滤关键字，比如：“sigline”，</li>
+<li>当用户提交的帖子标题或者内容中含有“sigline”这个关键词，</li>
+<li>软件根据后台设置进行提醒,阻止提交，可以有效的防止广告泛滥。</li>
+</ul>]]></item>
+				<item id="sanree_filterword_Donation"><![CDATA[我要赞助]]></item>
+				<item id="Donationhtml"><![CDATA[<ul >
+<li>有您的支持，我们才能开发出更多更好的产品，感谢您对我们的赞助！</li>
+<li>商务合作QQ[80065602]: <A href="http://wpa.qq.com/msgrd?v=3&amp;uin=80065602&amp;site=qq&amp;menu=yes" target=_blank><IMG title=点击这里给我发消息 border=0 alt=点击这里给我发消息 src="http://wpa.qq.com/pa?p=2:80065602:41"></A> 联系时，请注明：商务合作</li>
+<li>
+<p style="text-align:center"><a href="http://www.sanree.com/tel114/Donation.aspx" target="_blank" id="buy" style="display:none"><STRONG>我要付款</strong></a>
+<input type="button" onclick="javascript:buywin();" class="btn" id="submit_submit" name="submit" title="在线赞助" value="在线赞助" /></p>
+</ul>]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="header"><![CDATA[安装步骤]]></item>
+			</item>
+			<item id="installlang">
+				<item id="header"><![CDATA[安装步骤]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="license"><![CDATA[[list]
+[*][color=Red]如果管理员IP被禁止登录网站，请联系QQ:436101[/color]
+[*]本插件版权归属插件作者所有.
+[*][b]免责声明：本插件为绿色插件，对于插件使用后产生的任何后果，作者不承担任何责任。[/b]
+[*]未经插件作者许可,任何人不得以任何形式在任何地方发布/转发原版以及其衍生的修改版.
+[*][b]插件作者:[/b]三瑞网络科技有限公司 www.sanree.com
+[*][b]作品简介:[/b]针对论坛广告泛滥，【三瑞科技】强势推出广告过滤机，纯绿色插件，可以有效防止广告关键词发帖！禁止的广告关键词可以在后台自行修改，一行一条，便于修改。
+[*][b]发布地址:[/b][url]http://dx.sanree.com/forum-39-1.html[/url]
+[*]如有任何关于使用上的疑问,请至[url]http://dx.sanree.com/forum-39-1.html[/url]提出.
+[*][color=Red]请您在安装前阅读三瑞科技软件产品最终用户通用授权协议[/color]，地址：[url]http://www.sanree.com/filterword/xieyi.html[/url].
+[*][color=Red]如果您愿意资助我们,请至[url]http://www.sanree.com/tel114/Donation.aspx[/url]对我们进行赞助.[/color]
+[*]最后,感谢您使用我们的插件,也希望您能够给我们提供更好的意见([url=http://www.sanree.com/]请点击这里进入三瑞科技官方站点[/url]).
+[/list]]]></item>
+	</item>
+</root>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2013-04-02 07:06]]></item>
+	<item id="From"><![CDATA[¦N¥LªÀ (http://www.jitashe.net/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[¤À¨É¨ìQQ¦n¤Í©M¸s]]></item>
+			<item id="identifier"><![CDATA[laoyang_qq_share]]></item>
+			<item id="description"><![CDATA[¤À¨É¨ìQQ¬OQQ¤¬Áp¤À¨É²Õ¥óªº­«­n°òÂ¦¥\¯à¤§¤@¡Aºô¯¸¥u»Ý­n¦b­¶­±¤W¥[¤J¤@­Ó«ö¶s¡A«K¥iÅý¥Î¤á±N¤º®e¤À¨É¨ìQQ¦n¤Í/¸s/°Q½×²Õ¡C¤À¨É¨ìQQ²Õ¥ó¨ã¦³Àu¨qªº¦^¬y¯à¤O¡A¥Ñ¤_ªö¥ÎQQ®ø®§ªº§Î¦¡¡A¬GµL½×¬O¦n¤Í©Î¸s²Õ¡A¨ì¹F²v©M¦^¬y²v³£¦³±j¤Oªº«OÃÒ¡CÂÇ¥Ñ±µ¤J¤À¨É¨ìQQ¡Aºô¯¸±o¥H§Q¥ÎÄË°T±j¤jªºªÀ¥æÃö¨tÃì¡A¦b®ü¶q¥Î¤á¤¤¨³³t¶Ç¼½¡A©Ô¤É¬y¶q¡I]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[laoyang_qq_share/]]></item>
+			<item id="copyright"><![CDATA[¦N¥LªÀ(www.jitashe.net)]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[laoyang_qq_share]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[youhui]]></item>
+					<item id="menu"><![CDATA[Àu´f´¡¥ó]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5]]></item>
+	</item>
+</root>

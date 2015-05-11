@@ -1,0 +1,120 @@
+{subtemplate common/header}
+<script language="javascript">
+function ndshdmenu(v)
+{
+ var hdmenu = document.getElementById(v);
+ hdmenu.style.display = 'none;' ;
+}
+</script>
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" /> 
+<div id="pt" class="wp">
+<div class="z">
+<a href="./" class="nvhm">$_G['setting']['bbname']</a><em>&rsaquo;</em><a href="{$homeurl}"><!--{if !empty($ndsquesname)}-->$ndsquesname<!--{else}-->{lang nds_up_ques:ques}<!--{/if}--></a><em>&rsaquo;</em>{lang nds_up_ques:action_1}
+</div>
+</div>
+<div id="ct" class="wp cl">
+<div class="mn">
+<div class="bm bml">
+<div class="bm_h cl">
+<div class="y" style="padding: 0px 2px 0px 30px" id="scnds">
+        <form target="_self" action="plugin.php?id=nds_up_ques&action=index" method="post" id="scform">
+        <input type="hidden" name="formhash" value="{FORMHASH}" />
+        <table cellspacing="0" cellpadding="0">
+        <tbody><tr>
+        <td><input type="text" size="8" class="px z" id="srchtxt" name="srchtxt"></td>
+        <td style="padding: 0px 0px 0px 5px"><button class="xw1" value="true" type="submit" name="searchsubmit" id="search_submit">{lang nds_up_ques:seach}</button></td>
+        </tr>
+        </tbody></table>
+        </form>
+      </div>
+<span class="y">
+<a href="{$rlurl}" class="fa_ranklist">{lang nds_up_ques:ranklist}</a>
+<!--{if !empty($_G['uid']) }-->
+<span class="pipe">|</span>
+<a href="<!--{if $rws }-->ndsques_id-1-$tid-$page.html<!--{else}-->plugin.php?id=nds_up_ques&myqt=1<!--{if $_G['gp_typeid'] }-->&typeid=$_G['gp_typeid']<!--{/if}--><!--{/if}-->" class="fa_ques">{lang nds_up_ques:allques}</a>
+<span class="pipe">|</span><a href="<!--{if $rws }-->ndsques_id-2-$tid-$page.html<!--{else}-->plugin.php?id=nds_up_ques&myqt=2<!--{if $_G['gp_typeid'] }-->&typeid=$_G['gp_typeid']<!--{/if}--><!--{/if}-->" class="fa_mypost">{lang nds_up_ques:myques}</a>
+<span class="pipe">|</span><a href="<!--{if $rws }-->ndsques_id-3-$tid-$page.html<!--{else}-->plugin.php?id=nds_up_ques&myqt=3<!--{if $_G['gp_typeid'] }-->&typeid=$_G['gp_typeid']<!--{/if}--><!--{/if}-->" class="fa_myjion">{lang nds_up_ques:myanswer}</a>
+<span class="pipe">|</span><a href="<!--{if $rws }-->ndsques_id-4-$tid-$page.html<!--{else}-->plugin.php?id=nds_up_ques&myqt=4<!--{if $_G['gp_typeid'] }-->&typeid=$_G['gp_typeid']<!--{/if}--><!--{/if}-->" class="fa_nojion">{lang nds_up_ques:notanswer}</a>
+<!--{/if}-->
+
+</span>
+<h1 class="xs2">
+{lang nds_up_ques:queslist}<span class="xs1 xw0 i">{lang nds_up_ques:quescount}: <strong class="xi1">$magiccount </strong></span></h1>
+</div>
+</div>
+<div id="pgt" class="bm bw0 pgs cl">
+	$multipage
+    <!--{if in_array($_G['groupid'] ,$allowpost)}--><a id="isnewques" href="plugin.php?id=nds_up_ques&action=newques" <!--{if  $runmode == 3}-->  onmouseover="$('isnewques').id = 'isnewquestmp';this.id = 'isnewques';showMenu({'ctrlid':this.id});"<!--{/if}-->><img alt="{lang nds_up_ques:newques}" src="{$imgurl}mood_submit.png" /></a>
+ <!--{/if}-->
+ </div>
+<ul id="isnewques_menu" class="p_pop" style="display: none;">
+<li>
+<a href="<!--{if $rws }-->ndsques_new-1.html<!--{else}-->plugin.php?id=nds_up_ques&action=newques&mode=1<!--{/if}-->">{lang nds_up_ques:nds_quesmode1}</a>
+</li>
+<li>
+<a href="<!--{if $rws }-->ndsques_new-2.html<!--{else}-->plugin.php?id=nds_up_ques&action=newques&mode=2<!--{/if}-->">{lang nds_up_ques:nds_quesmode2}</a>
+</li>
+</ul>
+
+
+<!--{if $ndsqclass }-->
+	<ul id="thread_types" class="ttp bm cl">
+		<li id="ttp_all" {if !$_G['gp_typeid']}class="xw1 a"{/if}><a href="{$homeurl}">{lang nds_up_ques:q_viewall}</a></li>
+		<!--{if $ndsqclass }-->
+			<!--{loop $ndsqclass  $id $name}-->
+				<!--{if $_G['gp_typeid'] == $id}-->
+				<li class="xw1 a"><a href="javascript:void(0)">$name</a></li>
+				<!--{else}-->
+				<li><a href="<!--{if $rws }-->ndsques_id-1-$id-1.html<!--{else}-->plugin.php?id=nds_up_ques&action=index&typeid=$id<!--{/if}-->">$name</a></li>
+				<!--{/if}-->
+			<!--{/loop}-->
+		<!--{/if}-->
+	</ul>
+<!--{/if}-->
+<div id="threadlist" class="tl bm bmw">
+  <div class="th">
+       <table width="100%"cellspacing="0" cellpadding="0" class="th">
+           <tr>
+           <div class="tf">
+               	<td width="7%">{lang nds_up_ques:type}</td>
+                <td width="38%">{lang nds_up_ques:subject}</td>	
+               	<td width="15%">{lang nds_up_ques:dateline}</td>
+                <td width="12%">{lang nds_up_ques:author}</td>
+               	<!--{if $showpost_count }-->
+                <td width="7%">{lang nds_up_ques:post_count}</td>
+                <!--{else}-->
+                <td width="7%">{lang nds_up_ques:rest}</td>
+                <!--{/if}-->
+                <td width="15%">{lang nds_up_ques:expto}</td>
+                <td width="6%">{lang nds_up_ques:nds_quesmode}</td>
+            </div>
+           </tr>
+         </table>
+  </div>
+  <table width="100%" cellspacing="0" cellpadding="0">
+        <!--{loop $queslists $key $queslist}-->  
+        	<tr>   		
+        <td width="7%">$queslist['topictype']<!--{if $showtid}-->$key<!--{/if}--></td>
+        <td width="38%" class="common">$queslist['qclass']<!--{if $queslist['expenses'] == 1}--><img class="vm"  height="18px"  src="{STATICURL}image/common/folder_lock.gif" />&nbsp;<a  onclick="showWindow(this.id, this.href, 'get', 0);" id="dexpenses" href="plugin.php?id=nds_up_ques&action=admincp&cp=dexpenses&topicid=$key">{$queslist['subject']}</a><!--{else}--><a href="<!--{if $rws }-->ndsques_vq-{$key}.html<!--{else}-->plugin.php?id=nds_up_ques&action=viewques&topicid=$key<!--{/if}-->">{$queslist['subject']}</a><!--{/if}--><!--{if $queslist['expenses']}-->&nbsp;<img class="vm"  height="16px"  src="{STATICURL}image/common/viewpay.gif" /><!--{/if}--></td>
+		<td width="15%">$queslist['dateline']</td>
+        <td width="12%"><a href="home.php?mod=space&uid=$queslist[authorid]">$queslist['author']</a></td>
+      	<!--{if $showpost_count }-->
+         <td width="7%">$queslist['post_count']</td>
+        <!--{else}-->
+	    <td width="7%"><b>$queslist['person']</b></td>
+        <!--{/if}-->
+        <td width="15%">$queslist['exps']</td>
+        <td width="6%"><!--{if $queslist['ques_mode'] == 2}-->{lang nds_up_ques:nds_quesmode2}<!--{else}-->{lang nds_up_ques:nds_quesmode1}<!--{/if}--></td>
+            </tr>
+	<!--{/loop}-->
+
+  </table>
+ </div>
+<div id="pgt" class="bm bw0 pgs cl">
+	$multipage
+    <!--{if in_array($_G['groupid'] ,$allowpost)}--><a id="isnewques" href="plugin.php?id=nds_up_ques&action=newques" <!--{if  $runmode == 3}-->  onmouseover="$('isnewques').id = 'isnewquestmp';this.id = 'isnewques';showMenu({'ctrlid':this.id});"<!--{/if}-->><img alt="{lang nds_up_ques:newques}" src="{$imgurl}mood_submit.png" /></a>
+    <!--{/if}-->
+</div>
+ </div>
+</div>
+{subtemplate common/footer}

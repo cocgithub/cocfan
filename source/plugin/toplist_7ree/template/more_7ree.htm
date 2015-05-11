@@ -1,0 +1,152 @@
+<div class="container" id="cpcontainer">
+
+
+<style>
+.dynamic_box_7ree {width:950px;height:30px;line-height:30px;overflow:hidden;padding:5px 0px 5px 10px;margin:0 0 10px 20px;border:1px solid #CDCDCD;background-color:#E5EDF2;}
+.title_box_7ree{float:left;width:173px;color:#369;font-weight:700;}
+.scroll_box_7ree{float:left;width:770px;height:30px;line-height:30px;overflow:hidden;}
+.scroll_ul_7ree{height:30px;overflow:hidden;}
+.msg_box_7ree{float:left;width:380px;height:30px;line-height:30px;overflow:hidden;margin-right:5px;}
+.title_box_7ree a{color:#369;}
+.msg_box_7ree a{color:#369;}
+.logo_img_7ree{height:26px; width:26px;line-height:20px;}
+
+#category_7ree ul {list-style:none;margin:0px;} 
+#category_7ree ul li {float:left;display:block;width:200px;height:50px;margin:8px 13px 8px 13px;border:1px dotted #DDDDDD;padding:10px;}
+#category_7ree  li:hover{background-color:#E5EDF2;border:1px solid #DDDDDD;}  
+.applogo_7ree{float:left;padding-top:6px;}
+.appinfo_7ree{float:left;margin-left:15px;}
+.appinfo_7ree h3 a{font-weight:normal;color:#336699;}
+
+</style>
+<div class="dynamic_box_7ree">
+	<div class="title_box_7ree">
+	<a href="http://addon.discuz.com/?@7ree" target="_blank">{$lang_appdy1_7ree}{$info_array_7ree[COUNT]}{$lang_appdy2_7ree}</a>:
+	</div>
+	<div class="scroll_box_7ree">
+		<ul id="marqueebox0" class="scroll_ul_7ree">
+			<li>
+			<!--{loop $info_array_7ree[DATA] $key_7ree $info_value}-->
+				<div class="msg_box_7ree">
+					<a href="http://addon.discuz.com/?@{$info_value[ID]}" target="_blank"><img src="{$info_value[logo_7ree]}" border="0" class="logo_img_7ree" align="absmiddle"></a>
+					<span title="$info_value[siteurl]">{$info_value[siteurl2]}</span>{$lang_yu_7ree}{$info_value[time_7ree]}{$lang_cong_7ree}<a href="http://addon.discuz.com/?@7ree" target="_blank">{$lang_zhongxin_7ree}</a>{$lang_anzhuang_7ree}<a href="http://addon.discuz.com/?@{$info_value[ID]}" target="_blank" title="{$info_value[name_7ree]}">{$info_value[name_7ree]}</a>
+				</div>
+				<!--{if ($key_7ree + 1) % 2 ==0}-->
+					</li>
+					<li>
+				<!--{/if}-->
+			<!--{/loop}-->
+		</ul>
+	</div>
+	</div>
+	
+	
+
+<table class="tb tb2 fixpadding">
+<tbody>
+<tr>
+<th colspan="15" class="partition"><a href="http://addon.discuz.com/?@7ree" target="_blank" style="color:;">{$lang_dytitle1_7ree}{$now_7ree}{$lang_dytitle2_7ree}<strong>{$app_array_7ree[COUNT]}</strong>{$lang_dytitle3_7ree}<strong>{$all_download_count_7ree}</strong>{$lang_dytitle4_7ree}</a></th>
+</tr>
+
+<tr>
+<td>
+		<div id="category_7ree">
+		<ul>
+		<!--{loop $app_array_7ree[DATA] $app_array_value}-->
+			<li>
+				<div class="applogo_7ree"><a href="$app_array_value['url']" target="_blank"><img src="$app_array_value['logo']"></a></div>
+				<div class="appinfo_7ree">
+					<h3><a href="$app_array_value['url']" target="_blank">$app_array_value['name']</a></h3>
+					<p><a href="$app_array_value['url']" target="_blank">{$lang_anzhuang_7ree}{$app_array_value['downloads']}´Î</a></p>
+					<p><a href="$app_array_value['url']" target="_blank">{$lang_gengxin_7ree}{$app_array_value['lastupdate']}</a></p>
+				<div>
+			</li>		
+		<!--{/loop}-->
+		</ul>
+</td>
+	</tr>
+</tbody>
+</table>
+
+<table class="tb tb2 fixpadding">
+<tbody>
+
+
+<tr>
+	<th colspan="15" class="partition">{$lang_about_7ree}</th>
+</tr>
+<tr class="hover">
+	<td class="vtop td24 lineheight">{$lang_trust_7ree}</td>
+	<td class="vtop lineheight" colspan=2>{$lang_trustdetail_7ree}
+	<a href="http://addon.discuz.com/?@7.developer.doc/7ree" target="_blank">{$lang_detailinfo_7ree}</a>
+	</td>
+</tr>
+	
+<tr class="hover">	
+	<td class="vtop td24 lineheight">{$lang_siteweibo_7ree}</td>
+	<td class="vtop lineheight" colspan=2>
+	{$lang_site_7ree}<a href="http://www.7ree.com" target="_blank">www.7ree.com</a>&emsp;&emsp;
+	{$lang_weibo_7ree}<a href="http://t.qq.com/www_7ree_com" target="_blank">{$lang_qqweibo_7ree}</a> <a href="http://weibo.com/7ree" target="_blank">{$lang_sinaweibo_7ree}</a> 
+	</td>
+</tr>
+	
+<tr class="hover">	
+	<td class="vtop td24 lineheight">{$lang_club_7ree}</td>
+	<td class="vtop lineheight" colspan=2>
+		{$lang_qqqun_7ree} <a href="javascript:void(0);" onclick="setCopy('229018219', '{$lang_qqtip_7ree}');" title="{$lang_qqcopy_7ree}">229018219</a>;
+
+
+	</td>
+</tr>
+
+<tr class="hover">	
+	<td class="vtop td24 lineheight">{$lang_document_7ree}</td>
+	<td class="vtop lineheight" colspan=2>
+		<a href="http://addon.discuz.com/?@7.developer.doc/agreement_7ree_html" target="_blank">{$lang_agreement_7ree}</a>&emsp;&emsp;
+		[{$lang_lawyer_7ree}<a href="http://addon.discuz.com/?@7.developer.doc/agreement_7ree_html" target="_blank">{$lang_wuxingliang_7ree}</a>]
+	</td>
+</tr>
+<tr class="hover">	
+	<td class="vtop td24 lineheight"></td>
+	<td class="vtop lineheight" colspan=2>
+		<img width="600" height="150" src="http://open.discuz.net/resource/preview/3720/1.jpg" border="0" alt="">
+	</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<SCRIPT> 
+<!-- 
+function startmarquee(lh,speed,delay,index){ 
+var t; 
+var p=false; 
+var o=document.getElementById("marqueebox"+index); 
+
+o.innerHTML+=o.innerHTML; 
+
+
+o.onmouseover=function(){p=true} 
+o.onmouseout=function(){p=false} 
+o.scrollTop = 0; 
+function start(){ 
+t=setInterval(scrolling,speed); 
+if(!p) o.scrollTop += 2; 
+} 
+function scrolling(){ 
+if(o.scrollTop%lh!=0){ 
+o.scrollTop += 2; 
+if(o.scrollTop>=o.scrollHeight/2) o.scrollTop = 0; 
+}else{ 
+clearInterval(t); 
+setTimeout(start,delay); 
+} 
+} 
+setTimeout(start,delay); 
+} 
+startmarquee(30,10,2500,0); 
+--> 
+</SCRIPT>
+

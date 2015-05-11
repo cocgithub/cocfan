@@ -1,0 +1,97 @@
+{subtemplate common/header}
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" /> 
+
+<div class="box">
+<a href="./" class="nvhm">$_G['setting']['bbname']</a><em> &gt; </em><a href="plugin.php?id=nds_up_ques"><!--{if !empty($ndsquesname)}-->$ndsquesname<!--{else}-->{lang nds_up_ques:ques}<!--{/if}--></a><em> &gt; </em>{lang nds_up_ques:action_1}
+</div>
+
+
+<div class="y" style="padding: 0px 0px 0px 5px" id="scnds">
+        <form target="_self" action="plugin.php?id=nds_up_ques&action=index" method="post" id="scform">
+        <input type="hidden" name="formhash" value="{FORMHASH}" />
+        <table cellspacing="0" cellpadding="0">
+        <tbody><tr>
+        <td><input type="text" size="8" class="px z" id="srchtxt" name="srchtxt"></td>
+        <td style="padding: 0px 0px 0px 5px"><button class="xw1" value="true" type="submit" name="searchsubmit" id="search_submit">{lang nds_up_ques:seach}</button></td>
+        </tr>
+        </tbody></table>
+        </form>
+      </div>
+
+<div class="tz mtn">
+<a href="plugin.php?id=nds_up_ques&action=ranklist" class="fa_ranklist">{lang nds_up_ques:ranklist}</a>
+<!--{if !empty($_G['uid']) }-->
+<span class="pipe">|</span>
+<a href="plugin.php?id=nds_up_ques&myqt=1<!--{if $_G['gp_typeid'] }-->&typeid=$_G['gp_typeid']<!--{/if}-->" class="fa_ques">{lang nds_up_ques:allques}</a>
+<span class="pipe">|</span><a href="plugin.php?id=nds_up_ques&myqt=2<!--{if $_G['gp_typeid'] }-->&typeid=$_G['gp_typeid']<!--{/if}-->" class="fa_mypost">{lang nds_up_ques:myques}</a>
+<span class="pipe">|</span><a href="plugin.php?id=nds_up_ques&myqt=3<!--{if $_G['gp_typeid'] }-->&typeid=$_G['gp_typeid']<!--{/if}-->" class="fa_myjion">{lang nds_up_ques:myanswer}</a>
+<span class="pipe">|</span><a href="plugin.php?id=nds_up_ques&myqt=4<!--{if $_G['gp_typeid'] }-->&typeid=$_G['gp_typeid']<!--{/if}-->" class="fa_nojion">{lang nds_up_ques:notanswer}</a>
+<!--{/if}-->
+
+ </div>
+<div class="vt">
+    <div class="bm"> 
+ <div class="bm_h">
+ {lang nds_up_ques:queslist}
+ </div>
+<h2 class="xs2">
+<span class="xs1 xw0 i">{lang nds_up_ques:quescount}: <strong class="xi1">$magiccount </strong></span></h2>
+
+<div id="pgt" class="bm bw0 pgs cl">
+	$multipage
+ </div>
+<!--{if $ndsqclass }-->
+ <div>
+	<div class="bm_inf">
+		 <font <!--{if $_G['gp_typeid']}-->class="xg1"<!--{/if}-->><a href="plugin.php?id=nds_up_ques">{lang nds_up_ques:q_viewall}</a></font>
+		<!--{if $ndsqclass }-->
+			<!--{loop $ndsqclass  $id $name}-->
+            <span class="pipe">|</span>
+				<!--{if $_G['gp_typeid'] == $id}-->
+				<a href="plugin.php?id=nds_up_ques&action=index">$name</a>
+				<!--{else}-->
+				<font class="xg1"><a href="plugin.php?id=nds_up_ques&action=index&typeid=$id">$name</a></font>
+				<!--{/if}-->
+			<!--{/loop}-->
+		<!--{/if}-->
+  </div>   
+<!--{/if}-->
+<div id="threadlist" class="tl bm bmw">
+  <div class="th">
+       <table width="100%"cellspacing="0" cellpadding="0" class="th">
+           <tr>
+           <div class="tf">
+                <td width="46%">{lang nds_up_ques:subject}</td>	
+               	<td width="24%">{lang nds_up_ques:dateline}</td>
+                <td width="20%">{lang nds_up_ques:author}</td>
+               	<!--{if $showpost_count }-->
+                <td width="10%">{lang nds_up_ques:post_count}</td>
+                <!--{else}-->
+                <td width="10%">{lang nds_up_ques:rest}</td>
+                <!--{/if}-->
+            </div>
+           </tr>
+         </table>
+  </div>
+  <table width="100%" cellspacing="0" cellpadding="0">
+        <!--{loop $queslists $key $queslist}-->  
+        	<tr>   		
+        <td width="46%" class="common"><!--{if $queslist['expenses'] == 1}--><img class="vm"  height="18px"  src="{STATICURL}image/common/folder_lock.gif" />&nbsp;<a  onclick="showWindow(this.id, this.href, 'get', 0);" id="dexpenses" href="plugin.php?id=nds_up_ques&action=admincp&cp=dexpenses&topicid=$key">{$queslist['subject']}</a><!--{else}--><a href="plugin.php?id=nds_up_ques&action=viewques&topicid=$key">{$queslist['subject']}</a><!--{/if}--><!--{if $queslist['expenses']}-->&nbsp;<img class="vm"  height="16px"  src="{STATICURL}image/common/viewpay.gif" /><!--{/if}--></td>
+		<td width="24%">$queslist['dateline']</td>
+        <td width="20%"><a href="home.php?mod=space&uid=$queslist[authorid]">$queslist['author']</a></td>
+      	<!--{if $showpost_count }-->
+         <td width="10%">$queslist['post_count']</td>
+        <!--{else}-->
+	    <td width="10%"><b>$queslist['person']</b></td>
+        <!--{/if}-->
+            </tr>
+	<!--{/loop}-->
+
+  </table>
+ </div>
+<div id="pgt" class="bm bw0 pgs cl">
+	$multipage
+</div>
+ </div>
+</div>
+{subtemplate common/footer}

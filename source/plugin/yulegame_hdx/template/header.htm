@@ -1,0 +1,71 @@
+<script src="source/plugin/yulegame_hdx/jquery/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var yulegameJQ = jQuery.noConflict(true);
+
+
+    var hdxLang =  {
+        'jsError' : '{lang yulegame_hdx:js_error}',
+        'chooseToDel' : '{lang yulegame_hdx:choose_to_delete}',
+        'confirmToBuy' : '{lang yulegame_hdx:confirm_to_buy}',
+        'confirmToContinue' : '{lang yulegame_hdx:confirm_to_continue}',
+        'buy' : '{lang yulegame_hdx:buy}',
+        'hire' : '{lang yulegame_hdx:hire}',
+        'employ' : '{lang yulegame_hdx:employ}',
+        'whichTypeToChoose' : '{lang yulegame_hdx:which_type_to_choose}',
+        'pleaseTypeUsername' : '{lang yulegame_hdx:please_type_username}',
+        'pleaseTypeUid' : '{lang yulegame_hdx:please_type_uid}',
+        'couldNotGetUid' : '{lang yulegame_hdx:could_not_get_uid}',
+        'promptInfo' : '{lang yulegame_hdx:prompt_info}',
+        'invalid' : '{lang yulegame_hdx:invalid}',
+        'discard' : '{lang yulegame_hdx:discard}',
+        'confirmToDiscard' : '{lang yulegame_hdx:confirm_to_discard}',
+    
+        'validation_required' : '{lang yulegame_hdx:validation_required}',
+        'validation_number' : '{lang yulegame_hdx:validation_number}',
+        'validation_digits' :  '{lang yulegame_hdx:validation_digits}',
+        'validation_range' : '{lang yulegame_hdx:validation_range}',
+        'validation_max' : '{lang yulegame_hdx:validation_max}',
+        'validation_min' : '{lang yulegame_hdx:validation_min}'
+    
+    }
+</script>
+
+
+
+
+
+
+
+
+<!-- jQuery plugin start -->
+<script type='text/javascript' src='source/plugin/yulegame_hdx/jquery/jquery.form.js'></script>
+<script type='text/javascript' src='source/plugin/yulegame_hdx/jquery/validate/jquery.validate.min.js'></script>
+<script type='text/javascript' src='source/plugin/yulegame_hdx/jquery/validate/messages_cn.js'></script>
+
+<!-- jQuery UI start -->
+<script type="text/javascript" src="source/plugin/yulegame_hdx/jqueryui/js/jquery-ui.min.js"></script>
+<link href="source/plugin/yulegame_hdx/jqueryui/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<!-- jQuery UI end -->
+
+<script type='text/javascript' src='source/plugin/yulegame_hdx/js/function.js'></script>
+<script type='text/javascript' src='source/plugin/yulegame_hdx/js/common.js'></script>
+<link rel="stylesheet" type="text/css" href="source/plugin/yulegame_hdx/css/common.css" />
+<link rel="stylesheet" type="text/css" href="source/plugin/yulegame_hdx/css/style.css" />
+
+
+
+<!-- loading ... -->
+<div id="processing-modal" title="" style="display: none">
+    <p><img src="source/plugin/yulegame_hdx/images/common/loading.gif" align=absmiddle>
+        &nbsp;{lang yulegame_hdx:loading}</p>
+</div>
+
+<div id="pt" class="bm cl">
+
+    <div class="z">
+        <a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em>
+        <a href="#">{$_G['setting']['navs'][6]['navname']}</a> <em>&rsaquo;</em>
+        <a href="plugin.php?id=yulegame_hdx">{$_setting['plugin_name']}</a> <em>&rsaquo;</em>
+        {$h1_title}
+    </div>
+</div>

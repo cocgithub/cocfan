@@ -1,0 +1,87 @@
+.banner {
+width: 100%;
+height: 110px;
+margin: 5px auto;
+position: relative;
+overflow: hidden;
+}
+.banner .bpic li {
+position: relative;
+}
+.banner img {
+width: 100%;
+height: 110px;
+}
+.banner .bpic span {
+width: 100%;
+height: 30px;
+background: rgba(0,0,0,0.6);
+display: block;
+color: #fff;
+font-size: 14px;
+padding-left: 10px;
+line-height: 28px;
+position: absolute;
+bottom: 3px;
+left: 0;
+z-index: 0;
+}
+.banner .imgTextBar {
+width: 100%;
+height: 24px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: 2;
+}
+.banner .indexBar {
+float: right;
+margin: 7px 10px 0 0;
+}
+.banner .indexBar li.current {
+background: url("img/ico_indexBar2.png") no-repeat;
+-webkit-background-size: 7px 7px;
+}
+
+.banner .indexBar li {
+width: 7px;
+height: 7px;
+display: block;
+float: left;
+margin-right: 5px;
+background: url("img/ico_indexBar1.png") no-repeat;
+-webkit-background-size: 7px 7px;
+}
+
+
+
+
+
+
+
+
+.dsm_pcetab .andr_6_p1{display: none;}
+.dsm_pcelist_table dd {
+font-size: 1em;
+line-height: 2.4em;
+overflow: hidden;
+border-top: 1px solid #F3F3F3;
+padding: 5px 0 3px 10px;
+}
+.Ltit {
+background: #F6F6F6;
+border: none;
+margin: 8px 0;}
+.dsm_pcelist_table dd span {
+float: left;
+width: 33%;
+text-align: center;
+min-width: 50px;
+}
+.dsm_pcelist_table.dsm_pcelistxinfu dd span:nth-child(1) {width: 26%;min-width: 65px;}
+.dsm_pcelist_table.dsm_pcelistxinfu dd span:nth-child(3){color: #f60;}
+.dsm_pcelist_table.dsm_pcelistxinfu dd:nth-child(8),.dsm_pcelist_table.dsm_pcelistxinfu dd:nth-child(9){display:none;}
+.dsm_pcelist_table dd span.dsm_pcelist_name {
+width: 38%;
+min-width: 80px;
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2012-11-21 04:54]]></item>
+	<item id="From"><![CDATA[§ÖÃìºô (http://www.kl3w.com)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[µêÀÀ°¨¥Òµo©«¦^´_]]></item>
+			<item id="identifier"><![CDATA[kl3w_guisepost]]></item>
+			<item id="description"><![CDATA[¤@­Ó½ã¸¹µL»Ý¤Á´«¨­¥÷§Y¥i¨Ï¥Î°¨¥Ò¶i¦æ°°¸Ëµo©«¦^´_¾Þ§@¡AÂ²³æ»´ªQÀç³y¥XªÀ°Ï¤H®ð]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[kl3w_guisepost/]]></item>
+			<item id="copyright"><![CDATA[KL3w.com]]></item>
+			<item id="version"><![CDATA[2.3.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[kl3w_guisepost]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[-1]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X1,X1.5,X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[¶}±Ò¨Ï¥Î]]></item>
+				<item id="description"><![CDATA[¬O§_¨Ï¥ÎµêÀÀ°¨¥Ò¥\¯à]]></item>
+				<item id="variable"><![CDATA[open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[±Ò¥ÎÀY¹³]]></item>
+				<item id="description"><![CDATA[°¨¥Ò¦Cªí®i¥Ü·|­ûÀY¹³¡A¥i§óª½Æ[¨Ï¥Î°¨¥Ò]]></item>
+				<item id="variable"><![CDATA[useravatar]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[±Ò¥ÎÂIµû]]></item>
+				<item id="description"><![CDATA[¬O§_±Ò¥Î¤¹³\°¨¥ÒÂIµû¡A¥²¶·³]¸m¤F¤¹³\¥D¸¹¾Ö¦³ÂIµûÅv­­¤è¥i¨Ï¥Î!]]></item>
+				<item id="variable"><![CDATA[docomment]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[±Ò¥Îµû¤À]]></item>
+				<item id="description"><![CDATA[¬O§_±Ò¥Î°¨¥Òµû¤À¡A¥²¶·³]¸m¤F¤¹³\¥D¸¹¾Ö¦³µû¤ÀÅv­­¤è¥i¨Ï¥Î!]]></item>
+				<item id="variable"><![CDATA[dorate]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[¤¹³\¨Ï¥Îªº·|­ûUID]]></item>
+				<item id="description"><![CDATA[³]¸m¤À°t¤¹³\¨Ï¥Î°¨¥Òªº·|­ûUID
+³]¸m¥Ü¨Ò¡J1=2,3,4,5
+¥Ü¨Ò»¡©ú¡J¤¹³\UID¬°1ªº¥Î¤á¨Ï¥ÎUID¬°2,3,4,5ªº·|­û½ã¸¹µo©«¦^©«]]></item>
+				<item id="variable"><![CDATA[useid]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[1=2,3,4,5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[°¨¥ÒµêÀÀIP¬q°ì¤@]]></item>
+				<item id="description"><![CDATA[¨Ò¦p¡J219(¥²¶·¬O¼Æ¦r) ªí¥Ü219.x.x.x¬qªºIP¡A¦h¬q°ì¨Ï¥Î¦^¨®´«¦æ¿é¤J
+¥H¤WIP²Ä¤@­Óx½Ð¦b¬q°ì¤G¤¤³]¸m¡A³Ì«á¨â­Óx¬O¥Ñ¨t²ÎÀH¾÷¤À°t
+¦³Ãö¦¹°t¸m§ó¦h»¡©ú½Ðµn¿ýkl3w.com·j´M¸ê®Æ°Ñ¦Ò]]></item>
+				<item id="variable"><![CDATA[IP1]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[219]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[°¨¥ÒµêÀÀIP¬q°ì¤G]]></item>
+				<item id="description"><![CDATA[¨Ò¦p¡J136(¥²¶·¬O¼Æ¦r) ªí¥Üx.136.x.x¬qªºIP¡A¦h¬q°ì¨Ï¥Î¦^¨®´«¦æ¿é¤J
+¥H¤WIP²Ä¤@­Óx½Ð¦b¬q°ì¤@¤¤³]¸m¡A³Ì«á¨â­Óx¬O¥Ñ¨t²ÎÀH¾÷¤À°t
+¦³Ãö¦¹°t¸m§ó¦h»¡©ú½Ðµn¿ýkl3w.com·j´M¸ê®Æ°Ñ¦Ò]]></item>
+				<item id="variable"><![CDATA[IP2]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[136
+137
+136
+137]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="intro"><![CDATA[ª©Åv©Ò¦³ (C) 2009-2012, KL3w.COM «O¯d©Ò¦³Åv§Q
+´¡¥ó¶}µoªÌ: ²M»]±Æ°©(Pgcao)
+¨Ï¥Î°ÝÃD©ÎªÌBUG¤ÏõX½Ð¨ì: [url]http://www.KL3w.com[/url]
+Åwªï¯¸ªø¥[¤J¯¸ªøQQ¸s¥æ¬y: [b]74636827[/b]]]></item>
+		<item id="license"><![CDATA[[b]­YµM§A¯à¥¿±`¬Ý¨ì¥H¤U¤å¦r¡Aªí©ú§A¿ï¾Ü¦w¸Ëªºª©¥»¬O¥¿½Tªº[/b]
+ª©Åv©Ò¦³ (C) KL3w.COM ¨Ã«O¯d©Ò¦³Åv§Q
+·PÁÂ±z¿ï¾Ü [b][url=http://www.kl3w.com/]§ÖÃìºô[/url][/b] ¨t¦C²£«~¡A§Æ±æ§Ú­Ìªº§V¤O¯àÅý±z¾Ö¦³§ó¦h®É¶¡Ãöª`ºô¯¸¹BÀç¡C
+KL3w.com - ­P¤O¤_¬°­Ó¤H¯¸ªø¹BÀç»P¥Î¤áÅé©À¥\¯à¶}µo¡AÅý§Ú­Ì¤@°_µo²{ºôµ¸¡A§ÖÃì¤Wºô¡C
+ÂIÀ»¦P·Nªí¥Ü±z±µ¨ü¨óÄ³ ([url=http://www.kl3w.com/thread-37-1-1.html]½ÐÂIÀ»³o¨½¾\Åª[/url])¡A§_«h½ÐÂIÀ»§Ú¤£¦P·N¡C]]></item>
+	</item>
+</root>

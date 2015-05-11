@@ -1,0 +1,43 @@
+<!--{template common/header}-->
+
+<!--{if !$_G[inajax]}-->
+	<div id="ct" class="ct2_a wp cl">
+		<div class="mn">
+			<div class="bm">
+<!--{/if}-->
+   <div class="f_c">
+	<h3 class="flb">
+		<em id="return_$_G[gp_handlekey]">{$ndsquesname} - {lang nds_up_ques:nds_pay}</em>
+		<!--{if $_G[inajax]}--><span><a href="javascript:;" onclick="hideWindow('$_G[gp_handlekey]');" class="flbc" title="{lang close}">{lang close}</a></span><!--{/if}-->
+	</h3>
+	<form method="post" autocomplete="off" id="dexwindow_{$topicid}" name="dexwindow_{$topicid}"  action="plugin.php?id=nds_up_ques&action=admincp&cp={$cp}&topicid={$topicid}" {if $_G[inajax]} onsubmit="ajaxpost(this.id, 'return_$_G[gp_handlekey]', null, null, null,null);"{/if}>
+		<input type="hidden" name="paysubmit" value="true" />
+		<input type="hidden" name="referer" value="$_G[referer]" />
+		<input type="hidden" name="formhash" value="{FORMHASH}" />
+		<!--{if $_G[inajax]}--><input type="hidden" name="handlekey" value="$_G[gp_handlekey]" /><!--{/if}-->
+		<div class="c">
+    
+	 <table class="list" cellspacing="0" cellpadding="0" style="width:200px">
+				<tr>
+					<th>{lang nds_up_ques:nds_payprice} ({$_G['setting'][extcredits][$cvar][title]})</th>
+					<td>{$questopic['expenses']}</td>
+				</tr>
+				<tr>
+					<th valign="top">{lang nds_up_ques:nds_payye} ({$_G['setting'][extcredits][$cvar][title]})</th>
+					<td>$balance </td>
+				</tr>
+			</table>
+		</div>
+        
+        
+		<p class="o pns">
+			<button type="submit" name="paysubmit_btn" id="paysubmit_btn" class="pn pnc" value="true"><strong>{lang confirms}</strong></button>
+		</p>
+	</form>
+  </div>   
+<!--{if !$_G[inajax]}-->
+		</div>
+	</div>
+</div>
+<!--{/if}-->
+<!--{template common/footer}-->

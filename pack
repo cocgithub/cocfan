@@ -1,0 +1,63 @@
+#!/bin/sh
+tag=''
+args=''
+diff=''
+while getopts 't:a:d:' opt
+do
+    case $opt in
+        t)tag=$OPTARG;;
+        a)args=$OPTARG;;
+        d)diff=$OPTARG;;
+    esac
+done
+
+# 调试模式
+debug=0
+# 通过hg diff版本差异获取增量包
+if [ "$diff" != "" ];then
+    mkdir -p "package"
+    dname="package/~diff_file_list.log"
+    echo "-----diff files:">>$dname
+    for f in $diff
+    do
+        echo $f>>$dname
+    done
+
+    echo "-----extracted diff files:">>$dname
+    for f in $diff
+    do
+        echo $f>>$dname
+        if [ -d "$f" ];then
+            mkdir -p "package/$f"
+            if [ $debug == 1 ];then
+                echo "folder: [${f}] created successfully."
+            fi
+        else
+            index=`expr index "$f" /`
+            if [[ $index > 1 ]];then
+                mkdir -p "package/${f%*/*}"
+                if [ $debug == 1 ];then
+                    echo "folder: [${f%*/*}] created successfully."
+                fi
+            fi
+            cp -p $f "package/$f"
+            if [ $debug == 1 ];then
+                echo "file: [$f] moved successfully."
+            fi
+        fi
+    done
+else
+    # 获取全量包
+    mkdir -p "package"
+    cp $(ls|grep -v "package") -rf package
+fi
+
+excludes="install tests config pack publish.sh"
+for f in $excludes
+do
+    if [ -d "package/$f" ] || [ -f "package/$f" ];then
+        rm -rf "package/$f"
+    fi
+done
+
+exit 0

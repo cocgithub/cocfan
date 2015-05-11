@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5]]></item>
+	<item id="Time"><![CDATA[2012-12-09 01:21]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[亮劍SEO永久免費版]]></item>
+			<item id="identifier"><![CDATA[liangjian]]></item>
+			<item id="description"><![CDATA[亮劍DISCUZ榮譽出品,亮劍SEO商業版的免費版本，如需更多功能請購買商業版]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[liangjian/]]></item>
+			<item id="copyright"><![CDATA[亮劍DISCUZ]]></item>
+			<item id="version"><![CDATA[1.3.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[real]]></item>
+					<item id="menu"><![CDATA[偽原創]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[liangjian]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[help]]></item>
+					<item id="menu"><![CDATA[幫助]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[app]]></item>
+					<item id="menu"><![CDATA[亮劍應用中心]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[開啟貼子頁百度分享]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[share]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[貼子頁百度分享代碼]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[sharecode]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<!-- Baidu Button BEGIN -->
+		<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+			<span class="bds_more">分享到︰</span>
+			<a class="bds_qzone"></a>
+			<a class="bds_tsina"></a>
+			<a class="bds_tqq"></a>
+			<a class="bds_renren"></a>
+			<a class="shareCount"></a>
+		</div>
+	<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=625076" ></script>
+	<script type="text/javascript" id="bdshell_js"></script>
+	<script type="text/javascript">
+		document.getElementById("bdshell_js").src = "http://share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+	</script>
+	<!-- Baidu Button END -->]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[左右側百度分享]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[share1]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[左右側百度分享代碼]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[sharecode1]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;uid=625076" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+	document.getElementById("bdshell_js").src = "http://share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+</script>
+<!-- Baidu Button END -->]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[允許使用偽原創的用戶組]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[wuser]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+				</item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[允許使用偽原創的版塊]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[wwforums]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="c1"><![CDATA[導入詞庫]]></item>
+				<item id="c2"><![CDATA[修改整個詞庫可以使用這種方式，文件格式必須為txt文本文件，格式參照同義詞設置，若只是添加部分同義詞直接在文本框中編輯即可]]></item>
+				<item id="c3"><![CDATA[百度為您找到相關結果]]></item>
+				<item id="c4"><![CDATA[個]]></item>
+				<item id="c5"><![CDATA[百度]]></item>
+				<item id="c6"><![CDATA[標題]]></item>
+				<item id="c7"><![CDATA[搜索引摯]]></item>
+				<item id="c8"><![CDATA[類型]]></item>
+				<item id="c9"><![CDATA[ping狀態]]></item>
+				<item id="c10"><![CDATA[ping時間]]></item>
+				<item id="c11"><![CDATA[最後爬行時間]]></item>
+				<item id="c12"><![CDATA[收錄情況]]></item>
+				<item id="c13"><![CDATA[成功\]]></item>
+				<item id="c14"><![CDATA[失敗]]></item>
+				<item id="c15"><![CDATA[門戶文章]]></item>
+				<item id="c16"><![CDATA[論壇貼子]]></item>
+				<item id="c17"><![CDATA[未被抓取過]]></item>
+				<item id="c18"><![CDATA[已收錄]]></item>
+				<item id="c19"><![CDATA[未收錄]]></item>
+				<item id="c20"><![CDATA[百度]]></item>
+				<item id="a1"><![CDATA[域名設置(子域名重定向系統、官方域名設置的增強版、用于處理多域名重復收錄的問題達到集中域名及頁面權重的目的)]]></item>
+				<item id="a2"><![CDATA[域名設置成功\]]></item>
+				<item id="a3"><![CDATA[多域名兼容性]]></item>
+				<item id="a3_comment"><![CDATA[默認為否，因部分服務器不兼容，您可以嘗試選擇是，如果選擇是，動態鏈接會自動轉向偽靜態鏈接，提高域名權重]]></item>
+				<item id="b1"><![CDATA[開啟子域名重定向系統]]></item>
+				<item id="b1_comment"><![CDATA[如需開啟子域名重定向系統，請先確認插件設置中已填寫主域名]]></item>
+				<item id="b2"><![CDATA[個人日志是否綁定到主域名]]></item>
+				<item id="b2_comment"><![CDATA[當選擇是時，如果系統開啟了個人空間的二級域名，用戶的個人日志鏈接將會強制綁定到主域名下，選否則將權重集中到二級域名下]]></item>
+				<item id="b3"><![CDATA[群主主題列表頁是否綁定到主域名]]></item>
+				<item id="b3_comment"><![CDATA[當選擇是時，如果系統開啟了群組的的二級域名，群主主題列表頁鏈接將會強制綁定到主域名下，選否則將權重集中到二級域名下]]></item>
+				<item id="b4"><![CDATA[用戶個人空間首頁是否綁定到主域名]]></item>
+				<item id="b4_comment"><![CDATA[當選擇是時，如果系統開啟了個人空間的的二級域名，用戶個人空間首頁鏈接將會強制綁定到主域名下，選否則將權重集中到二級域名下]]></item>
+				<item id="b5"><![CDATA[論壇主題列表頁是否綁定到主域名]]></item>
+				<item id="b5_comment"><![CDATA[當選擇是時，如果系統開啟了論壇的的二級域名，論壇主題列表頁鏈接將會強制綁定到主域名下，選否則將權重集中到二級域名下]]></item>
+				<item id="b6"><![CDATA[論壇貼子頁是否綁定到主域名]]></item>
+				<item id="b6_comment"><![CDATA[當選擇是時，如果系統開啟了論壇的的二級域名，論壇貼子頁鏈接將會強制綁定到主域名下，選否則將權重集中到二級域名下]]></item>
+				<item id="ping_setting"><![CDATA[PING服務記錄（基于XML_RPC標準協議的更新通告服務，以便百度及時進行抓取和更新）]]></item>
+				<item id="content_portal"><![CDATA[門戶文章內容是否需要偽原創]]></item>
+				<item id="title_portal"><![CDATA[門戶文章標題是否需要偽原創]]></item>
+				<item id="content_portal_comment"><![CDATA[開啟後將在發表門戶文章時偽原創內容]]></item>
+				<item id="title_portal_comment"><![CDATA[開啟後將在發表門戶文章時偽原創標題]]></item>
+				<item id="f1"><![CDATA[服務器1]]></item>
+				<item id="f2"><![CDATA[服務器2]]></item>
+				<item id="f_tips"><![CDATA[雲采集服務器]]></item>
+				<item id="f_tips_comment"><![CDATA[服務器1為華為多線雲主機，服務器2為西部數碼多線雲主機]]></item>
+				<item id="allow_tips"><![CDATA[雲采集提示語]]></item>
+				<item id="allow_tips_comment"><![CDATA[發貼頁面采集框的提示語言，可自行配置，如不需要設為空即可]]></item>
+				<item id="seocloudname"><![CDATA[開始采集]]></item>
+				<item id="tips_cloud"><![CDATA[雲采集設置項]]></item>
+				<item id="allow_cloud"><![CDATA[是否開啟雲采集]]></item>
+				<item id="allow_cloud_comment"><![CDATA[開啟雲采集後發貼頁面將會出現采集框、您還可以在設置頁面指定可以使用采集功\能的用戶組版塊]]></item>
+				<item id="post_cloud"><![CDATA[目前支持的雲采集站點]]></item>
+				<item id="post_cloud_comment"><![CDATA[可以采集列表中網站的文章，將列表中網站的文章url放置于發貼頁面的采集框即可]]></item>
+				<item id="cloud_update"><![CDATA[提交]]></item>
+				<item id="thesaurus_update"><![CDATA[提交]]></item>
+				<item id="cloud_post"><![CDATA[雲采集信息配置成功\]]></item>
+				<item id="thesaurus_post"><![CDATA[偽原創信息配置成功\]]></item>
+				<item id="vars_setting"><![CDATA[Sitemap的基本參數配置,以後將會根據需要豐富選項]]></item>
+				<item id="thesaurus_setting"><![CDATA[偽原創完整詞庫可前往<a href="http://www.seoeye.cn/thread-829-1-1.html">亮劍SEO社區</a>中免費下載]]></item>
+				<item id="tips_post"><![CDATA[當發布主題時自動偽原創]]></item>
+				<item id="allow_thesaurus_comment"><![CDATA[如果選擇是當您指定的用戶組發布主題時將自動偽原創]]></item>
+				<item id="tips_title"><![CDATA[標題是否需要偽原創]]></item>
+				<item id="allow_title_comment"><![CDATA[您可以根據需要選擇是否需要偽原創標題]]></item>
+				<item id="tips_nosetting"><![CDATA[請先配置插件相關信息]]></item>
+				<item id="tips_succeed"><![CDATA[網站地圖更新成功\]]></item>
+				<item id="tips_return"><![CDATA[點擊返回]]></item>
+				<item id="tips_thesaurus"><![CDATA[同義詞設置]]></item>
+				<item id="thesaurus_setting_comment"><![CDATA[如需補充，請將同義詞附加到文本框即可，同義詞一行一對，以=號分隔]]></item>
+				<item id="tips_num"><![CDATA[只包括最近的貼子/文章/日志(1000以內)]]></item>
+				<item id="allow_num_comment"><![CDATA[只需要將最近一個更新周期內新增的和變化了的文章包含在XML頁面上，過多的數量只會增加服務器的負擔]]></item>
+				<item id="tips_publish"><![CDATA[當發布主題時更新Sitemap]]></item>
+				<item id="allow_publish_comment"><![CDATA[當天發布多少主題時才允許\更新網站地圖]]></item>
+				<item id="tips_portal"><![CDATA[當發布門戶文章時更新Sitemap]]></item>
+				<item id="allow_portal_comment"><![CDATA[當發布門戶文章時更新Sitemap]]></item>
+				<item id="create_xml"><![CDATA[生成XML地圖]]></item>
+				<item id="create_xml_comment"><![CDATA[對百度、谷歌都有作用，請使用http://域名/sitemap.xml的方式在瀏覽器中訪問確保XML地圖已生成，生成網站地圖後請一定將網站地圖地址添加至robots.txt文件中，,將Sitemap:http://域名/sitemap.xml添加進robots.txt即可，目前插件生成xml和txt文件地址為根目錄]]></item>
+				<item id="create_txt"><![CDATA[生成txt地圖]]></item>
+				<item id="create_txt_comment"><![CDATA[對百度特別有用]]></item>
+				<item id="create_index"><![CDATA[生成地圖索引]]></item>
+				<item id="create_index_comment"><![CDATA[用于生成指示地圖文件位置的索引]]></item>
+				<item id="updatexml"><![CDATA[提交並更新XML文件]]></item>
+				<item id="plugin_information"><![CDATA[插件信息]]></item>
+				<item id="info_1"><![CDATA[本插件版權歸屬余新啟所有]]></item>
+				<item id="info_2"><![CDATA[未經插件作者許\可,任何人不得以任何形式在任何地方發布/轉發原版以及其衍生的修改版]]></item>
+				<item id="info_3"><![CDATA[<b>插件名稱:</b>seo for discuz-亮劍seo]]></item>
+				<item id="info_4"><![CDATA[<b>作品簡介:</b>本插件力求打造discuz社區最專業的seo優化插件，如果您有更好的建議請QQ聯系<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=578933760&amp;site=qq&amp;menu=yes" title="點擊這里給我發消息" target="_blank"><img border="0" title="點擊這里給我發消息" alt="點擊這里給我發消息" src="http://wpa.qq.com/pa?p=2:578933760:41"></a>]]></item>
+				<item id="info_5"><![CDATA[本插件為亮劍SEO<a href="http://addon.discuz.com/?@seo.plugin">商業版本</a>的免費版，偽原創完整詞庫可前往<a href="http://www.seoeye.cn/thread-829-1-1.html">亮劍SEO社區</a>中免費下載]]></item>
+			</item>
+		</item>
+	</item>
+</root>

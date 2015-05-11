@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2013-03-14 09:34]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://dzx25.php.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[【煙雨】超級防注冊]]></item>
+			<item id="identifier"><![CDATA[yy_killreg]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[yy_killreg/]]></item>
+			<item id="copyright"><![CDATA[煙雨逍遙]]></item>
+			<item id="version"><![CDATA[v1.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[about]]></item>
+					<item id="menu"><![CDATA[榮譽出品]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否開啟]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[配置名稱]]></item>
+				<item id="description"><![CDATA[可自由改變安全碼的名稱]]></item>
+				<item id="variable"><![CDATA[title]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[安全碼]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[配置變量名]]></item>
+				<item id="description"><![CDATA[可自由改變安全碼的文本框名稱，英文數字下劃線，第一位不可為 數字]]></item>
+				<item id="variable"><![CDATA[name]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[safereg]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[延時倒計時]]></item>
+				<item id="description"><![CDATA[注冊頁安全碼位置會產生倒計時，倒計時結束後，鼠標點 輸入安全碼 才可注冊！]]></item>
+				<item id="variable"><![CDATA[time]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="nokey"><![CDATA[請輸入]]></item>
+				<item id="keyfalse"><![CDATA[不正確]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="creatkey"><![CDATA[正在生成]]></item>
+				<item id="creatkeytime"><![CDATA[%d秒]]></item>
+				<item id="creatkeysucceed"><![CDATA[生成成功\]]></item>
+				<item id="shurukey"><![CDATA[點擊輸入]]></item>
+				<item id="retrykey"><![CDATA[刷新]]></item>
+				<item id="creatkeyerror"><![CDATA[生成失敗]]></item>
+				<item id="recreatkey"><![CDATA[請點擊刷新]]></item>
+			</item>
+		</item>
+	</item>
+</root>

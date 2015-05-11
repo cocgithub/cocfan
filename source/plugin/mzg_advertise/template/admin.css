@@ -1,0 +1,14 @@
+.admin_table { color: #999999; margin-right: auto; margin-left: auto; }
+.admin_table .title { text-align: left; padding-left: 20px; background-color: #EBEBEB; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #999999; overflow: hidden; }
+.admin_table .title h2 { color: #000000; font-size: 14px; padding-top: 8px; padding-bottom: 8px; }
+.admin_table th { font-weight: bold; color: #333333; padding-right: 4px; text-align: right; }
+.admin_table td { padding-left: 10px; color: #999999; padding-top: 2px; padding-bottom: 2px; }
+.admin_title a { background-color: #0099CC; border-top-color: #336699; border-right-color: #336699; border-bottom-color: #336699; border-left-color: #336699; padding-top: 8px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; color: #FFFFFF; display: inline-block; }
+.admin_title a:hover { background-color: #006699; }
+.admin_title .ahover { background-color: #006699; font-weight: bold; }
+.admin_title_bot { background-color: #006699; margin-right: auto; margin-left: auto; line-height: 35px; height: 35px; padding-left: 8px; color: #FFFFFF; }
+.admin_title_bot a { color: #99FFFF; padding-right: 5px; padding-left: 5px; }
+.admin_title_bot .modav { color: #FF0000; }
+.admin_r { float: right; margin-right: 8px; }
+.admin_red { color: #990000; }
+.admin_blue { color: #006699; }

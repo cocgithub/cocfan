@@ -1,0 +1,69 @@
+<table class="tb tb2 " id="tips">
+	<tr>
+		<th  class="partition">{$lang['tips']}</th>
+	</tr>
+	<tr>
+		<td class="tipsblock" s="1">
+			<ul id="tipslis">
+				<li>{$lang['tip1']}</li>
+				<li>{$lang['tip2']}</li>
+				<li>{$lang['tip3']}</li>
+				<li>{$lang['admintip']}</li>
+			</ul>
+		</td>
+	</tr>
+</table>
+<form name="cpform" method="post" autocomplete="off" action="admin.php?action=plugins&operation=config&do={$pluginid}&identifier=nimba_security&pmod=admincp&page={$_GET['page']}" id="cpform" >
+<table class="tb tb2 ">
+	<tr class="header">
+		<th></th>
+		<th>{$lang['item1']}</th>
+		<th>{$lang['item2']}</th>
+		<th>{$lang['item3']}</th>
+		<th>{$lang['item4']}</th>
+		<th>{$lang['item5']}</th>
+		<th>{$lang['item6']}</th>
+		<th>{$lang['item7']}</th>		
+		<th>{$lang['item8']}</th>
+		<th>{$lang['item9']}</th>
+	</tr>
+	<tr class="header">
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>	
+		<th><input class="checkbox" type="checkbox" name="forumall" onclick="checkAll('prefix', this.form, 'forum', 'forumall')"></th>
+		<th><input class="checkbox" type="checkbox" name="portalall" onclick="checkAll('prefix', this.form, 'portal', 'portalall')"></th>
+		
+	</tr>
+	<!--{if $userlist}-->
+		<!--{loop $userlist $user}-->	
+	<tr class="hover">
+	
+		<td class="td25"><input type="checkbox" class="checkbox" name="delete_{$user['uid']}" value="1" /></td>
+		<td class="td28"><a href="home.php?mod=space&uid={$user['uid']}" target="_blank">{$user['name']}</a></td>
+		<td>{$user['uid']}</td>
+		<td>{$user['regdate']}</td>
+		<td class="td26">{$user['email']}</td>
+		<td class="td26">{$user['addr']}</td>
+		<td>{$user['ip']}</td>
+		<td>{$user['dateline']}</td>
+		<td><input class="checkbox" type="checkbox" value="1" name="forum_{$user['uid']}"></td>		
+		<td><input class="checkbox" type="checkbox" value="1" name="portal_{$user['uid']}"></td>
+		
+	</tr>
+		<!--{/loop}-->
+	<!--{else}-->
+	<tr class="hover">
+	<td></td>
+	<td>{$lang['nodata']}</td>
+	<td></td>
+	</tr>
+	<!--{/if}-->
+	<!--{if $multipage}--><tr><td></td><td colspan="3"><div>$multipage</div></td></tr><!--{/if}-->
+<tr><td class="td25"><input type="checkbox" name="chkall" id="chkall46p6" class="checkbox" onclick="checkAll('prefix', this.form, 'delete')" /><label for="chkall46p6">{$lang['sub1']}</label></td><td colspan="15"><div class="fixsel"><input type="submit" class="btn" id="submit_linksubmit" name="linksubmit" title="{$lang['sub2']}" value="{$lang['sub3']}" /></div></td></tr><script type="text/JavaScript">_attachEvent(document.documentElement, 'keydown', function (e) { entersubmit(e, 'linksubmit'); });</script></table>
+</form>

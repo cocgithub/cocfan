@@ -1,0 +1,42 @@
+<!--{template common/header}-->
+<link href="source/plugin/mzg_advertise/template/style.css" rel="stylesheet" type="text/css" />
+<div class="advertise_cen">
+  <div class="al">
+    <ul>
+      {loop $list $value}
+      <li title="点击我吧~_~">
+        <a href="$value[url]" target="_blank" title="$value[name]" class="pic" onclick="ad_show('$pageurl&mod=view&did=$value[did]');return false;">{if
+        $value[pic]}<img src="{$value[pic]}" />{else}<span>$value[name]</span>{/if}</a>
+        <p>
+        <a href="$value[url]" target="_blank" title="$value[name]" onclick="ad_show('$pageurl&mod=view&did=$value[did]');return false;">点击广告</a><span class="advertise_span">({$value[usercount]}/{$value[maxcount]})</span>
+        </p><p>{if $value[usercount]>0 and $value[usercount]>=$value[maxcount]}点击数已满{else}{if $value[price]}每{if $value[method]==1}用户{else}IP{/if}奖励 <strong class="advertise_red">{$value[price]}</strong>{$_G['setting']['extcredits'][$value[price_type]][title]}{else}无奖励{/if}{/if}</p></li>
+      {/loop}
+    </ul>
+    $multi
+  </div>
+  <div class="ar">
+    <h2 class="ar_title">
+      赚取积分
+    </h2>
+    <div class="ar_list">
+      <ul>
+        <li class="av">
+          <a href="$pageurl">点广告赚积分</a>
+        </li>
+        <li>
+          <a href="$pageurl&mod=log">点击记录</a>
+        </li>
+        <li>
+          <a href="home.php?mod=spacecp&ac=credit&op=log">奖励记录</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script language="javascript" type="text/javascript">
+    function ad_show(url){
+       window.open(url,"Ad_Win");
+		}
+
+</script>
+<!--{template common/footer}-->

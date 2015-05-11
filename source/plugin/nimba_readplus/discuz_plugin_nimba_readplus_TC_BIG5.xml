@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3]]></item>
+	<item id="Time"><![CDATA[2013-06-04 10:51]]></item>
+	<item id="From"><![CDATA[¤H¤u´¼¯à¹êÅç«Ç (http://www.ailab.cn/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[¤W¤@½g¤U¤@½g]]></item>
+			<item id="identifier"><![CDATA[nimba_readplus]]></item>
+			<item id="description"><![CDATA[¤W¤@½g¤U¤@½g v1.2.x for Discuz X2.0/X2.5/X3 §@ªÌ ¤gµÛ¤H¹ç¤Ú ¤H¤u´¼¯à¹êÅç«Ç ¥X«~¡]Made By Nimba, Team From AiLab.cn ¡^ ¥\¯à¤¶²Ð¡J¦b¥DÃD©«¤U­±¼W¥[¤W¤@½g¤U¤@½gÃì±µ¡A¼W¥[¤º®eºò±K«×¡A¼W¥[¥Î¤áÅéÅç¡I]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[nimba_readplus/]]></item>
+			<item id="copyright"><![CDATA[¤H¤u´¼¯à¹êÅç«Ç]]></item>
+			<item id="version"><![CDATA[v1.2.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[readplus]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="menu"><![CDATA[À³¥Î¤¤¤ß]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[§@¥Î½d³ò]]></item>
+				<item id="description"><![CDATA[»¡©ú¡J1¡B¦PªO¶ô¥DÃD¡A§Y¤W¤@½g¤U¤@½g³£¦b¬O¦P¤@ªO¶ôªº©«¤l¡F2¡B¥þ¯¸¥DÃD¡A¤W¤@½g¤U¤@½g¦b¥þ¯¸¤¤]]></item>
+				<item id="variable"><![CDATA[isforum]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1=¦PªO¶ô¥DÃD
+2=¥þ¯¸¥DÃD]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="appname"><![CDATA[¤W¤@½g¤U¤@½g]]></item>
+				<item id="nocontent"><![CDATA[¨S¦³¤F...]]></item>
+				<item id="unto"><![CDATA[¤W¤@½g¡J]]></item>
+				<item id="next"><![CDATA[¤U¤@½g¡J]]></item>
+				<item id="test"><![CDATA[´ú¸Õ]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="info"><![CDATA[¼ÒªO¥Îªº»y¨¥¥]]]></item>
+			</item>
+			<item id="installlang">
+				<item id="info"><![CDATA[¦w¸Ë¡B¤É¯Å¡B¨ø¸ü¸}¥»¥Îªº»y¨¥¥]]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="license"><![CDATA[[list]
+[*]¥»´¡¥óª©ÅvÂkÄÝ´¡¥ó§@ªÌ©Ò¦³.
+[*]¥¼¸g´¡¥ó§@ªÌ³\¥i,¥ô¦ó¤H¤£±o¥H¥ô¦ó§Î¦¡¦b¥ô¦ó¦a¤èµo¥¬/Âàµo­ìª©¥H¤Î¨ä­l¥Íªº­×§ïª©.
+[*][b]´¡¥ó§@ªÌ:[/b]¤gµÛ¤H¹ç¤Ú Team from [url=http://www.ailab.cn/]¤H¤u´¼¯à¹êÅç«Ç[/url]
+[*][b]¥\¯àÂ²¤¶:[/b]¦b¥DÃD©«¤U­±¼W¥[¤W¤@½g¤U¤@½gÃì±µ¡A¼W¥[¤º®eºò±K«×¡A¼W¥[¥Î¤áÅéÅç¡I
+[*][b]§Þ³N¤ä«ù:[/b][url=http://www.ailab.cn/]¤H¤u´¼¯à¹êÅç«Ç[/url]
+[*]¦p¦³¥ô¦óÃö¤_¨Ï¥Î¤WªººÃ°Ý,½Ð¦Ü¯¸ªøªÀ°Ï[url]http://dz.open.ailab.cn/[/url]´£¥X.
+[*][color=Red]½Ð±z¦b¦w¸Ë«e»{¯u¾\Åª´¡¥óªº¸Ô²Ó»¡©ú[/color]¡A¦a§}¡J[url]http://addon.discuz.com/?@nimba_readplus.plugin[/url].
+[*][color=Red]¦pªG±zÄ@·N¸ê§U§Ú­Ì,½Ð¦Ü[url]http://me.alipay.com/lih062624[/url]¹ï§Ú­Ì¶i¦æÃÙ§U.[/color]
+[*]³Ì«á,·PÁÂ±z¨Ï¥Î§Ú­Ìªº´¡¥ó,¤]§Æ±æ±z¯à°÷µ¹§Ú­Ì´£¨Ñ§ó¦nªº·N¨£([url=http://www.ailab.cn/]½ÐÂIÀ»³o¨½¶i¤J¤H¤u´¼¯à¹êÅç«Ç[/url]).
+[/list]]]></item>
+	</item>
+</root>

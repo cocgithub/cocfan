@@ -1,0 +1,40 @@
+<!--{block return}-->
+<div class="occ_gather">
+<!--{if $istips}-->
+<div class="occ_gathertips">$tips</div>
+<!--{/if}-->
+
+<div class="sppoll">
+<input type="text" name="occurl" id="occurl" class="px" placeholder="$occ_tips" x-webkit-speech="" speech="" value="$_GET[occurl]" size="80" />
+<button type="button" name="occ_button" id="occ_button" class="pn vm" style="vertical-align:top;"><em>$occ_gathername</em></button>
+<!--{if $ispost}-->
+<button type="submit" id="postsubmit" class="pn pnc" value="true" name="topicsubmit" style="vertical-align:top;"><span>$occ_postname</span></button>
+<!--{/if}-->
+<span id="occ_loading"></span>
+</div>
+<div class="mtn"></div>
+</div>
+<!--/end gather-->
+
+<script src="{$_G['siteurl']}source/plugin/onexin_occ/template/jquery.min.js"></script>
+<script type="text/javascript">
+var jQ = jQuery.noConflict(true);
+;(function ( $, window, undefined ) {
+$("#occ_button").click(function(){
+	var _url = encodeURIComponent($("#occurl").val());
+	$("#occ_loading").html('<img src="' + STATICURL + 'image/common/loading.gif" alt="loading" />');
+	$.getJSON("{$server}?q={$_SERVER[HTTP_HOST]}&k="+ _url +"&v=1&c={$isfrom}&d={$isdelimiter}&callback=?", function(data) {
+	if(data.gp_message){
+		$("#subject").val(data.gp_subject);
+		$("#e_iframe").contents().find("body").html(data.gp_message);
+		discuzcode('svd');
+		$("#subject").focus();
+		userdataoption(0);
+	}
+	$("#occ_loading").html(data.gp_status);
+	$script
+	});
+});
+})( jQ, window);
+</script>
+<!--{/block}-->

@@ -1,0 +1,2 @@
+<?php die('Permission denied');?>
+a:1:{s:76:"http://www.56php.com/plugin.php?id=seotool_server:upgrade&myac=get_qq&tpl=no";a:3:{s:4:"data";s:7:"3861570";s:7:"timeout";i:1412145465;s:3:"ttl";i:172800;}}

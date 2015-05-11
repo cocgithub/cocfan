@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2]]></item>
+	<item id="Time"><![CDATA[2011-12-07 03:35]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://x/x201/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[發帖直通車]]></item>
+			<item id="identifier"><![CDATA[vfastpost]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[vfastpost/]]></item>
+			<item id="copyright"><![CDATA[Comsenz Inc.]]></item>
+			<item id="version"><![CDATA[1.0.2]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[vfastpost]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[顯示懸浮快速回復按鈕]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[fixbutton]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+					<item id="1"><![CDATA[37]]></item>
+					<item id="2"><![CDATA[38]]></item>
+				</item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[快速回復開啟板塊]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[fids]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[]]></item>
+					<item id="1"><![CDATA[2]]></item>
+					<item id="2"><![CDATA[37]]></item>
+					<item id="3"><![CDATA[38]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[首頁顯示]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[index]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+					<item id="1"><![CDATA[37]]></item>
+					<item id="2"><![CDATA[38]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="stat_daytime"><![CDATA[日期]]></item>
+				<item id="stat_nt"><![CDATA[主題帖數]]></item>
+				<item id="stat_nt_index"><![CDATA[來自首頁主題帖]]></item>
+				<item id="stat_nr"><![CDATA[回復數]]></item>
+				<item id="stat_nr_vf"><![CDATA[來自插件回復]]></item>
+				<item id="stat_cl_f"><![CDATA[板塊發帖點擊數]]></item>
+				<item id="stat_cl_v_t"><![CDATA[看帖發帖點擊數]]></item>
+				<item id="stat_cl_v_r"><![CDATA[看帖回復點擊數]]></item>
+				<item id="stat_cl_vf_float"><![CDATA[看帖回復點擊來自浮動層]]></item>
+				<item id="stat_cl_vf_first"><![CDATA[看帖回復點擊來自頂樓]]></item>
+				<item id="stat_nr_vf_float"><![CDATA[來自插件回復(浮動層)]]></item>
+				<item id="select_fid"><![CDATA[選擇版塊]]></item>
+				<item id="pack"><![CDATA[收起]]></item>
+				<item id="otherfid"><![CDATA[全部板塊]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="vf_tips"><![CDATA[樓主的帖子怎麼樣？趕緊試試這里的快速回復給樓主點評論吧]]></item>
+				<item id="vf_popup"><![CDATA[這里是快速發帖，趕緊試試哦]]></item>
+				<item id="vf_popup_v"><![CDATA[這里是快速回復，趕緊試試哦]]></item>
+				<item id="vf_sharp"><![CDATA[◆]]></item>
+				<item id="vf_known"><![CDATA[我知道了]]></item>
+				<item id="vf_vfitips"><![CDATA[今天有什麼新鮮事和大家一起分享嗎？趕緊點擊這里試試快速發帖哦]]></item>
+				<item id="pack"><![CDATA[收起]]></item>
+				<item id="tips_n"><![CDATA[快速發帖區]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+	</item>
+</root>

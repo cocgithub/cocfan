@@ -1,0 +1,72 @@
+{subtemplate common/header}
+
+<div id="pt" class="bm cl">
+<div class="z"><a href="./" class="nvhm">$_G[setting][bbname]</a><em>&rsaquo;</em><a href="./">$_G[setting][bbname]</a> <em>&rsaquo;</em><a href="plugin.php?id=wq_viewthread:index">$plugin_name</a> <em>&rsaquo;</em>$plugin_nav</div>
+</div>
+<link href="source/plugin/wq_viewthread/template/index.css" rel="stylesheet" type="text/css" />
+
+<!--main-->
+<div class="activity_list">
+  <div class="huodongyoubian">
+   <!--{if is_array($list)}-->
+    <div class="activity_l_r">
+		<div class="activity_biaol">
+		<!--{loop $list $id $thread}-->
+		<!--{if $id % 2 == 0}-->
+        <div class="activity_n1">
+          <div class="jiantou"></div>
+          <a href="forum.php?mod=viewthread&tid={$thread['tid']}" title="{$thread['subject']}" target="_blank"><img src="{$thread['imgurl']}" width="100" height="125" /></a>
+          <div class="right_wenben">
+            <h2><a target="_blank" href="forum.php?mod=viewthread&tid={$thread['tid']}" title="{$thread['subject']}">{$thread['subject_s']}</a></h2>
+           	<p><a href="forum.php?mod=viewthread&tid={$thread['tid']}" target="_blank">{$thread['message']}</a></p>
+            <p><a href="home.php?mod=space&uid={$thread['authorid']}&do=profile" target="_blank">{$thread['author']}</a> {lang wq_viewthread:shared} <a href="forum.php?mod=forumdisplay&fid={$thread['fid']}" target="_blank">{$thread['fname']}</a></p>
+            <h5>{$thread['views']}{lang wq_viewthread:views}{$thread['replies']}{lang wq_viewthread:reply}</h5>
+          </div>
+          <div class="right_riqi">
+            <div class="right-riqi_s">
+              <p>{$thread['start_ymd']}</p>
+            </div>
+            <div class="right_riqi-x">
+              <h2>{$thread['start_d']}</h2>
+              <p>{$thread['start_w']}</p>
+            </div>
+          </div>
+        </div>
+		<!--{else}-->
+        <div class="activity_n2">
+          <div class="jiantou2"></div>
+          <div class="right_riqi2">
+            <div class="right-riqi_s">
+              <p>{$thread['start_ymd']}</p>
+            </div>
+            <div class="right_riqi-x">
+              <h2>{$thread['start_d']}</h2>
+              <p>{$thread['start_w']}</p>
+            </div>
+          </div>
+          <div class="right_wenben">
+            <h2><a href="forum.php?mod=viewthread&tid={$thread['tid']}" title="{$thread['subject']}" target="_blank">{$thread['subject_s']}</a></h2>
+           	<p><a href="forum.php?mod=viewthread&tid={$thread['tid']}" target="_blank">{$thread['message']}</a></p>
+            <p><a href="home.php?mod=space&uid={$thread['authorid']}&do=profile" target="_blank">{$thread['author']}</a> {lang wq_viewthread:shared} <a href="forum.php?mod=forumdisplay&fid={$thread['fid']}" target="_blank">{$thread['fname']}</a></p>
+            <h5>{$thread['views']}{lang wq_viewthread:views}{$thread['replies']}{lang wq_viewthread:reply}</h5>
+          </div>
+          <a href="forum.php?mod=viewthread&tid={$thread['tid']}" title="{$thread['subject']}" target="_blank"><img src="{$thread['imgurl']}" width="100" height="125" /></a> </div>
+        <div class="liebiaoline"></div>
+		<!--{if $id < $count_list}-->
+		</div>
+		<div class="activity_biaol">
+		<!--{/if}-->
+		<!--{/if}-->
+        <!--{/loop}-->
+      </div>
+    </div>
+    <!--{else}-->
+      <div style="font-size:16px" class="tips">{lang wq_viewthread:no_thread} <span><a style="color:#39c;font-size:12px;" href="forum.php?mod=misc&action=nav" target="_blank">{lang wq_viewthread:post_thread}</a></span></div>
+	<!--{/if}-->
+	
+    <div class="pg page">
+    $multipage
+    </div>
+  </div>
+</div>
+{subtemplate common/footer}

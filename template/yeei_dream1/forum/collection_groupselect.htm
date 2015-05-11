@@ -1,0 +1,24 @@
+<!--{template common/header}-->
+<h3 class="flb">
+	<em>分享到部落</em>
+	<span><a href="javascript:;" onclick="hideWindow('$_GET['handlekey']');" class="flbc" title="{lang close}">{lang close}</a></span>
+</h3>
+<form action="forum.php?mod=collection&action=edit&op=addgroup&tid={$tid}" method="post" onsubmit="ajaxpost(this.id, 'form_addgroupthread');" id="form_addgroupthread" name="form_addgroupthread">
+	<div class="c">
+		<p>选择部落</p>
+		<select name="fid" id="selectgroup" style="width: 280px;">
+		<!--{loop $myGroups $sgroup}-->
+			<option value="$sgroup['fid']">$sgroup['name']</option>
+		<!--{/loop}-->
+		</select>
+	</div>
+	<div class="o pns">
+		<input type="hidden" name="tids[]" value="$tid">
+		<input type="hidden" name="inajax" value="1">
+		<input type="hidden" name="handlekey" value="$_GET['handlekey']">
+		<input type="hidden" name="formhash" id="formhash" value="{FORMHASH}" />
+		<input type="hidden" name="addgroup" id="addgroup" value="1" />
+		<button type="submit" name="submitaddgroup" id="btn_submitaddgroup" class="pn pnc"><span>添加文章</span></button>
+	</div>
+</form>
+<!--{template common/footer}-->

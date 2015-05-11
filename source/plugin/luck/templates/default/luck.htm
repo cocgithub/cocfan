@@ -1,0 +1,84 @@
+{template header}
+<div class="subtable nav" style="width: {TABLEWIDTH}">
+<a href="$indexname">$bbname</a> &raquo; 幸运抽奖送金钱
+</div><br>
+
+<table cellspacing="0" cellpadding="0" border="0" width="98%" align="center">
+<tr><td width="200" valign="top">
+
+<div class="spaceborder" style="width: 100%">
+<table cellspacing="0" cellpadding="4" width="100%" align="center">
+<tr class="header"><td colspan="3" align="center">幸运排行榜</td></tr>
+<tr class="category">
+<td align="center">排名</td>
+<td align="center">用户名</td>
+<td align="center">获得积分</td>
+</tr>
+<!--{if $toplist}-->
+	<!--{loop $toplist $key $top}-->
+		<tr class="row" onMouseOver="this.style.backgroundColor='{ALTBG1}'" onMouseOut="this.style.backgroundColor='{ALTBG2}'">
+		<td align="center"><!--{if $key < 3}--><img src="{IMGDIR}/$key.gif" alt=""><!--{else}--><font color="red"><b>{eval echo $key + 1;}</b></font><!--{/if}--></td>
+		<td align="center"><a href="profile-uid-$top[uid].html" target="_blank">$top[username]</a></td>
+		<td align="center">$top[credits] $extcredits[$getcredit][title]</td>
+		</tr>
+	<!--{/loop}-->
+<!--{else}-->
+	<tr><td colspan="2" class="altbg1 bottom">暂时没有排行榜</td></tr>
+<!--{/if}-->
+</table>
+</div><br>
+
+<div class="spaceborder" style="width: 100%">
+<table cellspacing="0" cellpadding="4" width="100%" align="center">
+<tr class="header"><td colspan="3" align="center">您的抽奖情况</td></tr>
+<tr class="row">
+<td align="center" width="50%">抽奖次数</td>
+<td align="center">$luck[count]</td>
+</tr>
+<tr class="row">
+<td align="center">剩余次数</td>
+<td align="center">$remaincount</td>
+</tr>
+<tr class="row">
+<td align="center">累计奖金</td>
+<td align="center">$luck[credits]</td>
+</tr>
+</table>
+</div><br>
+
+</td><td align="right" valign="top">
+<div class="spaceborder" style="width: 98%">
+<form method="post" action="luck.php">
+<input type="hidden" name="formhash" value="{FORMHASH}">
+<table cellspacing="0" cellpadding="4" width="100%" align="center">
+<tr class="header"><td colspan="3" align="left">
+新春送积分活动
+</td></tr>
+<tr class="altbg2">
+<td class="altbg2" width="50%">
+<div class="altbg2" style="margin: 8px auto;">
+<p>抽奖时间: $startdate 至 $enddate
+<p>抽奖规则:
+<ul>
+<li>根据你的发贴数、精华贴数、注册时间、在线时间经过公式计算得出最高可能获得的奖励，然后随机产生一个数字得出
+<li>每次抽奖最小获奖金额为 <font color="red"><b>$mincredit</b></font> $extcredits[$getcredit][title]，每次最大获奖金额为 <font color="red"><b>$maxcredit</b></font> $extcredits[$getcredit][title]，奖金总额可以累计
+<li>每个人可以进行 <font color="red"><b>$joincount</b></font> 次抽奖，你不必着急把  <font color="red"><b>$joincount</b></font> 次机会全部用完，只要在活动期间内使用完就可以了。
+<li>根据抽奖进行的情况，我们可能会增加抽奖次数和提高最高奖金幅度。所以多多关注我们的抽奖活动，珍惜你的机会吧。祝各位好运！
+</ul>
+<p><center><font size="2" color="red"><b>参与人数 $total[joinnum] 人，共送出 $total[credits] $extcredits[$getcredit][title]</b></font></center>
+<div>
+</td>
+</tr></table>
+</div><br>
+<!--{if $remaincount}-->
+<div class="option" style="width: 98%"><div class="submitbutton">
+	<center><input class="button" type="submit" name="lucksubmit" value="您还有 $remaincount 次抽奖机会，祝各位好运！！点击开始抽奖"></center>
+</div>
+<!--{else}-->
+<div class="option" style="width: 98%"><br><center>
+您的抽奖机会已经全部用完！ 共获得 $luck[credits] $extcredits[$getcredit][title]
+</center><br></div>
+<!--{/if}--></form>
+</td></tr></table>
+
+{template footer}

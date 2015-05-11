@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3]]></item>
+	<item id="Time"><![CDATA[2013-05-15 22:08]]></item>
+	<item id="From"><![CDATA[ÈË¹¤ÖÇÄÜÊµÑéÊÒ (http://www.ailab.cn/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[·ÀË®Ç½ÍØÕ¹]]></item>
+			<item id="identifier"><![CDATA[nimba_security]]></item>
+			<item id="description"><![CDATA[·ÀË®Ç½ÍØÕ¹v2.0.1 for Discuz X2.0/X2.5/X3.0 ×÷Õß ÍÁÖøÈËÄþ°Í ÈË¹¤ÖÇÄÜÊµÑéÊÒ ³öÆ·£¨Made By Nimba, Team From AiLab.CN £©¹¦ÄÜ½éÉÜ£ºÊµÊ±´¦Àí±»·ÀË®Ç½´¦Àí¹ýµÄÓÃ»§£¬±ÜÃâÕ¾ÄÚÀ¬»øÓÃ»§»ýÀÛ£¡]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[nimba_security/]]></item>
+			<item id="copyright"><![CDATA[nimba]]></item>
+			<item id="version"><![CDATA[v2.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[admincp]]></item>
+					<item id="menu"><![CDATA[·â½û¹ÜÀí]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[wlist]]></item>
+					<item id="menu"><![CDATA[½â·âÃûµ¥]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[readme]]></item>
+					<item id="menu"><![CDATA[Ê¹ÓÃËµÃ÷]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[security]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[10]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[addon]]></item>
+					<item id="menu"><![CDATA[Ó¦ÓÃÖÐÐÄ]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[99]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[´¦Àí¼ä¸ô]]></item>
+				<item id="description"><![CDATA[µ¥Î»£º·ÖÖÓ£¬ÉèÖÃ¶à³¤Ê±¼ä´¦ÀíÒ»´ÎÀ¬»øÓÃ»§£¬½¨ÒéÉèÖÃ5-10·ÖÖÓÖ®¼ä]]></item>
+				<item id="variable"><![CDATA[long]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[´¦Àíµ×Ïß]]></item>
+				<item id="description"><![CDATA[µ±±»·ÀË®Ç½´¦Àí³¬¹ýÕâ¸öÊýÁ¿µÄÌû×Ó£¬Ôò·â½û´ËÓÃ»§£¡]]></item>
+				<item id="variable"><![CDATA[num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[´¦ÀíÓÃ»§×é]]></item>
+				<item id="description"><![CDATA[Ñ¡ÔñÐèÒª´¦ÀíµÄÓÃ»§£¬½¨ÒéÖ»Ñ¡ÔñµÍµÈ¼¶µÄÐÂÓÃ»§£¬±ÜÃâÀÏÓÃ»§±»ÎóÉ±£¡]]></item>
+				<item id="variable"><![CDATA[groups]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[9]]></item>
+					<item id="1"><![CDATA[10]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="license"><![CDATA[[list]
+[*]±¾²å¼þ°æÈ¨¹éÊô²å¼þ×÷ÕßËùÓÐ.
+[*]Î´¾­²å¼þ×÷ÕßÐí¿É,ÈÎºÎÈË²»µÃÒÔÈÎºÎÐÎÊ½ÔÚÈÎºÎµØ·½·¢²¼/×ª·¢Ô­°æÒÔ¼°ÆäÑÜÉúµÄÐÞ¸Ä°æ.
+[*][b]²å¼þ×÷Õß:[/b]ÍÁÖøÈËÄþ°Í Team from [url=http://www.ailab.cn/]ÈË¹¤ÖÇÄÜÊµÑéÊÒ[/url]
+[*][b]¹¦ÄÜ¼ò½é:[/b]±¾²å¼þÎª°²×°ÁË·ÀË®Ç½µÄÕ¾³¤Éè¼Æ£¬ÓÉÓÚ·ÀË®Ç½Ä¿Ç°Ö»¹ýÂËË®ÌûÈ´¶Ô·¢Ë®ÌûµÄÓÃ»§ÖÃÖ®²»Àí£¬Ôì³ÉÂÛÌ³À¬»øÓÃ»§Ô½À´Ô½¶à£¬Ã¿ÌìÐèÒª·ÀË®Ç½¹ýÂËµÄÀ¬»øÌûÔ½À´Ô½¶à£¬ÕâÑù²»½öÓ°ÏìÂÛÌ³Õý³£µÄÄÚÈÝ½¨Éè£¬Ò²ÔÚºÜ´ó³Ì¶ÈÉÏÏûºÄÏµÍ³×ÊÔ´£¬±¾²å¼þÊµÏÖ¿ìËÙ·âÉ±±»·ÀË®Ç½´¦Àí¹ýµÄÀ¬»øÓÃ»§£¡
+[*][b]¼¼ÊõÖ§³Ö:[/b][url=http://www.ailab.cn/]ÈË¹¤ÖÇÄÜÊµÑéÊÒ[/url]
+[*]ÈçÓÐÈÎºÎ¹ØÓÚÊ¹ÓÃÉÏµÄÒÉÎÊ,ÇëÖÁÕ¾³¤ÉçÇø[url]http://dz.open.ailab.cn/[/url]Ìá³ö.
+[*][color=Red]ÇëÄúÔÚ°²×°Ç°ÈÏÕæÔÄ¶Á²å¼þµÄÏêÏ¸ËµÃ÷[/color]£¬µØÖ·£º[url]http://addon.discuz.com/?@nimba_security.plugin[/url].
+[*][color=Red]Èç¹ûÄúÔ¸Òâ×ÊÖúÎÒÃÇ,ÇëÖÁ[url]http://me.alipay.com/lih062624[/url]¶ÔÎÒÃÇ½øÐÐÔÞÖú.[/color]
+[*]×îºó,¸ÐÐ»ÄúÊ¹ÓÃÎÒÃÇµÄ²å¼þ,Ò²Ï£ÍûÄúÄÜ¹»¸øÎÒÃÇÌá¹©¸üºÃµÄÒâ¼û([url=http://www.ailab.cn/]Çëµã»÷ÕâÀï½øÈëÈË¹¤ÖÇÄÜÊµÑéÊÒ[/url]).
+[/list]]]></item>		
+	</item>
+</root>

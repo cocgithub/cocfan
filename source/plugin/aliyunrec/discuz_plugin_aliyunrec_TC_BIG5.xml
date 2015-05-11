@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5,X3,X3.1]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[¶³±ÀÂË - ©x¤è¥¿¦¡ª©]]></item>
+			<item id="identifier"><![CDATA[aliyunrec]]></item>
+			<item id="description"><![CDATA[¶³±ÀÂË¬OCNZZºX¤U¤@´Ú­±¦V¯¸ªøªº°ª³t¡BÃ­©w¡B©ö¥Î¡B§K¶Oªº¯¸¤º­Ó©Ê¤Æ´¼¯à±ÀÂË¨t²Î¡C¶³±ÀÂË°ò¤_ªü¨½¶³¥ý¶iªº¶³­pºâ¨t²Î¡A¤ä«ù®ü¶qºô­¶¼Æ¾Ú©M¥Î¤á¦æ¬°¼Æ¾Úªº¤ÀªR­pºâ¡A´£¨Ñ­Ó©Ê¤Æªº¼Ë¦¡³]©w¥\¯à¡A¦P®É¡A¬°¯¸ªø´£¨Ñ¦h¨¤«×ªº¼Æ¾Ú³øªí¡A¨Ï¯¸ªø¦³ªº©ñ¥Úªº¹BÀçºô¯¸¡C]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[aliyunrec/]]></item>
+			<item id="copyright"><![CDATA[¶³±ÀÂË¹Î¶¤]]></item>
+			<item id="version"><![CDATA[v2.3]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[aliyunrec]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[setting]]></item>
+					<item id="menu"><![CDATA[³]¸m]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[help]]></item>
+					<item id="menu"><![CDATA[¦b½uÀ°§U]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1]]></item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

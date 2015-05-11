@@ -1,0 +1,141 @@
+ <!--{block return}-->
+<script type="text/javascript" src="source/plugin/dxksst_n/template/dxksst.js"></script>
+<link rel="stylesheet" type="text/css" href="source/plugin/dxksst_n/template/dxksst.css" />
+    <div class="man_show">
+        <div class="com-1">         
+        <div class="com-1-top">
+        <span>{$dxksst_title[0]}</span>
+            </div>
+           <div style="width:100% margin: 20px auto;">
+           <div class="module cl slidebox">
+<ul class="slideshow">
+<!--{loop $pic $order $pinfo}-->
+<li style="width:100%; height:213px;"><a href="forum.php?mod=viewthread&tid=$pinfo['tid']"><img src="{$pinfo[attachment]}" width="100%" height="213px" /></a><span class="title">{$pinfo[subject]}"</span></li>
+<!--{/loop}-->
+</ul>
+</div>
+           </div> 
+        </div> 
+        <div class="com-2">
+            <div id="tb_" class="hdm-top">
+                <ul>
+                    <li id="tb_1" onmouseover="x:HoverLi(1);" class="hdm-hover">{$dxksst_title[1]}</li>
+                    <li id="tb_2" onmouseover="x:HoverLi(2);" class="hdm-normal">{$dxksst_title[2]}</li>
+                    <li id="tb_3" onmouseover="x:HoverLi(3);" class="hdm-normal">{$dxksst_title[3]}</li>
+                    <li id="tb_4" onmouseover="x:HoverLi(4);" class="hdm-normal">{$dxksst_title[4]}</li>
+                    <li id="tb_5" onmouseover="x:HoverLi(5);" class="hdm-normal">{$dxksst_title[5]}</li>
+                </ul>
+            </div>
+            <div>
+                            <div class="hdm-dis" id="tbc_01" style="width:97%; margin: 10px auto;">
+<table cellpadding="0" cellspacing="0" class="txt">
+    <tr>
+        <td>
+            <div style="height:{$thread_height}px;overflow:hidden;"><img src="source/plugin/dxksst_n/images/list.gif" alt="" /></div>
+        </td>
+        <td width="100%" id="dxksst_recommend">
+                 <!--{loop $new_post $thread}-->
+            <div>
+[<a href="forum.php?mod=forumdisplay&fid=$thread['fid']" style="color:{$fcolor}">$thread['fname']</a>]            
+<a href="forum.php?mod=viewthread&tid=$thread['tid']" name="xxx">$thread['subject']</a>           
+            </div>
+            <!--{/loop}--> 
+
+        </td>
+    </tr>
+</table> 
+                </div>
+                <div class="hdm-undis" id="tbc_02" style="width:97%; margin: 10px auto;">
+<table cellpadding="0" cellspacing="0" class="txt">
+    <tr>
+        <td>
+            <div style="height:{$thread_height}px;overflow:hidden;"><img src="source/plugin/dxksst_n/images/list.gif" alt="" /></div>
+        </td>
+        <td width="100%">
+            <!--{loop $new_post $thread}-->
+            <div>
+[<a href="forum.php?mod=forumdisplay&fid=$thread['fid']" style="color:{$fcolor}">$thread['fname']</a>]            
+<a href="forum.php?mod=viewthread&tid=$thread['tid']" name="xxx">$thread['subject']</a>           
+            </div>
+            <!--{/loop}-->
+        </td>
+    </tr>
+</table> 
+                </div>
+                <div class="hdm-undis" id="tbc_03" style="width:97%; margin: 10px auto;">
+<table cellpadding="0" cellspacing="0" class="txt">
+    <tr>
+        <td>
+            <div style="height:{$thread_height}px;overflow:hidden;"><img src="source/plugin/dxksst_n/images/list.gif" alt="" /></div>
+        </td>
+        <td width="100%">
+            <!--{loop $hot_post $thread}-->
+            <div>
+[<a href="forum.php?mod=forumdisplay&fid=$thread['fid']" style="color:{$fcolor}">$thread['fname']</a>]            
+<a href="forum.php?mod=viewthread&tid=$thread['tid']" name="xxx">$thread['subject']</a>           
+            </div>
+            <!--{/loop}-->
+        </td>
+    </tr>
+</table>
+                </div>
+                <div class="hdm-undis" id="tbc_04" style="width:97%; margin: 10px auto;">
+<table cellpadding="0" cellspacing="0" class="txt">
+    <tr>
+    <td>
+        <div style="height:{$thread_height}px;overflow:hidden;"><img src="source/plugin/dxksst_n/images/list.gif" alt="" /></div>
+    </td>
+    <td width="100%">
+        <!--{loop $newreply_post $thread}-->
+            <div>
+[<a href="forum.php?mod=forumdisplay&fid=$thread['fid']" style="color:{$fcolor}">$thread['fname']</a>]            
+<a href="forum.php?mod=viewthread&tid=$thread['tid']" name="xxx">$thread['subject']</a>           
+            </div>
+        <!--{/loop}-->
+    </td>
+    </tr>
+</table> 
+            </div>
+            <div class="hdm-undis" id="tbc_05" style="width:97%; margin: 10px auto;">
+<table cellpadding="0" cellspacing="0" class="txt">
+    <tr>
+    <td>
+        <div style="height:{$thread_height}px;overflow:hidden;"><img src="source/plugin/dxksst_n/images/list.gif" alt="" /></div>
+    </td>
+    <td width="100%">
+        <!--{loop $history_post $thread}-->
+            <div>         
+<a href="forum.php?mod=viewthread&tid=$thread['tid']" name="xxx">$thread['subject']</a>           
+            </div>
+        <!--{/loop}-->
+    </td>
+    </tr>
+</table> 
+            </div>
+            </div>
+        </div>
+           <div class="com-3">
+            <div class="com-3-top">
+			<div class="hdm-topm">
+                <ul><li class="hdm-normal">{$dxksst_title[6]}</li>
+                </ul>
+            </div>   	
+            </div>
+            <div style="width:97%; margin: 10px auto;">
+<table cellpadding="0" cellspacing="0" class="txt">
+    <tr>
+        <td>
+            <div style="height:{$thread_height}px;overflow:hidden;"><img src="source/plugin/dxksst_n/images/list.gif" alt="" /></div>
+        </td>
+        <td width="100%">
+            <!--{loop $new_user $result}-->
+            <div>
+            <a href="home.php?mod=space&uid=$result['uid']" name="xxx">$result['username']</a></div>
+            <!--{/loop}-->
+        </td>
+    </tr>
+</table> 
+            </div>
+             </div>
+             </div>          
+<!--{/block}-->

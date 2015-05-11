@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.1]]></item>
+	<item id="Time"><![CDATA[2014-09-24 11:26]]></item>
+	<item id="From"><![CDATA[XJP dzx31g (http://localhost/31g/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[安米網手機客戶端]]></item>
+			<item id="identifier"><![CDATA[appbyme_app]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[appbyme_app/]]></item>
+			<item id="copyright"><![CDATA[安米網]]></item>
+			<item id="version"><![CDATA[v1.2.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[forum]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[論壇管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[10]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[portal]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[門戶管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[11]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[operation]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[運營]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[12]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[seo]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[SEO設置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[20]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="4">
+					<item id="name"><![CDATA[cache]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[更新緩存]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[30]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="5">
+					<item id="name"><![CDATA[plugin]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[轉換接口包管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[40]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="6">
+					<item id="name"><![CDATA[main]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="7">
+					<item id="name"><![CDATA[main_mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[80]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否開啟門戶模塊]]></item>
+				<item id="description"><![CDATA[注意，修改此項之後需要新建或者更新應用才會在客戶端產生效果]]></item>
+				<item id="variable"><![CDATA[portal_allow_open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[新建應用時的驗證密碼]]></item>
+				<item id="description"><![CDATA[只能輸入數字，並且最大長度為10]]></item>
+				<item id="variable"><![CDATA[install_password]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[12345678]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[緩存定時自動更新時間]]></item>
+				<item id="description"><![CDATA[設置每天定點執行更新緩存操作, 請按照以下格式修改時間 
+[hh:mm], 
+其中hh為小時，必須佔用兩個空間，範圍為 00 - 23
+mm為分鐘，必須佔用兩個空間，範圍為 00 - 59,
+如[05:30]]]></item>
+				<item id="variable"><![CDATA[cache_update_time]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[[04:30]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[緩存自動更新間隔(秒)]]></item>
+				<item id="description"><![CDATA[自動執行更新緩存的時間間隔, 0為關閉,  建議設置為43200。請注意，更新緩存操作對服務器端的壓力會很大！ 請按照服務器的實際情況設置]]></item>
+				<item id="variable"><![CDATA[cache_update_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[版塊列表緩存有效期(秒)]]></item>
+				<item id="description"><![CDATA[設置版塊列表緩存更新的時間,  0 為關閉,  建議設置為 600,  更改參數之後要重新生成緩存]]></item>
+				<item id="variable"><![CDATA[cache_forumlist]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[600]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[主題列表緩存有效期(秒)]]></item>
+				<item id="description"><![CDATA[設置主題列表緩存更新的時間, 0 為關閉, 建議設置為7200 , 更改參數之後要重新生成緩存]]></item>
+				<item id="variable"><![CDATA[cache_topiclist]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[3600]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[門戶列表緩存有效期(秒)]]></item>
+				<item id="description"><![CDATA[設置門戶列表緩存更新的時間, 0 為關閉, 建議設置為600 , 更改參數之後要重新生成緩存]]></item>
+				<item id="variable"><![CDATA[cache_newslist]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[600]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[緩存有效的用戶組]]></item>
+				<item id="description"><![CDATA[緩存只對設置的用戶有效，請注意當空選中時，代表全不選]]></item>
+				<item id="variable"><![CDATA[cache_usergroup]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[9]]></item>
+					<item id="1"><![CDATA[10]]></item>
+					<item id="2"><![CDATA[11]]></item>
+					<item id="3"><![CDATA[12]]></item>
+					<item id="4"><![CDATA[13]]></item>
+					<item id="5"><![CDATA[14]]></item>
+					<item id="6"><![CDATA[15]]></item>
+					<item id="7"><![CDATA[20]]></item>
+					<item id="8"><![CDATA[21]]></item>
+					<item id="9"><![CDATA[22]]></item>
+					<item id="10"><![CDATA[16]]></item>
+					<item id="11"><![CDATA[17]]></item>
+					<item id="12"><![CDATA[18]]></item>
+					<item id="13"><![CDATA[19]]></item>
+					<item id="14"><![CDATA[1]]></item>
+					<item id="15"><![CDATA[2]]></item>
+					<item id="16"><![CDATA[3]]></item>
+					<item id="17"><![CDATA[4]]></item>
+					<item id="18"><![CDATA[5]]></item>
+					<item id="19"><![CDATA[6]]></item>
+					<item id="20"><![CDATA[7]]></item>
+					<item id="21"><![CDATA[8]]></item>
+				</item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[緩存定時刪除周期(天)]]></item>
+				<item id="description"><![CDATA[設置緩存定時刪除周期(天), 0 為關閉]]></item>
+				<item id="variable"><![CDATA[cache_clean_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[消息通知請求周期(秒)]]></item>
+				<item id="description"><![CDATA[客戶端收到消息通知的間隔時間, 建議設置120, 此值過小會增加服務器的壓力, 請按照服務器的實際情況設置]]></item>
+				<item id="variable"><![CDATA[message_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[120]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[私信聊天通知間隔(秒)]]></item>
+				<item id="description"><![CDATA[客戶端在聊天頁面時收到消息通知的間隔時間, 建議設置20, 此值過小會增加服務器的壓力, 請按照服務器的實際情況設置]]></item>
+				<item id="variable"><![CDATA[message_pm_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[20]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[私信發送語音限制(秒)]]></item>
+				<item id="description"><![CDATA[設置客戶端私信聊天時發送語音的長度限制,-1為不能發送,0為無限制]]></item>
+				<item id="variable"><![CDATA[message_pm_audio_limit]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[60]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[是否生成縮略圖]]></item>
+				<item id="description"><![CDATA[選擇生成縮略圖, 會給服務器造成一定的壓力,
+不生成縮略圖, 則會給用戶造成帶寬壓力, 以及配置比較差的手機客戶端閃退會比較頻繁]]></item>
+				<item id="variable"><![CDATA[image_isthumb]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[21]]></item>
+				<item id="title"><![CDATA[縮略圖自動生成間隔(秒)]]></item>
+				<item id="description"><![CDATA[自動生成縮略圖的時間間隔; 
+0為關閉,即根據縮略圖開關,當客戶端刷新列表時,實時生成縮略圖;
+建議設置為60。當此值大于0時,將會自動把縮略圖任務放在後台,按照此間隔生成縮略圖(每次的任務個數由配置設定);
+由于這任務對服務器端的壓力很大！ 請按照服務器的實際情況配置]]></item>
+				<item id="variable"><![CDATA[image_thumb_make_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[120]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[22]]></item>
+				<item id="title"><![CDATA[縮略圖後台每次任務數]]></item>
+				<item id="description"><![CDATA[縮略圖每一次間隔自動生成時的裁圖個數]]></item>
+				<item id="variable"><![CDATA[image_thumb_task_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[23]]></item>
+				<item id="title"><![CDATA[縮略圖後台最大任務數]]></item>
+				<item id="description"><![CDATA[添加到縮略圖後台生成任務中的最大任務數,0為無限制]]></item>
+				<item id="variable"><![CDATA[image_thumb_task_max_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[50]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[25]]></item>
+				<item id="title"><![CDATA[生成的縮略大圖最短邊長度]]></item>
+				<item id="description"><![CDATA[建議設置為640]]></item>
+				<item id="variable"><![CDATA[image_thumb_big_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[640]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[26]]></item>
+				<item id="title"><![CDATA[生成的縮略小圖最短邊長度]]></item>
+				<item id="description"><![CDATA[建議設置為380]]></item>
+				<item id="variable"><![CDATA[image_thumb_small_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[380]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[27]]></item>
+				<item id="title"><![CDATA[縮略圖定時刪除周期(天)]]></item>
+				<item id="description"><![CDATA[設置縮略圖定時刪除周期(天), 0 為關閉]]></item>
+				<item id="variable"><![CDATA[image_thumb_clean_period]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="19">
+				<item id="displayorder"><![CDATA[28]]></item>
+				<item id="title"><![CDATA[是否啟用dz的縮略圖]]></item>
+				<item id="description"><![CDATA[當啟用此選項時,就會調用dz自己的縮略圖,減少服務器的壓力,只是縮略圖的大小不再受上面的配置控制]]></item>
+				<item id="variable"><![CDATA[image_thumb_allow_discuz]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="20">
+				<item id="displayorder"><![CDATA[29]]></item>
+				<item id="title"><![CDATA[是否允許手機客戶端注冊]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobile_allow_register]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="21">
+				<item id="displayorder"><![CDATA[30]]></item>
+				<item id="title"><![CDATA[客戶端注冊網址]]></item>
+				<item id="description"><![CDATA[設置手機客戶端注冊網址,該值不為空時,客戶端將采用此url(請以http://開頭)來注冊,如果想用客戶端注冊,請設為空]]></item>
+				<item id="variable"><![CDATA[mobile_register_url]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="22">
+				<item id="displayorder"><![CDATA[31]]></item>
+				<item id="title"><![CDATA[是否允許qq登陸]]></item>
+				<item id="description"><![CDATA[設置變更之後，重新啟動應用才會有效]]></item>
+				<item id="variable"><![CDATA[mobile_allow_qqlogin]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="23">
+				<item id="displayorder"><![CDATA[32]]></item>
+				<item id="title"><![CDATA[是否開啟客戶端簽到]]></item>
+				<item id="description"><![CDATA[設置是否開啟客戶端的簽到功能，設置變更之後，重新啟動客戶端才會有效]]></item>
+				<item id="variable"><![CDATA[mobile_allow_sign]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="24">
+				<item id="displayorder"><![CDATA[33]]></item>
+				<item id="title"><![CDATA[簽到發帖文字]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobile_sign_text]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[哎...今天夠累的，來自客戶端的簽到]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="25">
+				<item id="displayorder"><![CDATA[34]]></item>
+				<item id="title"><![CDATA[發帖簽名(主題列表頁)]]></item>
+				<item id="description"><![CDATA[請按照如下格式填寫
+[title_xxx]發帖簽名html代碼[/title_xxx]
+注意:
+1. xxx可為all,android,apple
+2.當存在title_all時,所有平台都會應用該簽名忽略其他設置]]></item>
+				<item id="variable"><![CDATA[mobile_sign_thread]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_all]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="來自手機客戶端" align="absmiddle">[/title_all]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="26">
+				<item id="displayorder"><![CDATA[35]]></item>
+				<item id="title"><![CDATA[發帖簽名位置(帖子內容頁)]]></item>
+				<item id="description"><![CDATA[設置在帖子內容頁的發帖簽名位置]]></item>
+				<item id="variable"><![CDATA[mobile_sign_position]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[postbottom]]></item>
+				<item id="extra"><![CDATA[postheader=帖子頂部
+posttop=帖子內容頂部
+postbottom=帖子內容底部
+postfooter=帖子底部
+postsightmlafter=個人簽名底部
+0=無]]></item>
+			</item>
+			<item id="27">
+				<item id="displayorder"><![CDATA[36]]></item>
+				<item id="title"><![CDATA[發帖簽名(帖子內容頁)]]></item>
+				<item id="description"><![CDATA[請參照 發帖簽名(主題列表頁) 設置項說明]]></item>
+				<item id="variable"><![CDATA[mobile_sign_post]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_android]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="來自安卓客戶端" align="absmiddle"><a href="mobcent/download/down.php" target="_blank" style="color:#D94600">來自安卓客戶端</a>[/title_android]
+[title_apple]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="來自隻果客戶端" align="absmiddle"><a href="mobcent/download/down.php" target="_blank" style="color:#D94600">來自隻果客戶端</a>[/title_apple]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="28">
+				<item id="displayorder"><![CDATA[37]]></item>
+				<item id="title"><![CDATA[發帖簽名(帖子內容頁頭像)]]></item>
+				<item id="description"><![CDATA[請參照 發帖簽名(主題列表頁) 設置項說明]]></item>
+				<item id="variable"><![CDATA[mobile_sign_avatar]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_android]<div><img style="margin: -145px 0 0 100px;" src="mobcent/app/web/images/mobile/mobile-android.png" /></div>[/title_android]
+[title_apple]<div><img style="margin: -145px 0 0 100px;" src="mobcent/app/web/images/mobile/mobile-ios.png" /></div>[/title_apple]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="29">
+				<item id="displayorder"><![CDATA[41]]></item>
+				<item id="title"><![CDATA[發帖簽名(主題列表頁-wap)]]></item>
+				<item id="description"><![CDATA[請參照 發帖簽名(主題列表頁) 設置項說明]]></item>
+				<item id="variable"><![CDATA[mobile_sign_thread_mobile]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_all]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="來自手機客戶端" align="absmiddle">[/title_all]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="30">
+				<item id="displayorder"><![CDATA[42]]></item>
+				<item id="title"><![CDATA[簽名位置(帖子內容頁-wap)]]></item>
+				<item id="description"><![CDATA[設置在帖子內容頁(手機版)的發帖簽名位置]]></item>
+				<item id="variable"><![CDATA[mobile_sign_position_mobile]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[postbottom]]></item>
+				<item id="extra"><![CDATA[posttop=帖子內容頂部
+postbottom=帖子內容底部
+0=無]]></item>
+			</item>
+			<item id="31">
+				<item id="displayorder"><![CDATA[43]]></item>
+				<item id="title"><![CDATA[發帖簽名(帖子內容頁-wap)]]></item>
+				<item id="description"><![CDATA[請參照 發帖簽名(主題列表頁) 設置項說明]]></item>
+				<item id="variable"><![CDATA[mobile_sign_post_mobile]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[[title_android]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="來自安卓客戶端" align="absmiddle"><a href="mobcent/download/down.php" target="_blank" style="color:#D94600">來自安卓客戶端</a>[/title_android]
+[title_apple]<img src="mobcent/app/web/images/mobile/mobile-attach-1.png" alt="來自隻果客戶端" align="absmiddle"><a href="mobcent/download/down.php" target="_blank" style="color:#D94600">來自隻果客戶端</a>[/title_apple]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="32">
+				<item id="displayorder"><![CDATA[45]]></item>
+				<item id="title"><![CDATA[是否開啟簽到發帖簽名]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobile_allow_sign_with_sign]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="33">
+				<item id="displayorder"><![CDATA[46]]></item>
+				<item id="title"><![CDATA[是否在客戶端顯示發帖簽名]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[mobile_allow_app_sign]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="34">
+				<item id="displayorder"><![CDATA[47]]></item>
+				<item id="title"><![CDATA[是否開啟原手機頁跳轉]]></item>
+				<item id="description"><![CDATA[設置論壇手機版默認下載地址跳轉,如果開啟,原論壇的默認手機版下載地址將跳轉到由安米網生成的手機客戶端下載地址]]></item>
+				<item id="variable"><![CDATA[mobile_allow_download_redirect]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="35">
+				<item id="displayorder"><![CDATA[60]]></item>
+				<item id="title"><![CDATA[是否顯示今日發帖數]]></item>
+				<item id="description"><![CDATA[設置變更之後，重新啟動應用才會有效]]></item>
+				<item id="variable"><![CDATA[forum_show_today_post]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="36">
+				<item id="displayorder"><![CDATA[61]]></item>
+				<item id="title"><![CDATA[論壇主題列表的摘要長度]]></item>
+				<item id="description"><![CDATA[設置範圍為 0-255,如果開啟了緩存,請進行更新緩存操作]]></item>
+				<item id="variable"><![CDATA[forum_summary_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[40]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="37">
+				<item id="displayorder"><![CDATA[62]]></item>
+				<item id="title"><![CDATA[門戶列表摘要長度]]></item>
+				<item id="description"><![CDATA[設置範圍為 0-255,如果開啟了緩存,請進行更新緩存操作]]></item>
+				<item id="variable"><![CDATA[portal_summary_length]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[40]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="38">
+				<item id="displayorder"><![CDATA[63]]></item>
+				<item id="title"><![CDATA[論壇主題列表顯示圖片]]></item>
+				<item id="description"><![CDATA[如果開啟了緩存,請進行更新緩存操作]]></item>
+				<item id="variable"><![CDATA[forum_allow_image]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="39">
+				<item id="displayorder"><![CDATA[64]]></item>
+				<item id="title"><![CDATA[門戶列表顯示圖片]]></item>
+				<item id="description"><![CDATA[如果開啟了緩存,請進行更新緩存操作]]></item>
+				<item id="variable"><![CDATA[portal_allow_image]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="40">
+				<item id="displayorder"><![CDATA[65]]></item>
+				<item id="title"><![CDATA[開啟客戶端主題評價]]></item>
+				<item id="description"><![CDATA[對應客戶端的贊功能]]></item>
+				<item id="variable"><![CDATA[forum_allow_topic_recommend]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="41">
+				<item id="displayorder"><![CDATA[66]]></item>
+				<item id="title"><![CDATA[開啟客戶端帖子評價]]></item>
+				<item id="description"><![CDATA[對應客戶端的贊功能]]></item>
+				<item id="variable"><![CDATA[forum_allow_post_recommend]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="42">
+				<item id="displayorder"><![CDATA[67]]></item>
+				<item id="title"><![CDATA[開啟客戶端主題評分]]></item>
+				<item id="description"><![CDATA[對應客戶端的評分功能]]></item>
+				<item id="variable"><![CDATA[forum_allow_topic_rate]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="43">
+				<item id="displayorder"><![CDATA[70]]></item>
+				<item id="title"><![CDATA[公告顯示欄目]]></item>
+				<item id="description"><![CDATA[設置公告可以在論壇哪些欄目顯示, 空代表全不選
+按住 CTRL 多選]]></item>
+				<item id="variable"><![CDATA[forum_announcement_show]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[0=空
+1=全部
+2=新帖
+3=精華
+4=置頂]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+					<item id="1"><![CDATA[2]]></item>
+					<item id="2"><![CDATA[3]]></item>
+					<item id="3"><![CDATA[4]]></item>
+				</item>
+			</item>
+			<item id="44">
+				<item id="displayorder"><![CDATA[71]]></item>
+				<item id="title"><![CDATA[主題分類類別前綴]]></item>
+				<item id="description"><![CDATA[客戶端主題列表是否顯示主題分類前綴]]></item>
+				<item id="variable"><![CDATA[forum_allow_topictype_prefix]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="45">
+				<item id="displayorder"><![CDATA[72]]></item>
+				<item id="title"><![CDATA[分類信息類別前綴]]></item>
+				<item id="description"><![CDATA[客戶端主題列表是否顯示分類信息前綴]]></item>
+				<item id="variable"><![CDATA[forum_allow_topicsort_prefix]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="46">
+				<item id="displayorder"><![CDATA[73]]></item>
+				<item id="title"><![CDATA[開啟上傳附件插件]]></item>
+				<item id="description"><![CDATA[如果你用了阿里雲等上傳附件的插件,當關閉此選項時上傳圖片失敗時,請嘗試打開此選項;
+注意,此選項只適用于用了上述插件的用戶!!!]]></item>
+				<item id="variable"><![CDATA[forum_allow_upload_with_plugin]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="47">
+				<item id="displayorder"><![CDATA[74]]></item>
+				<item id="title"><![CDATA[帖子詳情列表默認排序]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[forum_postlist_orderby]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0=正序瀏覽 
+1=倒序瀏覽]]></item>
+			</item>
+			<item id="48">
+				<item id="displayorder"><![CDATA[75]]></item>
+				<item id="title"><![CDATA[帖子發送語音的限制(秒)]]></item>
+				<item id="description"><![CDATA[設置客戶端發帖時發送語音的長度限制,-1為不能發送,0為無限制]]></item>
+				<item id="variable"><![CDATA[forum_audio_limit]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[60]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="49">
+				<item id="displayorder"><![CDATA[76]]></item>
+				<item id="title"><![CDATA[是否能發送特殊字符(gbk)]]></item>
+				<item id="description"><![CDATA[如果discuz網站采用的是gbk編碼,客戶端目前是發送不了非中文等特殊字符的,想能發送就打開該設置
+注意:此配置項僅針對gbk編碼的站點,如無特殊需求,請不要打開!]]></item>
+				<item id="variable"><![CDATA[forum_allow_gbk_special]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="50">
+				<item id="displayorder"><![CDATA[80]]></item>
+				<item id="title"><![CDATA[能在客戶端顯示的版塊]]></item>
+				<item id="description"><![CDATA[如果開啟了緩存,請在修改過後重新生成緩存, 
+當有子版塊的時候也請根據需要進行選擇,沒有選擇的版塊將沒有發帖等權限,
+請注意當空選中時，代表全不選]]></item>
+				<item id="variable"><![CDATA[forum_show]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[45]]></item>
+					<item id="1"><![CDATA[36]]></item>
+					<item id="2"><![CDATA[37]]></item>
+					<item id="3"><![CDATA[2]]></item>
+					<item id="4"><![CDATA[48]]></item>
+					<item id="5"><![CDATA[47]]></item>
+					<item id="6"><![CDATA[39]]></item>
+					<item id="7"><![CDATA[49]]></item>
+					<item id="8"><![CDATA[50]]></item>
+					<item id="9"><![CDATA[51]]></item>
+					<item id="10"><![CDATA[46]]></item>
+					<item id="11"><![CDATA[41]]></item>
+					<item id="12"><![CDATA[43]]></item>
+				</item>
+			</item>
+			<item id="51">
+				<item id="displayorder"><![CDATA[81]]></item>
+				<item id="title"><![CDATA[能顯示版塊圖標的版塊]]></item>
+				<item id="description"><![CDATA[如果開啟了緩存,請在修改過後重新生成緩存，請注意當空選中時，代表全不選]]></item>
+				<item id="variable"><![CDATA[forum_show_image]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[45]]></item>
+					<item id="1"><![CDATA[36]]></item>
+					<item id="2"><![CDATA[37]]></item>
+					<item id="3"><![CDATA[2]]></item>
+					<item id="4"><![CDATA[48]]></item>
+					<item id="5"><![CDATA[47]]></item>
+					<item id="6"><![CDATA[39]]></item>
+					<item id="7"><![CDATA[49]]></item>
+					<item id="8"><![CDATA[50]]></item>
+					<item id="9"><![CDATA[51]]></item>
+					<item id="10"><![CDATA[46]]></item>
+					<item id="11"><![CDATA[41]]></item>
+					<item id="12"><![CDATA[43]]></item>
+				</item>
+			</item>
+			<item id="52">
+				<item id="displayorder"><![CDATA[82]]></item>
+				<item id="title"><![CDATA[能顯示在圖庫中的版塊]]></item>
+				<item id="description"><![CDATA[請注意當空選中時，代表全不選]]></item>
+				<item id="variable"><![CDATA[forum_photo_show]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[45]]></item>
+					<item id="1"><![CDATA[36]]></item>
+					<item id="2"><![CDATA[37]]></item>
+					<item id="3"><![CDATA[2]]></item>
+					<item id="4"><![CDATA[48]]></item>
+					<item id="5"><![CDATA[47]]></item>
+					<item id="6"><![CDATA[39]]></item>
+					<item id="7"><![CDATA[49]]></item>
+					<item id="8"><![CDATA[50]]></item>
+					<item id="9"><![CDATA[51]]></item>
+					<item id="10"><![CDATA[46]]></item>
+					<item id="11"><![CDATA[41]]></item>
+					<item id="12"><![CDATA[43]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="mobcent_tips_updatecache"><![CDATA[
+        <li>當客戶端需要加快訪問速度, 或者數據需要更新時, 您可以使用本功\能重新生成緩存。更新緩存的時候，可能讓服務器負載升高，請盡量避開會員訪問的高峰時間</li>
+        <li>由于生成時給服務器的壓力會特別大，生成縮略圖的時候請一定要設置好數量(0為不更新), 還要選擇好時間</li>
+    ]]></item>
+				<item id="mobcent_clean_datacache"><![CDATA[清理數據緩存]]></item>
+				<item id="mobcent_update_datacache"><![CDATA[更新數據緩存]]></item>
+				<item id="mobcent_clean_thumbcache"><![CDATA[清理縮略圖緩存]]></item>
+				<item id="mobcent_thumb_task_length_setting"><![CDATA[設置縮略圖任務數]]></item>
+				<item id="mobcent_thumb_task_length"><![CDATA[當前縮略圖後台任務數]]></item>
+				<item id="mobcent_tips_portal_module_source"><![CDATA[
+        <li>版塊id與文章欄目id不能同時存在, 只能二者選一</li>
+        <li>模塊id為指的通過discuz頁面diy產生的模塊id</li>
+        <li>當 文章id/帖子id/模塊id 與版塊id/文章欄目id 都有存在時, 文章id/帖子id/模塊id 會類似置頂的效果，排在 版塊id/文章欄目id 數據前面</li>
+    ]]></item>
+				<item id="mobcent_tips_portal_module_source_add"><![CDATA[(可添加多個id,用`,`隔開)]]></item>
+				<item id="mobcent_tips_extcredit_base"><![CDATA[獎勵基數, 客戶端會在本來獎勵的基礎上乘以該數字, 請注意，你只能輸入數字, 並且1代表0.01, 100代表1, 即該數會在設置的基礎上乘以0.01]]></item>
+				<item id="mobcent_error_not_installed"><![CDATA[請先上傳好安米網dz轉換接口包!!!]]></item>
+				<item id="mobcent_error_portal_not_allow"><![CDATA[請先打開啟用門戶模塊配置項!!!]]></item>
+				<item id="mobcent_error_portal_module_param"><![CDATA[此項僅適用于在模塊內容設置里的內容來源類別里面設置了版塊id或者文章欄目id]]></item>
+				<item id="mobcent_error_time_invalid"><![CDATA[抱歉，您輸入的時間格式不正確!]]></item>
+				<item id="mobcent_forum_style_setting"><![CDATA[版塊顯示樣式設置]]></item>
+				<item id="mobcent_forum_column_style_col1"><![CDATA[單列顯示]]></item>
+				<item id="mobcent_forum_column_style_col2"><![CDATA[雙列顯示]]></item>
+				<item id="mobcent_forum_edit_succeed"><![CDATA[論壇更新成功\]]></item>
+				<item id="mobcent_portal_edit_succeed"><![CDATA[門戶更新成功\]]></item>
+				<item id="mobcent_seo_edit_succeed"><![CDATA[SEO更新成功\]]></item>
+				<item id="mobcent_operation_sign_extcredit_base"><![CDATA[簽到獎勵基數設置]]></item>
+				<item id="mobcent_operation_forum_extcredit_base"><![CDATA[發回帖獎勵基數設置]]></item>
+				<item id="mobcent_operation_edit_succeed"><![CDATA[運營更新成功\]]></item>
+				<item id="mobcent_operation_setting"><![CDATA[運營設置]]></item>
+				<item id="mobcent_portal_module_setting"><![CDATA[門戶模塊設置]]></item>
+				<item id="mobcent_portal_module_name"><![CDATA[模塊名稱(必填)]]></item>
+				<item id="mobcent_portal_module_source"><![CDATA[內容來源]]></item>
+				<item id="mobcent_portal_module_slider"><![CDATA[圖片來源]]></item>
+				<item id="mobcent_portal_module_source_edit"><![CDATA[模塊內容設置]]></item>
+				<item id="mobcent_portal_module_slider_edit"><![CDATA[幻燈片設置]]></item>
+				<item id="mobcent_portal_module_param_edit"><![CDATA[模塊參數設置]]></item>
+				<item id="mobcent_portal_module_param_topic_digest"><![CDATA[精華主題選擇,精華 I,精華 II,精華 III,普通主題]]></item>
+				<item id="mobcent_portal_module_param_topic_stick"><![CDATA[置頂主題選擇,置頂 I,置頂 II,置頂 III,普通主題]]></item>
+				<item id="mobcent_portal_module_param_topic_special"><![CDATA[特殊主題選擇,投票主題,商品主題,懸賞主題,活動主題,辯論主題,普通主題]]></item>
+				<item id="mobcent_portal_module_param_topic_picrequired"><![CDATA[必須含圖片附件]]></item>
+				<item id="mobcent_portal_module_param_topic_orderby"><![CDATA[主題排序方式,按最後回復時間倒序排序,按發布時間倒序排序,按回復數倒序排序,按瀏覽次數倒序排序,按熱度倒序排序,按主題評價倒序排序]]></item>
+				<item id="mobcent_portal_module_param_topic_postdateline"><![CDATA[主題發布時間]]></item>
+				<item id="mobcent_portal_module_param_topic_lastpost"><![CDATA[最後更新時間]]></item>
+				<item id="mobcent_portal_module_param_time"><![CDATA[不限制,1小時內,24小時內,7天內,1個月內]]></item>
+				<item id="mobcent_portal_module_param_style"><![CDATA[顯示樣式]]></item>
+				<item id="mobcent_portal_module_param_topic_style"><![CDATA[發帖時間,最後回復時間]]></item>
+				<item id="mobcent_portal_module_param_article_picrequired"><![CDATA[過濾無封面文章]]></item>
+				<item id="mobcent_portal_module_param_article_starttime"><![CDATA[發布時間-起始]]></item>
+				<item id="mobcent_portal_module_param_article_endtime"><![CDATA[發布時間-結束]]></item>
+				<item id="mobcent_portal_module_param_article_ordby"><![CDATA[文章排序方式,按發布時間倒序,按查看數倒序,按評論數倒序]]></item>
+				<item id="mobcent_portal_module_param_article_publishdateline"><![CDATA[文章發布時間]]></item>
+				<item id="mobcent_portal_module_source_type"><![CDATA[內容來源類別]]></item>
+				<item id="mobcent_portal_module_source_type_aid"><![CDATA[文章id]]></item>
+				<item id="mobcent_portal_module_source_type_tid"><![CDATA[帖子id]]></item>
+				<item id="mobcent_portal_module_source_type_fid"><![CDATA[版塊id]]></item>
+				<item id="mobcent_portal_module_source_type_catid"><![CDATA[文章欄目id]]></item>
+				<item id="mobcent_portal_module_source_type_bid"><![CDATA[DIY模塊id]]></item>
+				<item id="mobcent_portal_module_slider_type"><![CDATA[圖片來源類別]]></item>
+				<item id="mobcent_portal_module_slider_title"><![CDATA[幻燈片標題]]></item>
+				<item id="mobcent_infomation_appbyme"><![CDATA[安米mobcent.zip轉換接口包信息]]></item>
+				<item id="mobcent_version_user"><![CDATA[當前使用的轉換接口包版本]]></item>
+				<item id="mobcent_version_appbyme"><![CDATA[安米網最新轉換接口包版本]]></item>
+				<item id="appbyme_seo_title_download"><![CDATA[下載頁面]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="appbyme_qrcode_install"><![CDATA[掃描二維碼安裝]]></item>
+				<item id="appbyme_android_install"><![CDATA[安卓版下載]]></item>
+				<item id="appbyme_apple_install"><![CDATA[iPhone版下載]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+		<item id="upgradefile"><![CDATA[upgrade.php]]></item>
+		<item id="checkfile"><![CDATA[check.php]]></item>
+	</item>
+</root>

@@ -1,0 +1,38 @@
+
+<!--
+	ID: adkiller_7ree
+	[www.7ree.com] (C)2007-2013 7ree.com.
+	This is NOT a freeware, use is subject to license terms
+	Update: 18:57 2013/5/21
+	Agreement: http://addon.discuz.com/?@7.developer.doc/agreement_7ree_html
+	More Plugins: http://addon.discuz.com/?@7ree
+-->
+
+{template common/header}
+
+<div class="float">
+<div class="floatbox floatbox1" style="padding:5px;">
+	<h3 class="float_ctrl">
+		<em>{lang adkiller_7ree:htm_lang_check_7ree}{lang adkiller_7ree:htm_lang_allpost_7ree}</em>
+
+	</h3>
+	
+<form id="adkiller_7ree_form" name="adkiller_7ree_form" method="post" action="plugin.php?id=adkiller_7ree:adkiller_action_7ree">
+<input type="hidden" name="formhash" value="{FORMHASH}">
+	
+  <br />
+  {lang adkiller_7ree:htm_lang_care_7ree}<br />
+  <font color="red">{lang adkiller_7ree:htm_lang_warning_7ree}</font>
+  <br /><br />
+  <input type="hidden" name="adkillconfirm" value="1" />
+  <input type="hidden" name="uid_7ree" value="$_GET['uid_7ree']" />
+  <input type="hidden" name="fid_7ree" value="$_GET['fid_7ree']" />
+  <input type="submit" name="submit_7ree" value="{lang adkiller_7ree:htm_lang_ok_7ree}" class="pn pnc vm"/>
+  <input type="reset"  name="reset_7ree" value="{lang adkiller_7ree:htm_lang_cancel_7ree}" onclick="hideWindow('adkiller_7ree')" class="pn vm"/> 
+
+</form>
+
+	
+</div> 
+</div>
+{template common/footer}

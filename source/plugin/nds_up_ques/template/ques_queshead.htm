@@ -1,0 +1,124 @@
+ <div class="main">
+		<div class="content">
+		<div class="datalist">	        
+			<div class="itemtitle s_clear"><h1>{lang nds_up_ques:admin4}</h1></div>
+	         <table width="100%" cellspacing="0" cellpadding="0" class="datatable">
+
+			<thead class="category">
+		      <tr>
+  	            <td width="10%"><b>{lang nds_up_ques:object}</b></td>
+		      	<td width="70%"><b>{lang nds_up_ques:item}</b></td>
+		      	<td width="20%"><b>{lang nds_up_ques:help}</b></td>
+		      </tr>
+		  </thead>
+		  
+		  	  <tr>
+		      	<td>{lang nds_up_ques:subject}</td>
+		      	<td><input type="text" name="subject" size="75" value="$questopic['subject']"></td>
+		      	<td>{lang nds_up_ques:help1}</td>
+		      </tr>
+              <tr>
+		      	<td>{lang nds_up_ques:quesclass}</td>
+		      	<td>
+                   <select name="quesclass">
+                     <!--{loop $ndsqclass $key $var}--> 
+					<option  <!--{if $questopic['qclass'] == $key }--> selected="selected" <!--{/if}--> value="{$key}">$var</option>
+                    <!--{/loop}-->
+				 </select>
+                
+                </td>
+		      	<td>{lang nds_up_ques:help0}</td>
+		      </tr>
+              
+		  	  <tr>
+		      	<td height="28">{lang nds_up_ques:person}</td>
+		      	<td><input type="text" name="person" size="8"  <!--{if $action == "edit" }-->value="$questopic['person']"<!--{else}-->value="1000"<!--{/if}-->>
+                <span  style="margin-left:40px">{lang nds_up_ques:exp}&nbsp;&nbsp;&nbsp;<input type="text" id="exptime" name="exp" size="17"  <!--{if $action == "edit" }-->value="{$questopic['exp']}"<!--{else}-->value=""<!--{/if}-->></span>
+                </td>
+		      	<td>{lang nds_up_ques:help2}{lang nds_up_ques:help5}</td>
+		      </tr>	
+               <!--{if $sysmode  == 2}-->	   
+		  		<tr>
+		      	<td height="28">{lang nds_up_ques:nds_settimeleft}</td>
+		      	<td><input type="text" name="timeleft" id="timeleft" size="8"  <!--{if $action == "edit" }-->value="{$questopic['timeleft']}"<!--{else}-->value="0"<!--{/if}-->>
+                <span  style="margin-left:40px">{lang nds_up_ques:nds_xiaofei}&nbsp;&nbsp;&nbsp;<input type="text" name="expenses" id="expenses" size="8"  <!--{if $action == "edit" }-->value="{$questopic['expenses']}"<!--{else}-->value="0"<!--{/if}-->></span>
+                </td>
+		      	<td>{lang nds_up_ques:help9}</td>
+		      </tr>	
+              <!--{/if}-->	
+                       <!--{if $ndscopyauthor }-->	 
+              <tr>
+		      	<td height="28">{lang nds_up_ques:copyauthor}</td>
+		      	<td><input type="text" name="copyauthor" size="8" value="$questopic['copyauthor']"></td>
+		      	<td></td>
+		      </tr>	
+               <!--{/if}-->	
+               <tr>
+		      	<td height="28">{lang nds_up_ques:tid}</td>
+		      	<td><input type="text" name="tid" size="8" <!--{if $action == "edit" }-->value="$questopic['tid']"<!--{else}-->value="0"<!--{/if}-->></td>
+		      	<td>{lang nds_up_ques:help7}</td>
+		      </tr>
+               <!--{if $sysmode  == 1 }-->  
+               <tr>
+		      	<td height="28">{lang nds_up_ques:nds_posturl}</td>
+		      	<td><input type="text" name="posturl" size="75" value="$questopic['posturl']"></td>
+		      	<td>{lang nds_up_ques:help8}</td>
+		      </tr>
+              <!--{/if}-->					         
+		      <tr>
+		      	<td>{lang nds_up_ques:message}</td>
+		      	<td>
+                	<div class="tedt" style="width: 400px;" >
+                		<div class="bar">
+				 		{eval $seditor = array('is', array('bold', 'color', 'img', 'link', 'quote', 'code', 'smilies'));}
+							{subtemplate common/seditor}
+						</div>
+						<div class="area">
+							<textarea name="message" id="ismessage" rows="5" class="pt" cols="75">$questopic['message']</textarea>
+						</div>
+					</div>
+                </td>
+		      	<td>{lang nds_up_ques:help3}</td>
+		      </tr>
+          <!--{if $sysmode  == 2 }-->   
+               <tr>
+		      	<td height="28">{lang nds_up_ques:nds_stjlytz}</td>
+                <td>{lang nds_up_ques:nds_sttjh}<input type="checkbox" name="credit" id="credit" <!--{if $questopic['credit']}--> checked="checked" <!--{/if}-->><label>{lang nds_up_ques:nds_stjljf}</label>&nbsp;&nbsp;
+           <input type="radio" name="nwds" id="nwds" value="1" <!--{if $action == "edit" }--><!--{if $questopic['nwds']==1}--> checked="checked" <!--{/if}--><!--{else}--> checked="checked" <!--{/if}-->  /><label>{lang nds_up_ques:nds_stfhlb}</label>&nbsp;&nbsp;
+           <input type="radio" name="nwds" id="nwds" value="2" <!--{if $questopic['nwds']==2}--> checked="checked" <!--{/if}--> /><label>{lang nds_up_ques:nds_stfhxx}</label>&nbsp;&nbsp;
+           <input type="radio" name="nwds" id="nwds" value="3" <!--{if $questopic['nwds']==3}--> checked="checked" <!--{/if}--> /><label>{lang nds_up_ques:nds_sttzym}</label>&nbsp;&nbsp;
+           <input type="radio" name="nwds" id="nwds" value="4" <!--{if $questopic['nwds']==4}--> checked="checked" <!--{/if}--> /><label>{lang nds_up_ques:nds_sttzdz}</label>
+         	<td>{lang nds_up_ques:help10}</td>
+		      </tr>
+             <tr>	              
+               	<td>{lang nds_up_ques:nds_strategyltd}</td>
+		      	<td>{lang nds_up_ques:nds_strategygs}<br />  
+                <textarea name="strategy" wrap="off" id="strategy" rows="5" cols="75">$questopic['strategy']</textarea></td>
+		      	<td>{lang nds_up_ques:help11}</td> 
+              </tr>
+              <!--{/if}-->              
+		  		<tr>
+		      	<td>{lang nds_up_ques:others}</td>
+		      	<td>
+             <input type="checkbox" name="isguest" id="isguest" <!--{if $questopic['isguest']}--> checked="checked" <!--{/if}-->>&nbsp;&nbsp;<label>{lang nds_up_ques:nds_guest}</label><br />   
+           <!--{if $sysmode  == 1}-->  
+                <input type="checkbox" name="credit" id="credit" onclick="doShow('credit','addcreditnum')" <!--{if $questopic['credit']}-->checked="checked"<!--{/if}--> <!--{if !in_array($_G['groupid'] ,$allowpostcredit)}-->disabled<!--{/if}-->>&nbsp;&nbsp;<!--{if !in_array($_G['groupid'] ,$allowpostcredit)}--><label><span disabled>{lang nds_up_ques:addcredit}</span>&nbsp;&nbsp;</label><!--{else}--><label>{lang nds_up_ques:addcredit}&nbsp;&nbsp;</label><!--{/if}-->
+                 &nbsp;&nbsp;
+              <span id="addcreditnum" <!--{if $questopic['credit']}--> style="display:inline"<!--{else}-->style="display:none" <!--{/if}-->> <label>{lang nds_up_ques:addcreditnum}</label> <input type="text" name="qreward" id="qreward" size="8" value="$questopic['qreward']">
+                </span>                  <br />
+         <!--{/if}-->  
+		      		<input type="checkbox" name="postmust" id="postmust" <!--{if $action == "edit" }--><!--{if $questopic['postmust']}--> checked="checked" <!--{/if}--><!--{else}--> checked="checked" <!--{/if}-->>&nbsp;&nbsp;<label>{lang nds_up_ques:see}&nbsp;&nbsp;</label><br />
+		      		<input type="checkbox" name="secret" id="secret" <!--{if $action == "edit" }--><!--{if $questopic['secret']}--> checked="checked" <!--{/if}--><!--{else}--><!--{if $ndssecret}--> checked="checked" <!--{/if}--><!--{/if}-->>&nbsp;&nbsp;<label>{lang nds_up_ques:secret}</label><br />
+                    <input type="checkbox" id="isprivate" name="isprivate" onclick="doShow('isprivate','privatetext')"  <!--{if $action == "edit" }--><!--{if $questopic['isprivate']}-->checked="checked"<!--{/if}--><!--{/if}-->>&nbsp;&nbsp;<label>{lang nds_up_ques:nds_isprivate}</label>&nbsp;&nbsp;<span id="privatetext" <!--{if !$questopic['isprivate']}--> style="display:none" <!--{/if}-->><label>{lang nds_up_ques:nds_usermessage}</label><input type="text" name="isprivatetext" size="60" <!--{if $questopic['isprivatetext'] != "" }-->  value="$questopic['isprivatetext']"<!--{else}-->value="{lang nds_up_ques:nds_privatetext}"<!--{/if}-->></span>        <br />  
+          <input type="checkbox" name="seeanswer" id="seeanswer" <!--{if $questopic['seeanswer']}-->checked="checked"<!--{/if}-->>&nbsp;&nbsp;<label><!--{if $sysmode  == 2}-->{lang nds_up_ques:seeanswer}<!--{else}-->{lang nds_up_ques:nds_nodispty}<!--{/if}--></label> 
+           <br /><input type="checkbox" name="ndsabc" id="ndsabc"   <!--{if $action == "edit" }--><!--{if $questopic['ndsabc']}-->checked<!--{/if}--><!--{else}-->checked="checked"<!--{/if}-->>&nbsp;&nbsp;<label>{lang nds_up_ques:nds_ndsabc}</label>
+         <br /><input type="checkbox" name="ndsflag" id="ndsflag"   <!--{if $action == "edit" }--><!--{if $questopic['ndsflag']}-->checked<!--{/if}--><!--{else}-->checked="checked"<!--{/if}-->>&nbsp;&nbsp;<label>{lang nds_up_ques:nds_flag}</label>
+         <br /><input type="checkbox" name="userrepost" id="userrepost" <!--{if $questopic['userrepost']}-->checked="checked"<!--{/if}--> >&nbsp;&nbsp;<label>{lang nds_up_ques:nds_udelques}</label>  
+         <br /><input type="checkbox" name="ndsright" id="ndsright" <!--{if $action == "edit" }--><!--{if $questopic['ndsright']}-->checked="checked"<!--{/if}--><!--{else}-->checked="checked"<!--{/if}-->>&nbsp;&nbsp;<label>{lang nds_up_ques:nds_dispright}</label> 
+         <br /><input type="checkbox" name="tmtype" id="tmtype"  <!--{if $questopic['tmclass']}-->checked="checked"<!--{/if}-->  onclick="doShow('tmtype','tmtypetextsp')">&nbsp;&nbsp;<label>{lang nds_up_ques:nds_tmtype}</label><span id="tmtypetextsp" <!--{if $questopic['tmclass']}--> style="display:inline"<!--{else}-->style="display:none" <!--{/if}-->>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="tmtypehd" id="tmtypehd"  <!--{if $questopic['tmtypehd']}-->checked="checked"<!--{/if}-->>&nbsp;<label>{lang nds_up_ques:nds_ordfortm}</label><br /><label>{lang nds_up_ques:nds_tmtypeno}</label><input type="text" name="tmtypetext" size="96" <!--{if $questopic['tmtypetext'] != "" }-->value="$questopic['tmtypetext']"<!--{else}-->value="{lang nds_up_ques:nds_tmtypetext}"<!--{/if}-->></span> 
+         </td>
+		      	<td>{lang nds_up_ques:help6}</td>
+		      </tr>		      
+			<tr>
+				<td><!--{if $action == "edit" }--><input type="checkbox" name="chkall" class="checkbox" onclick="NDSCheckAll('delete[]')">{lang nds_up_ques:alldel}<!--{else}--><a id="addqueslink" href="javascript:void(0)" onclick="addRow('quesbody');"><img src="{$imgurl}add.gif" alt="{lang nds_up_ques:addopa}" /> {lang nds_up_ques:add}</a><!--{/if}--></td>
+				<td colspan="2"><!--{if $action == "edit" }-->{lang nds_up_ques:editoldoptions}<!--{else}-->{lang nds_up_ques:options1}<!--{/if}--></td></tr>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2,X2.5]]></item>
+	<item id="Time"><![CDATA[2012-07-16 22:20]]></item>
+	<item id="From"><![CDATA[¤H¤u´¼¯à¹êÅç«Ç (http://www.ailab.org/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[·s¤â³ø¨ì]]></item>
+			<item id="identifier"><![CDATA[nimba_newuser]]></item>
+			<item id="description"><![CDATA[·s¤â³ø¹Dv1.4.1 for Discuz X2.0/X2.5 §@ªÌ ¤gµÛ¤H¹ç¤Ú ¤H¤u´¼¯à¹êÅç«Ç ¥X«~¡]Made By Nimba, Team From AiLab.org ¡^
+¶}ÅP©T©wªO¶ô¡A±j¨î·sª`¥U¥Î¤áµo¥¬·s¤â³ø¹D¶K¡I¡]ª`¡J°t¦X¤ÀÃþ«H®§¥\¯à¡A®ÄªG·|§ó¦n¡^]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[nimba_newuser/]]></item>
+			<item id="copyright"><![CDATA[nimba]]></item>
+			<item id="version"><![CDATA[v1.4.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[readme]]></item>
+					<item id="menu"><![CDATA[¨Ï¥Î»¡©ú]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[newuser]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[¶}±Ò´¡¥ó]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[open]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[¸õÂà¶¡¹j]]></item>
+				<item id="description"><![CDATA[¶ñ¼Æ¦r¡A¥¼³ø¹D¥Î¤á¦b¼u¥X´£¥Ü«á¸õÂà¦Ü·s¤â³ø¹Dª©¶ô]]></item>
+				<item id="variable"><![CDATA[refresh]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[³ø¹Dª©¶ô]]></item>
+				<item id="description"><![CDATA[«ü©wµo¥¬·s¤â³ø¹D¶Kªºª©¶ô]]></item>
+				<item id="variable"><![CDATA[baodao]]></item>
+				<item id="type"><![CDATA[forum]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[¸õÂà¤è¦¡]]></item>
+				<item id="description"><![CDATA[·s¼W°Ñ¼Æ¡A¥i¥H¿ï¾Ü¸õÂà¦Üª©¶ô©«¤l¦CªíÁÙ¬Oª½±µ¸õ¦ÜÃ±¨ìµo¥¬­¶]]></item>
+				<item id="variable"><![CDATA[style]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1=¦Cªí­¶
+2=µo©«­¶]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[´£¥Ü«H®§]]></item>
+				<item id="description"><![CDATA[¥i¦Û©w¸q´£¥Ü«H®§¡A¤ä«ùHTML¥N½X]]></item>
+				<item id="variable"><![CDATA[tip]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[±z­è­èª`¥U¦¨¬°¥»¯¸·|­û¡A¦³«Ü¦hªB¤Í³£¦bÃöª`±z¡A·Q­n¤F¸Ñ±z¡I»°§Ö¥hµo¥¬¤@½g¦Û§Ú¤¶²Ðªº©«¤l§a¡I]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[³ø¨ì¥Î¤á²Õ]]></item>
+				<item id="description"><![CDATA[¿ï¾Ü»Ý­nµo¥¬³ø¨ì©«±o¥Î¤á²Õ¡A½Ð¤Å¿ï¾Ü¡§´å«È¡¨]]></item>
+				<item id="variable"><![CDATA[group]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[10]]></item>
+					<item id="1"><![CDATA[1]]></item>
+					<item id="2"><![CDATA[8]]></item>
+				</item>
+			</item>
+		</item>
+	</item>
+</root>

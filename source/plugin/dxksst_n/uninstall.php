@@ -1,0 +1,11 @@
+<?php
+/**
+ * 		&#2440;Ñs&#19665;Òí&#660;&#660;&#802;
+ * 		½µÑswww.dxksst.com
+ *       QQ:2811931192
+ */
+if(!defined('IN_DISCUZ')) {
+	exit('Access Denied');
+}
+$finish=true;
+?>

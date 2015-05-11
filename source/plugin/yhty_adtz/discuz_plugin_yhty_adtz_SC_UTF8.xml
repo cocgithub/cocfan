@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2014-08-30 21:51]]></item>
+	<item id="From"><![CDATA[萌谈 (http://www.7-th.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[萌谈-发射弹出公告]]></item>
+			<item id="identifier"><![CDATA[yhty_adtz]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[yhty_adtz/]]></item>
+			<item id="copyright"><![CDATA[曲奇姬]]></item>
+			<item id="version"><![CDATA[2014.08.30]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[ccx]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[-1]]></item>
+				<item id="title"><![CDATA[打开jquery开关？]]></item>
+				<item id="description"><![CDATA[jquery是js的简化工具.
+萌谈一切插件都会有jquery开关,如果你已经在使用萌谈其他插件.请关闭jquery.
+不确定是否拥有jquery时，点击关闭后无法使用说明没有jquery.]]></item>
+				<item id="variable"><![CDATA[jq]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[公告数量]]></item>
+				<item id="description"><![CDATA[0-2 = 显示所有
+大于2 = 显示X个]]></item>
+				<item id="variable"><![CDATA[sl]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[右下角打开]]></item>
+				<item id="description"><![CDATA[打开后右下角会显示 展开公告  
+如果关闭则只有添加新公告才会展开公告.]]></item>
+				<item id="variable"><![CDATA[sx]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[检查周期]]></item>
+				<item id="description"><![CDATA[检查周期 X 秒,最低 3 秒. 
+请根据服务器访问速度调整,
+0秒表示不检查.
+
+!:检查是否有新公告 X 秒 ajax Get 一次]]></item>
+				<item id="variable"><![CDATA[sgd]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[关闭原公告显示]]></item>
+				<item id="description"><![CDATA[关闭后原本公告显示将会隐藏]]></item>
+				<item id="variable"><![CDATA[sww]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[广告A]]></item>
+				<item id="description"><![CDATA[请使用 HTML 代码.
+版权建议保留]]></item>
+				<item id="variable"><![CDATA[swdd]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<a target="_blank" href="http://www.7-th.com/">by.萌谈</a>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

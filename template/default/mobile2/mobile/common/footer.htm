@@ -1,0 +1,21 @@
+<!--{if $_G['setting']['mobile']['mobilesimpletype']}-->
+<!--{subtemplate mobile/common/footer}-->
+<!--{else}-->
+
+<!--{hook/global_footer_mobile}-->
+<div class="uiddiv ui-bar-b" data-role="navbar">
+	<ul>
+		<li><a href="$nav" data-icon="home" data-iconpos="top" data-ajax="false">{lang homepage}</a></li>
+		<li><a href="{$_G['setting']['mobile']['nomobileurl']}" title="{lang nomobiletype}" data-icon="grid" data-iconpos="top" data-ajax="false">{lang nomobiletype}</a></li>
+		<li><a href="#" data-rel="back" data-icon="back" data-iconpos="top" data-direction="reverse">{lang goback}</a></li>
+	</ul>
+</div>
+
+</body></html>
+<!--{eval updatesession();}-->
+<!--{if defined('IN_MOBILE')}-->
+<!--{eval output();}-->
+<!--{else}-->
+<!--{eval output_preview();}-->
+<!--{/if}-->
+<!--{/if}-->

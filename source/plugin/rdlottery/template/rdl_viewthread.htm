@@ -1,0 +1,204 @@
+<!--{block return}-->
+<style type="text/css">
+	.aucimg {border:1px solid #E3E3E3;background-color:#E3E3E3;padding:2px;width:250px;float:left;color:#1C1C1C;cursor:pointer;position: relative;}
+	.aucdetail {margin:0 0 0 265px;padding:0 0 0 5px;color:#1C1C1C;padding:0 5px;font-size:12px;}
+	.aucdetail a{color:#5A5A96;}
+	.aucdetail li{list-style:none; border-bottom:1px dashed #CDCDCD;height:26px;line-height:26px;padding-left:10px;}
+	.aucdetail li span{float:left;width:70px;}
+	.aucdetail em{margin-left:10px;}
+	.aucdetail img{vertical-align:middle;cursor:pointer;}
+	.aucdetail .rdl_title{color:#F26C4F;font-weight:700;}
+
+	#rdltips_menu {border:1px double #E3E3E3;background-color:#E5EDF2;padding:5px 10px;width:200px;line-height:22px;}
+	#rdl_involve{margin:10px 0 0 90px;margin:10px 0 0 70px\9;}
+
+
+	#rdl_pg .pg {line-height:15px;float;left;margin-top:5px;}
+#rdl_pg .pg a, #rdl_pg .pg strong, #rdl_pg .pgb a {
+  background-repeat: no-repeat;
+  color: #333333;
+  display: inline;
+  float:left;
+  font-size: 10px;
+  height: 16px;
+  margin-left: 4px;
+  overflow: hidden;
+  padding: 0 4px;
+  text-decoration: none;
+}
+#rdl_pg .pg a.nxt{background:none;}
+
+.list_tb {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #BACFDD #E3E5E7 #E3E5E7;
+    border-right: 1px solid #E3E5E7;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    text-align: left;
+}
+.list_tb span {
+    background: url("source/plugin/rdlottery/images/icon03.gif") no-repeat scroll left center transparent;
+    color: #333333;
+    font-weight: bold;
+    margin: 5px;
+    padding: 0 0 0 20px;
+    text-align: left;
+    width:auto;
+    float:left;
+    font-weight:700;
+}
+.list_lt {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border-top: 1px solid #E3ECF2;
+    color: #666666;
+    font-size: 12px;
+    height: 25px;
+    padding-left: 10px;
+    vertical-align: middle;
+    width:auto;
+    word-break:break-all;
+}
+
+
+.list_bt {background: url("source/plugin/rdlottery/images/list_bg.gif") repeat scroll center top transparent; height: 25px; vertical-align: bottom;}
+.list_lt{}
+.list_tb .gray{background:none;padding:0;}
+.list_tb .gray a{color:#999;}
+.auction_price .rdl_title{color:#F26C4F;}
+.auction_price {margin:10px;}
+.auction_price a{color:#1B7FC6;}
+.myauclog td,.myauclog th{background-color:#eee;}
+.rdl_cover{position: absolute;width:100px;height:100px;top: 205px;left: 155px;}
+</style>
+
+
+<div class="auc pbm cl">
+	<div class="aucimg">
+		<!--{if $rdlotteryatt[attachment]}-->
+		<img src="{$rdlotteryatt[attachment]}" width="250" <!--{if $_G[uid]}-->zoomfile="forum.php?mod=attachment&aid={$rdlotteryatt[encodeaid]}&nothumb=yes" onclick="zoom(this, this.getAttribute('zoomfile'))"<!--{/if}-->/>
+		<span class="rdl_cover"  {if $rdlottery['status']==0}style="background: url(source/plugin/rdlottery/images/start.gif) no-repeat;"{else}style="background: url(source/plugin/rdlottery/images/stop.gif) no-repeat;"{/if}></span>
+		<!--{else}-->
+		<img src="static/image/common/nophoto.gif" width="250">
+		<!--{/if}-->
+	</div>
+	<div class="aucdetail">
+		<dl>
+			<li><span>{lang rdlottery:rdl_type}:</span>
+				<em class="rdl_title">
+					{lang rdlottery:rdlottery}				
+				</em>
+				<em style="margin-left:80px;">
+					<img src="source/plugin/rdlottery/images/rules.gif" id="rdltips" onmouseover="showMenu(this.id);"/>
+				</em>
+			</li>
+			<li><span>{lang rdlottery:rdl_virtual}:</span><em class="">{if $rdlottery['virtual']}{lang rdlottery:rdl_virtual_1}{else}{lang rdlottery:rdl_virtual_0}{/if}</em></li>
+			<li><span>{lang rdlottery:rdl_name}:</span><em class="">{$rdlottery['name']}</em></li>
+			<li><span>{lang rdlottery:rdl_number}:</span><em class="">{lang rdlottery:total} <font color="#F26C4F">{$rdlottery['number']}</font> {lang rdlottery:unit}</em></li>
+			<li><span>{lang rdlottery:rdl_last_number}:</span><em class="">{lang rdlottery:last} <font color="#F26C4F">{$rdlottery['last_number']}</font> {lang rdlottery:unit}</em></li>
+			<li><span>{lang rdlottery:rdl_starttimefrom}:</span><em>{$rdlottery['starttimefrom']}</em></li>
+			<li><span>{lang rdlottery:rdl_starttimeto}:</span><em>{$rdlottery['starttimeto']}</em></li>
+			<li<!--{if $notstart}--> style="display:none;"<!--{/if}-->><span>{lang rdlottery:rdl_timeleft}:</span><em id="timeleft" class="rdl_title"></em></li>
+			<li><span>{lang rdlottery:rdl_ext_price}:</span><em class="rdl_title">{$rdlottery['ext_price']}</em><em>{$_G[setting][extcredits][$rdlottery['extid']][title]}</em></li>
+			<li><span>{lang rdlottery:rdl_real_price}:</span><em class="rdl_title">{$rdlottery['real_price']}</em><em>{lang rdlottery:rdl_yuan}</em></li>
+			<li><span>{lang rdlottery:rdl_type_hot}:</span><em class="rdl_title">{$rdlottery['hot']}</em></li>
+		</dl>
+		<dd><p class="pns" id="rdl_involve">
+			<!--{if $_G['uid']}-->
+			<!--{if $_G['uid'] == $rdlottery['uid'] && $rdlottery['starttimeto_0'] <= $_G['timestamp']}-->
+			<button class="pn" value="true" name="ijoin" id="ijoin" onclick="showWindow('confirm', 'plugin.php?id=rdlottery:involve&operation=join&tid={$tid}', 'get', 0);doane(event);"><span style="width:80px;float:none;">{lang rdlottery:rdl_join}</span></button>
+			<!--{else}-->
+			<button class="pn" value="true" name="ijoin" id="ijoin" onclick="showWindow('confirm', 'plugin.php?id=rdlottery:involve&operation=join&tid={$tid}', 'get', 0);doane(event);"><span style="width:80px;float:none;">{lang rdlottery:rdl_join}</span></button>
+			<!--{/if}-->
+			<!--{else}-->
+			<button class="pn" value="true" name="ijoin" id="ijoin" onclick="showWindow('confirm', 'member.php?mod=logging&action=login', 'get', 0);doane(event);" onmouseover="$('joinword').innerHTML='{lang rdlottery:login}';" onmouseout="$('joinword').innerHTML='{lang rdlottery:rdl_join}';"><span id="joinword" style="width:80px;float:none;">{lang rdlottery:rdl_join}</span></button>
+			<!--{/if}-->
+			<!--{if $rdlottery['virtual'] && ($_G['adminid'] == 1 || $_G[uid] == $rdlottery[uid])}-->
+			<button class="pn" value="true" name="ijoin" id="ijoin" onclick="showWindow('rdlottery_message', 'plugin.php?id=rdlottery:involve&operation=admin_message&tid={$rdlottery[tid]}', 'get', 0);doane(event);"><span id="joinword" style="width:80px;float:none;">{lang rdlottery:view_message}</span></button>
+			<!--{/if}-->			
+			</p></dd>
+	</div>
+</div>
+<div  id="rdl_list_tmp" style="display:none;">
+<div class="auc pbm cl">
+	<table class="list_tb" style="border-bottom:none;">
+		<tr>
+			<td class="list_bt" colspan="<!--{if $showmobile}-->6<!--{else}-->4<!--{/if}-->"><span class=""><a href="javascript:;" onclick="ajaxget('plugin.php?id=rdlottery:involve&operation=view&tid={$thread[tid]}&page=1', 'list_ajax_rdl');$('list_002').style.color='#cdcdcd';$('list_001').style.color='#333';" id="list_001">{lang rdlottery:list}</a></span></td>
+		</tr>
+		<tr>
+
+			<th class="list_lt" width="20%">{lang rdlottery:username}</th>
+			<th class="list_lt" width="30%">{lang rdlottery:dateline}</th>
+			<th class="list_lt" width="<!--{if $showmobile}-->5%<!--{else}-->25%<!--{/if}-->">{lang rdlottery:price} ({$_G[setting][extcredits][$rdlottery['extid']][title]})</th>
+			<th class="list_lt" width="<!--{if $showmobile}-->5%<!--{else}-->25%<!--{/if}-->">{lang rdlottery:status}</th>
+			<!--{if $showmobile}-->
+			<th class="list_lt" width="20%">{lang rdlottery:contact}</td>
+			<th class="list_lt" width="20%">{lang rdlottery:info}</td>
+			<!--{/if}-->
+		</tr>
+	</table>
+	<div id="list_ajax_rdl">
+	<img src="static/image/common/loading.gif" />
+	</div>
+</div></div>
+<div id="rdltips_menu" style="display:none">{$_G[cache][plugin][rdlottery][rdl_type_tips]}</div>
+<div id="confirm" style="display:none;"></div>
+
+<script language="javascript" type="text/javascript">
+	var auctionNow= Date.parse('{$rdlottery[js_timeto]}');
+	var auctionStartTime = Date.parse('{$rdlottery[js_timefrom]}');
+	var auctionFuture=  {$rdlottery[js_timenow]}*1000;
+	
+	function showTimeLimit(){
+
+	auctionFuture+=1000;
+
+	days = (auctionNow-auctionFuture) / 1000 / 60 / 60 / 24;
+	if(auctionStartTime-auctionFuture >0) {
+		document.getElementById('ijoin').innerHTML = '<span>{lang rdlottery:not_start_yet}</span>';
+		return;
+	}
+        dayNum = Math.floor(days);
+        hours = (auctionNow-auctionFuture) / 1000 / 60 / 60 - (24 * dayNum);
+        houNum = Math.floor(hours);
+	if(houNum < 10 && houNum > 0){
+            houNum = "0" + houNum;
+        }
+        minutes = (auctionNow-auctionFuture) / 1000 / 60 - (24 * 60 * dayNum) - (60 * houNum);
+        minNum = Math.floor(minutes);
+        if(minNum < 10){
+            minNum = "0" + minNum;
+        }
+        seconds = (auctionNow-auctionFuture) / 1000 - (24 * 60 * 60 * dayNum) - (60 * 60 * houNum) - (60 * minNum);
+        secNum = Math.floor(seconds);
+        if(secNum < 10){
+            secNum = "0" + secNum;
+        }
+        millisec=(auctionNow-auctionFuture)-(24*60*60*1000*dayNum)-(60*60*1000*houNum)-(60*1000*minNum)-(secNum*1000);
+        milli=Math.floor(millisec/10);
+        if(milli<10){
+            milli="0"+milli;
+	}
+	if(dayNum < 0 || houNum < 0 || minNum < 0 || secNum < 0) {
+		if({$rdlottery[uid]} == {$_G[uid]} && !{$rdlottery['status']} && {$rdlottery[starttimeto_0]} <= {$_G[timestamp]}) {
+			document.getElementById('timeleft').innerHTML = '{lang rdlottery:deadline}';
+			document.getElementById('ijoin').onclick = 'javascript:void(0);';
+			document.getElementById('ijoin').innerHTML = '<span>{lang rdlottery:deadline}</span>';
+		} else {
+			document.getElementById('timeleft').innerHTML = '{lang rdlottery:deadline}';
+			document.getElementById('ijoin').onclick = 'javascript:void(0);';
+			document.getElementById('ijoin').innerHTML = '<span>{lang rdlottery:deadline}</span>';
+		}
+		clearInterval("showTimeLimit()");
+		return;
+	}
+	document.getElementById('timeleft').innerHTML = (dayNum?dayNum+" {lang rdlottery:day} ":'')+ (houNum > 0 ?houNum + " {lang rdlottery:hour} ":'') + (minNum?minNum + " {lang rdlottery:min} ":'')+ secNum + " {lang rdlottery:sec}";
+    }
+setInterval("showTimeLimit()", 1000);
+</script>
+
+<!--{/block}-->

@@ -1,0 +1,212 @@
+{eval
+
+function tpl_guessulike_index_top_output($threads, $rForumList) {
+global $_G;
+}
+<!--{block return}-->
+<div id="guessulike_keywordCustom" class="mtm"></div>
+<!--{if $rForumList}-->
+<div class="guessulike_lforumlist">
+	<div class="guessarea">
+<!--{/if}-->
+<!--{if $threads}-->
+	<div class="bm guessulike_bm">
+		<div class="bm_h">
+			<h2>{if $_G['username']}$_G['username'], {/if}{lang guessulike:guesstitle}</h2>
+		</div>
+		<div class="bm_c">
+			<ul class="guessulike_threadlist cl">
+			<!--{loop $threads $thread}-->
+				<li>
+					<div class="avt"><a href="home.php?mod=space&amp;uid=$thread['authorid']" target="_blank" c="1">$thread[authoravatar]</a></div>
+					<p class="xs2"><a href="$thread[urllink]" target="_blank" title="$thread[subject]">$thread[subject]</a></p>
+					<p class="xg1">
+						<a href="home.php?mod=space&amp;uid=$thread['authorid']" target="_blank">$thread[author]</a> {lang guessulike:publish_at} <a href="forum.php?mod=forumdisplay&fid=$thread[fid]">$thread[forumname]</a>
+					</p>
+				</li>
+			<!--{/loop}-->
+			</ul>
+		</div>
+	</div>
+<!--{/if}-->
+<!--{if $rForumList}-->
+	</div>
+	<div {if $threads}class="lovearea"{/if}>
+		<div class="bm guessulike_bm lovecon">
+			<div class="bm_h">
+				<h2>{lang guessulike:loveforums}</h2>
+			</div>
+			<div class="bm_c lovelist">
+				<ul class="guessulike_loveforum">
+				<!--{loop $rForumList $sKey $sForum}-->
+					<!--{if $sForum && $_G[cache][forums][$sForum]}-->
+					<li>
+						<div class="avt"><span class="count_livid">{$sKey}</span><a href="forum.php?mod=forumdisplay&fid=$sForum">{$_G[cache][forums][$sForum]['name']}</a></div>
+					</li>
+					<!--{/if}-->
+				<!--{/loop}-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div style="clear:both;"></div>
+<!--{/if}-->
+<!--{if $_G['cache']['plugin']['guessulike']['switcherkeyword'] && $_G['uid']}-->
+<script>
+function guessulike_getKeywordList() {
+	ajaxget('forum.php?guessulike_ac=list', 'guessulike_keywordCustom');
+}
+function guessulike_subscribeKeyword() {
+	kw = $("guessulike_kwinput").value;
+	kw = preg_replace(['&', '<', '>', '"', "'"], ['%26', '', '', '', ''], kw);
+	kw = (BROWSER.ie && document.charset == 'utf-8' ? encodeURIComponent(kw) : kw);
+	ajaxget('forum.php?guessulike_ac=add&keyword='+kw, 'guessulike_keywordCustom');
+}
+function guessulike_rmKeyword(kw) {
+	kw = preg_replace(['&'], ['%26'], kw);
+	kw = (BROWSER.ie && document.charset == 'utf-8' ? encodeURIComponent(kw) : kw);
+	ajaxget('forum.php?guessulike_ac=del&keyword='+kw, 'guessulike_keywordCustom');
+}
+guessulike_getKeywordList();
+</script>
+<!--{/if}-->
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+
+function tpl_guessulike_viewthread($threads) {
+global $_G;
+}
+<!--{block return}-->
+<!--{if $threads}-->
+</div>
+<table cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="pls">
+			<div class="avatar">{lang guessulike:related_be_replied_threads}</div>
+		</td>
+		<td class="plc">
+			<div class="guessulike_cmt">
+				<ul class="guessulike_threadlist cl">
+				<!--{loop $threads $thread}-->
+					<li>
+						<div class="avt"><a href="home.php?mod=space&amp;uid=$thread['authorid']" target="_blank" class="avt" c="1">$thread[authoravatar]</a></div>
+						<p class="xs2"><a href="$thread[urllink]" target="_blank">$thread[subject]</a></p>
+						<p class="xg1"><a href="home.php?mod=space&amp;uid=$thread['authorid']" target="_blank">$thread[author]</a> {lang guessulike:publish_at} <a href="forum.php?mod=forumdisplay&fid=$thread[fid]">$thread[forumname]</a></p>
+					</li>
+				<!--{/loop}-->
+				</ul>
+			</div>
+		</td>
+	</tr>
+	<tr class="ad">
+		<td class="pls"></td>
+		<td class="plc"></td>
+	</tr>
+</table>
+<div>
+<!--{/if}-->
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+
+
+function tpl_keyword_list($kwdata, $tips, $threads) {
+global $_G;
+}
+<!--{block return}-->
+	<div class="bm bml guessulike_bml">
+		<div class="bm_h">
+			<p>
+			<!--{if !$kwdata}-->
+				{lang guessulike:nosubscribe}
+			<!--{else}-->
+				<strong>{lang guessulike:subscribed}</strong>&nbsp;
+				<!--{if $kwdata}-->
+					<span class="guessulike_kw">
+						<!--{loop $kwdata $kw}-->
+							<span><em>$kw</em><a href="javascript:;" onclick="javascript:guessulike_rmKeyword('$kw');" title="{lang guessulike:delete}" class="x">x</a></span>
+						<!--{/loop}-->
+					</span>
+				<!--{/if}-->
+				&nbsp;<a href="javascript:;" onclick="javascript:display('guessulike_subscribeform');" class="xw0 xi2">{lang guessulike:add}</a>
+			<!--{/if}-->
+			</p>
+		</div>
+		<div class="bm_c">
+			<!--{if $tips}-->
+				$tips
+			<!--{/if}-->
+
+			<div id="guessulike_subscribeform" class="mtn pbm" {if $kwdata}style="display:none;"{/if}>
+				<input type="text" name="keyword" id="guessulike_kwinput" class="px vm" size="30" placeholder="{lang guessulike:subscribekeywords}" x-webkit-speech="" speech=""  />&nbsp;<button class="pn vm" onclick="javascript:guessulike_subscribeKeyword();"><span>{lang guessulike:add}</span></button>
+			</div>
+			<!--{if $kwdata}-->
+				<!--{if $threads}-->
+					<ul class="guessulike_threadlist cl">
+					<!--{loop $threads $thread}-->
+						<li>
+							<div class="avt"><a href="home.php?mod=space&amp;uid=$thread['authorid']" target="_blank" c="1">$thread[authoravatar]</a></div>
+							<p class="xs2"><a href="$thread[urllink]" target="_blank">$thread[subject]</a></p>
+							<p class="xg1">
+								<a href="home.php?mod=space&amp;uid=$thread['authorid']" target="_blank">$thread[author]</a> {lang guessulike:publish_at} <a href="forum.php?mod=forumdisplay&fid=$thread[fid]">$thread[forumname]</a>
+							</p>
+						</li>
+					<!--{/loop}-->
+					</ul>
+				<!--{else}-->
+					<p class="mtn mbm">{lang guessulike:nosubscribe_thread}</p>
+				<!--{/if}-->
+			<!--{/if}-->
+		</div>
+	</div>
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+
+
+function tpl_guessulike_newforumlist($forum_favlist, $catlist, $favforumlist, $forumlist) {
+global $_G;
+}
+<!--{block return}-->
+
+	<style type="text/css">.fl { border: none; }</style>
+	<div class="bm guessulike_bm">
+		<div class="bm_h">
+			<h2>{lang guessulike:forumlist}</h2>
+		</div>
+		<div class="bm_c">
+			<div class="guessulike_fixlastchild">
+			<!--{if empty($gid) && !empty($forum_favlist)}-->
+				<dl class="guessulike_catlist cl">
+					<dt>{lang guessulike:favforumlist}</dt>
+					<!--{loop $forum_favlist $key $favorite}-->
+						<!--{if $favforumlist[$favorite[id]]}-->
+							<dd><a href="{$favforumlist[$favorite[id]][forumurl]}"{if $favforumlist[$favorite[id]][redirect]} target="_blank"{/if}{if $favforumlist[$favorite[id]][extra][namecolor]} style="color: {$forum[extra][namecolor]};"{/if}>$favforumlist[$favorite[id]][name]</a><!--{if $forumlist[$forumid][todayposts] && !$forumlist[$forumid][redirect]}--><em class="xw0 xi1" title="{lang guessulike:todaypost}"> ($forumlist[$forumid][todayposts])</em><!--{/if}--></dd>
+						<!--{/if}-->
+					<!--{/loop}-->
+				</dl>
+			<!--{/if}-->
+
+			<!--{loop $catlist $key $cat}-->
+				<dl class="guessulike_catlist cl">
+					<dt><a href="{if !empty($cat['caturl'])}$cat['caturl']{else}forum.php?gid=$cat[fid]{/if}" style="{if $cat[extra][namecolor]}color: {$cat[extra][namecolor]};{/if}">$cat[name]</a></dt>
+					<!--{loop $cat[forums] $forumid}-->
+					<dd><a href="$forumlist[$forumid]['forumurl']"{if $forumlist[$forumid][redirect]} target="_blank"{/if}{if $forumlist[$forumid][extra][namecolor]} style="color: {$forumlist[$forumid][extra][namecolor]};"{/if}>$forumlist[$forumid][name]</a><!--{if $forumlist[$forumid][todayposts] && !$forumlist[$forumid][redirect]}--><em class="xw0 xi1" title="{lang guessulike:todaypost}"> ($forumlist[$forumid][todayposts])</em><!--{/if}--></dd>
+					<!--{/loop}-->
+				</dl>
+			<!--{/loop}-->
+			</div>
+		</div>
+	</div>
+
+<!--{/block}-->
+<!--{eval return $return;}-->
+{eval
+}
+
+}

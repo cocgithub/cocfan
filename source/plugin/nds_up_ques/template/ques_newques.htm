@@ -1,0 +1,42 @@
+{subtemplate common/header}
+<script language="javascript"> var node = 1;</script>
+<script src="$_G['siteurl']source/plugin/nds_up_ques/js/ques_edit.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" /> 
+<div id="pt" class="wp">
+<div class="z">
+<a href="./" class="nvhm">$_G['setting']['bbname']</a><em>&rsaquo;</em><a href="plugin.php?id=nds_up_ques"><!--{if !empty($ndsquesname)}-->$ndsquesname<!--{else}-->{lang nds_up_ques:ques}<!--{/if}--></a><em>&rsaquo;</em>{lang nds_up_ques:newques}
+</div>
+</div>
+<div id="ct" class="wp cl">
+<div class="mn">
+<div class="bm bml">
+<div class="bm_h cl">
+<h1 class="xs2">
+{lang nds_up_ques:newques}&nbsp;&nbsp;[<!--{if $sysmode == 2}-->{lang nds_up_ques:nds_quesmode2}<!--{elseif $sysmode == 1}-->{lang nds_up_ques:nds_quesmode1}<!--{/if}-->]</h1>
+</div>
+</div>
+<form  name="newques" method="post" action="plugin.php?id=nds_up_ques&action=newques" >
+<input type="hidden" name="formhash" value="{FORMHASH}">
+<input type="hidden" name="newquessubmit" value="true">
+<input type="hidden" name="choiceall" value="">
+<input type="hidden" name="ques_mode" value="$sysmode">
+{template nds_up_ques:ques_queshead}		
+	</table>
+{template nds_up_ques:ques_addnode}
+     <table  width="100%" cellspacing="0" cellpadding="0" class="datatable2">
+     <tbody id="quesbody">
+     <script language="javascript">addRow('quesbody')</script>
+     </tbody>
+     </table>
+<a  href="javascript:void(0)" onclick="addRow('quesbody');"><img src="{$imgurl}add.gif" alt="{lang nds_up_ques:addopa}" /> {lang nds_up_ques:add}</a> 
+ <div class="mtm mbm">
+  <button type="submit" id="postsubmit" class="pn pnc" value="true" name="newquessubmit_bt" onclick =" return confirm('$mischecktm')"><span>{lang nds_up_ques:btnewques}</span></button>
+</div> 
+</form>
+  </div>
+ </div>
+{subtemplate common/footer}
+  <script type="text/javascript">
+		var datetext = document.getElementById("exptime");
+     	 datetext.value = addCurentTime(100);
+  </script>

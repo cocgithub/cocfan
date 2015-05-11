@@ -1,0 +1,142 @@
+<!--{template mzg_advertise:admin_menu}-->
+<script src="static/js/calendar.js" type="text/javascript"></script>
+
+<div class="admin_title_bot">
+  <a href="{$pageurl}&mod=$mod"{$opav[index]}>广告列表</a>
+  -
+  <a href="{$pageurl}&mod=$mod&op=add"{$opav[add]}>添加广告</a>
+</div>
+<form id="form_$mod" name="form_$mod" method="post" enctype="multipart/form-data" action="{$pageurl}&mod=action">
+  {if $op=='add'}
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="admin_table">
+  {if $post[did]}
+  <tr>
+    <th height="35" colspan="2" class="title">编辑:{$post[name]}</th>
+  </tr>
+  {/if}
+  <tr>
+    <th width="135" height="35">排 序</th>
+    <td><input type="text" class="px" name="topid" id="topid" value="$topid" size="12" /></td>
+  </tr>
+  <tr>
+    <th width="135" height="35">名 称</th>
+    <td><input type="text" class="px" name="name" id="name" value="$post[name]" /></td>
+  </tr>
+  <tr>
+    <th width="135" height="35">网 址</th>
+    <td><input name="url" class="px" type="text" id="url" size="42" value="{if $post[url]}$post[url]{else}http://{/if}" /></td>
+  </tr>
+  <tr>
+    <th width="135" height="35">LOGO</th>
+    <td><input type="file" name="up_pic" id="up_pic" style="display:none;width:320px;" />
+      <input type="text" class="px" name="url_pic" id="url_pic" style="display:none;width:320px;" value="$post[pic]"  />
+      <a href="javascript:" id="up1" onclick="setpic(this.id); return false;">本地上传</a>
+      |
+      <a href="javascript:" id="url1" onclick="setpic(this.id); return false;">网络图片</a></td>
+  </tr>
+  <tr>
+    <th width="135" height="35">点击方式</th>
+    <td><select name="method" id="method">
+        <option value="1"{if $post[method]==1} selected="selected"{/if}>每用户</option>
+        <option value="2"{if $post[method]==2} selected="selected"{/if}>每IP</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th width="135" height="35">每次点击奖励</th>
+    <td><input name="price" class="px" type="text" id="price" size="8" value="$price" />
+      <select name="price_type" id="price_type">
+        
+                        {loop $_G['setting']['extcredits'] $k $v}
+                        
+        <option value="$k"{if $post[price_type]==$k} selected="selected"{/if}>$v[title]</option>
+        
+                        {/loop}
+
+                    
+    </select></td>
+  </tr>
+  <tr>
+    <th width="135" height="35">最大点击次数</th>
+    <td><input name="maxcount" class="px" type="text" id="maxcount" size="8" value="$maxcount" />
+      次 (0不限制)</td>
+  </tr>
+  <tr>
+    <th width="135" height="35">有效时间</th>
+    <td><input name="stime" class="px" type="text" id="stime" value="$stime" onclick="showcalendar(event, this);" />
+      -
+      <input name="etime" class="px" type="text" id="etime" value="$etime" onclick="showcalendar(event, this);" />
+    </td>
+  </tr>
+  <tr>
+    <th width="135" height="35">状 态</th>
+    <td><input name="status" type="radio" id="status" value="1"{if $post[status]==1 or !$post[status]} checked="checked" {/if}/>
+      <span class="admin_blue">正常</span>
+      <input type="radio" name="status" id="status" value="2"{if $post[status]==2} checked="checked" {/if} />
+      <span class="admin_red">禁用</span></td>
+  </tr>
+  <tr>
+    <th width="135" height="35"> <input name="formhash" type="hidden" value="{FORMHASH}" />
+      <input name="did" type="hidden" value="$post[did]" />
+      <input name="resturl" type="hidden" value="{$rurl}&mod=$mod{if $post[did]}&op=$op&did=$post[did]{/if}" /></th>
+    <td><input type="submit" name="savepost" id="savepost" value=" {if $post[did]}保存编辑{else}确认发布{/if} " class="pn pnp"/></td>
+  </tr>
+  </table>
+  <script type="text/javascript">
+	function setpic(objname){
+ 		if(objname=="up1"){
+ 		$('up_pic').style.display='';
+ 		$('url_pic').style.display='none';
+ 		$(objname).className='admin_red';
+ 		$('url1').className='';
+ 		} else {
+ 		$('url_pic').style.display='';
+ 		$(objname).className='admin_red';
+ 		$('up1').className='';
+ 		$('up_pic').style.display='none';
+ 		}
+	}
+ {if $post[pic]}setpic('url1');{else}setpic('up1');{/if}
+</script>
+  {else}
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="admin_table">
+  <tr>
+    <td width="43" class="title"><strong>排序</strong></td>
+    <td height="35" class="title"><strong>名称</strong></td>
+    <td class="title"><strong>奖励规则</strong></td>
+    <td class="title"><strong>最大点击数</strong></td>
+    <td class="title"><strong>点击人次</strong></td>
+    <td class="title"><strong>状态</strong></td>
+    <td class="title"><strong>有效期</strong></td>
+    <td class="title"><strong>发布时间</strong></td>
+    <td class="title">&nbsp;</td>
+  </tr>
+  {loop $list $value}
+  <tr>
+    <td height="25"><input class="px" type="text" name="topid[{$value[did]}]" id="topid[{$value[did]}]" value="$value[topid]" style="width:65px;" /></td>
+    <td height="25"><input name="userbox[]" type="checkbox" id="userbox[]" value="$value[did]" />
+      <a href="$pageurl&mod=adview&op=add&did=$value[did]">$value[name]</a></td>
+    <td>{if $value[price]}每 <strong>{if $value[method]==1}用户{else}IP{/if}</strong> 点击奖励 <strong>{$value[price]}
+        {$_G['setting']['extcredits'][$value[price_type]][title]}</strong>{else}无奖励{/if}</td>
+    <td>{if $value[maxcount]}<strong>{$value[maxcount]}</strong> 次{else}-{/if}</td>
+    <td><a href="$pageurl&mod=adlog&did=$value[did]">$value[usercount]</td>
+    <td>{if $value[status]==1}<span class="admin_blue">正常</span>{else}<span class="admin_red">禁止</span>{/if}</td>
+    <td>{if $value[stime]}{eval echo dgmdate($value[stime],'d');}{else}*{/if}
+      - {if $value[etime]}{eval echo dgmdate($value[etime],'d');}{else}*{/if}</td>
+    <td>{eval echo dgmdate($value[posttime],'d');}</td>
+    <td><a href="{$pageurl}&mod=$mod&op=add&did={$value[did]}">编辑</a></td>
+  </tr>
+  {/loop} {if $list}
+  <tr>
+    <td height="45"><input type="submit" name="savetopid" id="savetopid" value="更新排序" />    </td>
+    <td><input type="checkbox" name="chkall" id="chkall" class="checkbox" onclick="checkAll('prefix', this.form, 'userbox')" />
+      <label for="chkall">全选?</label>
+      <input type="submit" name="deldata" id="deldata" value="删除选中的数据" />
+      <input name="formhash" type="hidden" value="{FORMHASH}" />
+      <input name="resturl" type="hidden" value="{$rurl}&mod=$mod&page=$page" /></td>
+    <td colspan="7">&nbsp;</td>
+  </tr>
+  {/if}
+  </table>
+  {/if}
+</form>

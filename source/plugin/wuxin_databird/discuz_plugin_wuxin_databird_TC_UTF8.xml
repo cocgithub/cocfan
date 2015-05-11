@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2012-05-31 14:07]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://www.2015pc.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[數據菜鳥]]></item>
+			<item id="identifier"><![CDATA[wuxin_databird]]></item>
+			<item id="description"><![CDATA[一個虛擬人氣的小插件。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[wuxin_databird/]]></item>
+			<item id="copyright"><![CDATA[2015電腦技術論壇]]></item>
+			<item id="version"><![CDATA[V1.32 免費版]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[index]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X1.5,X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[增加在線會員數]]></item>
+				<item id="description"><![CDATA[設置隨機產生的在線會員數量，在線會員數建議不要設置得太大，當在線會員數為0時，表示要啟用按時間顯示會員。]]></item>
+				<item id="variable"><![CDATA[olmembers]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[增加在線游客數]]></item>
+				<item id="description"><![CDATA[設置增加的在線游客數量,當設置為零時，需要設置按時間增加在線游客數。]]></item>
+				<item id="variable"><![CDATA[olguests]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[65]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[數據倍數]]></item>
+				<item id="description"><![CDATA[昨日發帖，今日發帖，總帖子，總會員，最高在線的數據倍數，一定不能是0。]]></item>
+				<item id="variable"><![CDATA[multiple]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[需修改今日發帖數的版塊]]></item>
+				<item id="description"><![CDATA[選擇要修改今日發帖數的版塊，選中後該版塊的今日發帖將將會顯示成指定倍數。]]></item>
+				<item id="variable"><![CDATA[changefid]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[2]]></item>
+					<item id="1"><![CDATA[36]]></item>
+					<item id="2"><![CDATA[37]]></item>
+					<item id="3"><![CDATA[38]]></item>
+				</item>
+			</item>
+		</item>
+	</item>
+</root>

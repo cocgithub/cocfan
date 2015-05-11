@@ -1,0 +1,113 @@
+{subtemplate common/header}
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_quiz/template/nds_quiz_nav.css" />
+<div id="pt" class="wp">
+   <div class="z">
+     <a href="./" class="nvhm">$_G['setting']['bbname']</a><em>&rsaquo;</em><a href="plugin.php?id=nds_quiz"><!--{if !empty($ndsquizname)}-->$ndsquizname<!--{else}-->在线测试系统<!--{/if}--></a><em>&rsaquo;</em>测试首页
+   </div>
+</div>
+{template nds_quiz:quiz_nav}
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_quiz/template/nds_quiz_c1.css" />
+<div id="ct" class="wp cl">
+   <div class="mn">
+
+<div class="main">
+<div class="hd"><h2>创建测试-跳转型</h2></div>
+<div class="bd fixfloat">
+<div class="l">
+<div class="step"><img width="624" height="48" alt="" src="http://cn.yimg.com/testplatform/2011/082901/img/step_03.gif"></div>
+<form method="POST" enctype="multipart/form-data" action="/save" id="exam_form">
+
+<div class="group_item">
+<div class="item fixfloat">
+<label>测试标题：</label><b class="star">*</b>
+<input type="text" maxlength="20" style="width:312px;" data-default="20字以内" tabindex="1" class="basic-input grey" null="false" name="exam_title" data-type="string" id="bt">
+<span style="display:none;" class="validate-error">标题不能为空或超过20字</span>
+</div>
+<div class="item fixfloat">
+<label>测试简介：</label><b class="star">*</b>
+             	<div class="tedt" style="width: 489px;" >
+                		<div class="bar">
+				 		{eval $seditor = array('is', array('bold', 'color', 'img', 'link', 'quote', 'code', 'smilies'));}
+							{subtemplate common/seditor}
+						</div>
+						<div class="area">
+                        <textarea   rows="5"  cols="75" name="exam_description" id="ismessage" ></textarea> 
+ 					</div>
+					</div>
+<span style="display:none;margin-left:76px;" class="validate-error">简介不能为空或超过200字</span>
+</div>
+<div class="item fixfloat">
+<label>测试封面：</label><b class="star">*</b>
+<input type="file" onchange="uploadcover()" tabindex="3" class="picfile" name="picture" id="picture">
+<input type="hidden" null="false" data-type="string" value="" name="cover" id="cover">
+<span class="sm">支持JPG、JPEG、GIF和PNG，文件最大200K，宽高比4:3。</span>
+<div class="upload-img">
+<img width="0" height="0" alt="" id="image"><br>
+<span style="display:none;color:#ff0000;line-height:24px;" class="upload-error">图片格式有误，请重新上传</span>
+<span style="display:none;line-height:24px;" class="validate-error">请上传图片</span>
+<span style="display:none;" class="rm2">图片过大，最大为200K</span>
+<span style="display:none;" class="rm3">图片正在上传中</span>
+<span style="display:none;" class="rm4">图片上传成功</span>
+<span style="display:none;" class="rm5">图片上传失败</span>
+</div>
+</div>
+<div class="item fixfloat">
+<label>测试分类：</label><b class="star">*</b>
+<div class="select">
+<select null="false" rel="select" name="category_id" tabindex="4" id="classific" min="1" data-type="number">
+<option value="-1" selected="">请选择</option><option value="1">爱情</option><option value="2">星座</option><option value="3">财运</option><option value="4">性格</option><option value="5">职业</option><option value="6">综合</option></select>
+<span style="display:none;" class="validate-error">请选择测试分类</span>
+</div>
+</div>
+<div class="item fixfloat">
+<label>标签：</label><b class="star blank">*</b>
+<div class="suggestion fixfloat"><label for="cb-31" class="">情感</label><label for="cb-32" class="on">缘分</label><label for="cb-33" class="on">心理</label><label for="cb-34">两性</label><label for="cb-35">趣味</label><label for="cb-36">智商</label><label for="cb-37" class="">情商</label><label for="cb-38" class="on">运势</label><label for="cb-39">时尚</label><label for="cb-40">社交</label><label for="cb-41">健康育儿</label><label for="cb-42">生活</label><label for="cb-43" class="">财富</label><label for="cb-44" class="on">事业</label><label for="cb-45" class="on">手机</label><label for="cb-46">笔记本</label><label for="cb-47">数码相机</label><label for="cb-48">数码综合</label><label for="cb-49" class="">旅游</label><label for="cb-50" class="on">爱情</label><label for="cb-51" class="on">体育</label><label for="cb-52">自然</label><label for="cb-53">科普</label><label for="cb-54">探秘</label><label for="cb-55" class="">姚明</label><label for="cb-56" class="on">足球</label><label for="cb-57" class="on">电影</label><label for="cb-58">科技</label><label for="cb-61">婚姻</label><label for="cb-62">汽车有奖</label><label for="cb-63">星座</label></div>
+<div style="height:0; overflow:hidden" class="checkbox"><input type="checkbox" id="cb-31" value="31" name="tag"><input type="checkbox" id="cb-32" value="32" name="tag"><input type="checkbox" id="cb-33" value="33" name="tag"><input type="checkbox" id="cb-34" value="34" name="tag"><input type="checkbox" id="cb-35" value="35" name="tag"><input type="checkbox" id="cb-36" value="36" name="tag"><input type="checkbox" id="cb-37" value="37" name="tag"><input type="checkbox" id="cb-38" value="38" name="tag"><input type="checkbox" id="cb-39" value="39" name="tag"><input type="checkbox" id="cb-40" value="40" name="tag"><input type="checkbox" id="cb-41" value="41" name="tag"><input type="checkbox" id="cb-42" value="42" name="tag"><input type="checkbox" id="cb-43" value="43" name="tag"><input type="checkbox" id="cb-44" value="44" name="tag"><input type="checkbox" id="cb-45" value="45" name="tag"><input type="checkbox" id="cb-46" value="46" name="tag"><input type="checkbox" id="cb-47" value="47" name="tag"><input type="checkbox" id="cb-48" value="48" name="tag"><input type="checkbox" id="cb-49" value="49" name="tag"><input type="checkbox" id="cb-50" value="50" name="tag"><input type="checkbox" id="cb-51" value="51" name="tag"><input type="checkbox" id="cb-52" value="52" name="tag"><input type="checkbox" id="cb-53" value="53" name="tag"><input type="checkbox" id="cb-54" value="54" name="tag"><input type="checkbox" id="cb-55" value="55" name="tag"><input type="checkbox" id="cb-56" value="56" name="tag"><input type="checkbox" id="cb-57" value="57" name="tag"><input type="checkbox" id="cb-58" value="58" name="tag"><input type="checkbox" id="cb-59" value="59" name="tag"><input type="checkbox" id="cb-60" value="60" name="tag"><input type="checkbox" id="cb-61" value="61" name="tag"><input type="checkbox" id="cb-62" value="62" name="tag"><input type="checkbox" id="cb-63" value="63" name="tag"></div>
+</div>
+<div class="item fixfloat">
+<label>测试数量：</label><b class="star">*</b>
+<input type="text" max="60" min="1" data-type="number" tabindex="7" class="basic-input grey" null="false" name="questions" id="num">  （数量数不超过60个）
+<span style="display:none;" class="validate-error">请填写正确的测试题数量</span>
+</div>
+<div class="item fixfloat">
+<label>结果种类：</label><b class="star">*</b>
+<input type="text" max="20" min="1" data-type="number" tabindex="7" class="basic-input grey" null="false" name="answers" id="res"> （种数不超过20个）
+<span style="display:none;" class="validate-error">请填写正确的种类</span>
+</div></div>
+<div class="skipline">
+<span class="next"><input type="button" id="button_sub"></span>
+</div>
+</form>
+</div>
+<style>
+.main .bd .r p{ border-top:none 0;}
+</style>
+<div class="r">
+<h3>跳转型测试</h3>
+<p>为每个测试问题的选项指定跳转到哪一个问题或哪一种结果。</p>
+<p>做题者最终跳转到的结果即为该用户的测试结果。</p>
+<p><b>注意：</b>1. 必须为所填选项指定跳转目标。2. 避免出现无限循环，导致无法得出测试结果。</p>
+</div></div>
+</div>
+
+  </div>
+</div>
+{subtemplate common/footer}
+<script src="$_G['siteurl']source/plugin/nds_quiz/js/jquery-1.5.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  ndsjq = jQuery.noConflict();
+ndsjq(function(){});
+</script>
+<script type="text/javascript">
+window.onload = function(){
+if(typeof jQuery != 'undefined'){
+ndsjq('#nav ul.main>li').not('.blank').hover(function(){
+ndsjq(this).parent().find('>li').not(ndsjq(this).addClass('current on')).removeClass('current on');
+},function(){
+ndsjq(this).removeClass('on');
+ndsjq('#nav ul.main>li.current').addClass('on');
+});
+ndsjq('#nav ul.main>li.on').addClass('current');
+}
+};
+</script>

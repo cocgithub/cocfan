@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2014-08-30 21:51]]></item>
+	<item id="From"><![CDATA[µÞ½Í (http://www.7-th.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[µÞ½Í-µo®g¼u¥X¤½§i]]></item>
+			<item id="identifier"><![CDATA[yhty_adtz]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[yhty_adtz/]]></item>
+			<item id="copyright"><![CDATA[¦±©_®V]]></item>
+			<item id="version"><![CDATA[2014.08.30]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[ccx]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[-1]]></item>
+				<item id="title"><![CDATA[¥´¶}jquery¶}Ãö¡H]]></item>
+				<item id="description"><![CDATA[jquery¬OjsªºÂ²¤Æ¤u¨ã.
+µÞ½Í¤@¤Á´¡¥ó³£·|¦³jquery¶}Ãö,¦pªG§A¤w¸g¦b¨Ï¥ÎµÞ½Í¨ä¥L´¡¥ó.½ÐÃö³¬jquery.
+¤£½T©w¬O§_¾Ö¦³jquery®É¡AÂIÀ»Ãö³¬«áµLªk¨Ï¥Î»¡©ú¨S¦³jquery.]]></item>
+				<item id="variable"><![CDATA[jq]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[¤½§i¼Æ¶q]]></item>
+				<item id="description"><![CDATA[0-2 = Åã¥Ü©Ò¦³
+¤j¤_2 = Åã¥ÜX­Ó]]></item>
+				<item id="variable"><![CDATA[sl]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[¥k¤U¨¤¥´¶}]]></item>
+				<item id="description"><![CDATA[¥´¶}«á¥k¤U¨¤·|Åã¥Ü ®i¶}¤½§i  
+¦pªGÃö³¬«h¥u¦³²K¥[·s¤½§i¤~·|®i¶}¤½§i.]]></item>
+				<item id="variable"><![CDATA[sx]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[ÀË¬d©P´Á]]></item>
+				<item id="description"><![CDATA[ÀË¬d©P´Á X ¬í,³Ì§C 3 ¬í. 
+½Ð®Ú¾ÚªA°È¾¹³X°Ý³t«×½Õ¾ã,
+0¬íªí¥Ü¤£ÀË¬d.
+
+!:ÀË¬d¬O§_¦³·s¤½§i X ¬í ajax Get ¤@¦¸]]></item>
+				<item id="variable"><![CDATA[sgd]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[Ãö³¬­ì¤½§iÅã¥Ü]]></item>
+				<item id="description"><![CDATA[Ãö³¬«á­ì¥»¤½§iÅã¥Ü±N·|ÁôÂÃ]]></item>
+				<item id="variable"><![CDATA[sww]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[¼s§iA]]></item>
+				<item id="description"><![CDATA[½Ð¨Ï¥Î HTML ¥N½X.
+ª©Åv«ØÄ³«O¯d]]></item>
+				<item id="variable"><![CDATA[swdd]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<a target="_blank" href="http://www.7-th.com/">by.µÞ½Í</a>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

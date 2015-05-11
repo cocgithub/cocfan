@@ -1,0 +1,97 @@
+.ccxtitlep1{
+text-align: center;
+font-size: 22px;
+font-weight: bold;
+line-height: 36px
+}
+.ccxtitlep2{
+border-bottom: 1px solid #CDCDCD;
+text-align: end;
+line-height: 16px;
+}
+.ccxbg{
+top: 15%;
+left: 22%;
+display: none;
+position: fixed;
+width: 800px;
+height: 462px;
+border-radius: 9px;
+background: #000;
+opacity: 0.2;
+}
+.yhad_bq1{
+display: none;
+position: fixed;
+right: 1px;
+bottom: 0px;
+width: 200px;
+height: 100px;
+background: #fff;
+text-align: left;
+box-shadow: 0 0 4px rgba(68,68,68,0.25);
+}
+.yhad_bq1 div{
+position: absolute;
+top: -19px;
+right: -1px;
+font-size: 26px;
+}
+.yhad_div1{
+top: 15%;
+display: none;
+margin: 8px;
+left: 22%;
+padding: 38px;
+position: fixed;
+background: #fff;
+width: 708px;
+height: 370px;
+}
+.yhad_div1left {
+top: 0px;
+left: 0px;
+position: absolute;
+height: 443px;
+overflow-y: scroll;
+overflow-x: hidden;
+padding-top: 3px;
+width: 166px;
+}
+.yhad_div1p{
+display: block;
+width: 145px;
+text-align: center;
+border: 1px dashed #DADADA;
+margin-bottom: 4px;
+}
+.yhad_div1right{
+width: 620px;
+float: left;
+padding: 3px;text-align: left;
+}
+.yhad_div1right h1{
+text-align: center;
+display: block;
+font-size: 23px;
+}
+.yhad_div1right h2{
+text-align: center;
+font-size: 14px;
+margin-top: -10px;
+color: #FF4700;
+font-weight: initial;
+display: block;
+}
+.thad_div2right {
+overflow-y: scroll;
+overflow-x: hidden;
+height: 440px;
+width: 608px;
+position: absolute;
+left: 170px;
+top: 0px;
+}
+.ggtgbg{
+background: #00F5FF;
+}

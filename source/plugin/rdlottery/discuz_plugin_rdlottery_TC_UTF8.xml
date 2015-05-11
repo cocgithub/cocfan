@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2]]></item>
+	<item id="Time"><![CDATA[2012-09-19 16:36]]></item>
+	<item id="From"><![CDATA[Discuz! Board]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[隨機抽獎]]></item>
+			<item id="identifier"><![CDATA[rdlottery]]></item>
+			<item id="description"><![CDATA[插件描述]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[rdlottery/]]></item>
+			<item id="copyright"><![CDATA[coofee]]></item>
+			<item id="version"><![CDATA[1.6]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[rdlthread]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[12]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[rdlmanage]]></item>
+					<item id="menu"><![CDATA[管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[rdlthread_hide]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[參與交易自動回復]]></item>
+				<item id="description"><![CDATA[如果開啟，用戶參與抽獎後會自動回復]]></item>
+				<item id="variable"><![CDATA[rdl_reply]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[交易積分]]></item>
+				<item id="description"><![CDATA[用戶抽獎時消費的積分類型]]></item>
+				<item id="variable"><![CDATA[rdl_extcredit]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[自動回復內容]]></item>
+				<item id="description"><![CDATA[用戶自動回復的內容，多個內容之間以換行分割]]></item>
+				<item id="variable"><![CDATA[rdl_reply_message]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[好活動，支持~！
+讓我中個大獎吧~！
+打個醬油，支持下！
+只花{price}{priceunit}就能參與{name}的抽獎，太值了！]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[抽獎規則]]></item>
+				<item id="description"><![CDATA[可以在此填寫抽獎的規則，用戶在前台可以看到]]></item>
+				<item id="variable"><![CDATA[rdl_type_tips]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[       只要用戶相應的金錢數量以及物品的數量足夠就可以參與抽獎。每參與一次都會扣除相應數量的金錢，每次都有一定的概率獲獎。
+      提示︰不管有沒有中獎都會扣除相應的金錢。]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="rdlottery"><![CDATA[隨機抽獎]]></item>
+				<item id="post_rdlottery"><![CDATA[發布抽獎]]></item>
+				<item id="m_time_invalide"><![CDATA[交易時間錯誤，請返回重新填寫]]></item>
+				<item id="m_name_invalide"><![CDATA[物品名稱未填寫，請返回]]></item>
+				<item id="m_real_price_invalide"><![CDATA[物品市場價填寫錯誤，請返回]]></item>
+				<item id="m_message_ivalide"><![CDATA[卡密不能為空，請返回]]></item>
+				<item id="m_number_invalide"><![CDATA[物品數量填寫錯誤，請返回]]></item>
+				<item id="m_ext_price_invalide"><![CDATA[物品積分價格填寫錯誤，請返回]]></item>
+				<item id="m_time_too_short"><![CDATA[交易開始時間與結束時間的間隔範圍應該為 1小時-3個月，請重新填寫]]></item>
+				<item id="m_rand_error"><![CDATA[中獎概率填寫錯誤]]></item>
+				<item id="m_no_pic"><![CDATA[封面必須上傳]]></item>
+				<item id="m_owner"><![CDATA[對不起，您是交易的發起者，不能參與]]></item>
+				<item id="m_choujiang_succeed"><![CDATA[恭喜，您中獎了！]]></item>
+				<item id="m_choujiang_faile"><![CDATA[沒抽中，別灰心，再試一次吧！]]></item>
+				<item id="info_error"><![CDATA[配送信息錯誤，請檢查你的手機號和配送信息是否填寫正確！]]></item>
+				<item id="n_rdlottery_get"><![CDATA[恭喜，您已經獲得 <a href='forum.php?mod=viewthread&tid={rdlotterytid}'>{rdlotteryname}</a> ，<a href='forum.php?mod=viewthread&tid={rdlotterytid}'>點此查看詳情</a>]]></item>
+				<item id="m_manage_tips"><![CDATA[請謹慎操作！]]></item>
+				<item id="id"><![CDATA[AID]]></item>
+				<item id="m_title"><![CDATA[物品名稱]]></item>
+				<item id="m_starttimeto"><![CDATA[結束時間]]></item>
+				<item id="m_starttimefrom"><![CDATA[開始時間]]></item>
+				<item id="m_username"><![CDATA[發布者]]></item>
+				<item id="m_finished"><![CDATA[已結束]]></item>
+				<item id="m_yes"><![CDATA[是]]></item>
+				<item id="m_no"><![CDATA[<font color='red'>否</font>]]></item>
+				<item id="n_rdlottery_clear"><![CDATA[活動已經刪除]]></item>
+				<item id="m_join_rdllog"><![CDATA[參與隨機抽獎]]></item>
+				<item id="none"><![CDATA[暫無記錄]]></item>
+				<item id="m_delay_time_error"><![CDATA[本交易延期時間範圍為 {mintime} 至 {maxtime}，請重新設置交易結束時間]]></item>
+				<item id="rdl_cover_update"><![CDATA[點擊更新來更換交易的封面]]></item>
+				<item id="m_delete_succeed"><![CDATA[刪除成功\]]></item>
+				<item id="m_delete_end"><![CDATA[個交易，未結束的交易不能刪除！]]></item>
+				<item id="m_less_ext"><![CDATA[您已經沒有足夠參與本次抽獎所需要的相應種類的金錢！]]></item>
+				<item id="not_start_yet"><![CDATA[抽獎還未開始]]></item>
+				<item id="m_starttime_error"><![CDATA[對不起，抽獎還未開始]]></item>
+				<item id="m_no_goods"><![CDATA[您來晚了，物品已經賣光了！]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="login"><![CDATA[登陸]]></item>
+				<item id="rdl_type"><![CDATA[交易類型]]></item>
+				<item id="rdlottery"><![CDATA[隨機抽獎]]></item>
+				<item id="rdl_time"><![CDATA[交易時間]]></item>
+				<item id="rdl_real_price"><![CDATA[市場價]]></item>
+				<item id="rdl_yuan"><![CDATA[元]]></item>
+				<item id="post_rdlottery"><![CDATA[參與抽獎]]></item>
+				<item id="rdl_name"><![CDATA[物品名稱]]></item>
+				<item id="rdl_virtual"><![CDATA[物品類型]]></item>
+				<item id="rdl_virtual_0"><![CDATA[實物]]></item>
+				<item id="rdl_virtual_1"><![CDATA[虛擬物品]]></item>
+				<item id="rdl_isinfo"><![CDATA[配送信息]]></item>
+				<item id="rdl_isinfo_0"><![CDATA[否]]></item>
+				<item id="rdl_isinfo_1"><![CDATA[是]]></item>
+				<item id="rdl_isinfo_desc"><![CDATA[是否需要用戶填寫具體的送貨地址]]></item>
+				<item id="rdl_message"><![CDATA[卡密]]></item>
+				<item id="rdl_ext_price"><![CDATA[交易價格]]></item>
+				<item id="rdl_rand"><![CDATA[中獎概率]]></item>
+				<item id="rdl_rand_desc"><![CDATA[0-1000內的整數]]></item>
+				<item id="rdl_cover"><![CDATA[物品圖片]]></item>
+				<item id="rdl_cover_tips"><![CDATA[上傳一張圖片作為交易的封面吧]]></item>
+				<item id="input_invalid"><![CDATA[填寫無效]]></item>
+				<item id="rdl_message_message"><![CDATA[請填寫卡密，一個一行]]></item>
+				<item id="rdl_number"><![CDATA[物品數量]]></item>
+				<item id="rdl_post_error_name"><![CDATA[請填寫物品名稱]]></item>
+				<item id="rdl_post_error_starttimefrom"><![CDATA[開始時間填寫無效]]></item>
+				<item id="rdl_post_error_starttimeto"><![CDATA[結束時間填寫無效]]></item>
+				<item id="rdl_post_error_real_price"><![CDATA[市場價格填寫無效]]></item>
+				<item id="rdl_post_error_ext_price"><![CDATA[積分價格填寫無效]]></item>
+				<item id="rdl_post_error_number"><![CDATA[物品數量填寫無效]]></item>
+				<item id="rdl_post_error_message"><![CDATA[卡密填寫無效]]></item>
+				<item id="rdl_post_error_rand"><![CDATA[中獎概率填寫無效]]></item>
+				<item id="rdl_starttimefrom"><![CDATA[開始時間]]></item>
+				<item id="rdl_starttimeto"><![CDATA[結束時間]]></item>
+				<item id="rdl_timeleft"><![CDATA[剩余時間]]></item>
+				<item id="day"><![CDATA[天]]></item>
+				<item id="hour"><![CDATA[小時]]></item>
+				<item id="min"><![CDATA[分鐘]]></item>
+				<item id="sec"><![CDATA[秒]]></item>
+				<item id="total"><![CDATA[共]]></item>
+				<item id="unit"><![CDATA[件]]></item>
+				<item id="rdl_type_hot"><![CDATA[人氣]]></item>
+				<item id="finish"><![CDATA[結算]]></item>
+				<item id="rdl_join"><![CDATA[試試手氣]]></item>
+				<item id="view_message"><![CDATA[查看卡密]]></item>
+				<item id="deadline"><![CDATA[已經結束]]></item>
+				<item id="m_delay_time_error"><![CDATA[本交易延期時間範圍為 {mintime} 至 {maxtime}，請重新設置交易結束時間]]></item>
+				<item id="m_none_exist"><![CDATA[交易不存在或已到期]]></item>
+				<item id="m_owner"><![CDATA[對不起，您是交易的發起者，不能參與]]></item>
+				<item id="m_starttime_error"><![CDATA[交易尚未開始，您不能參與]]></item>
+				<item id="m_end"><![CDATA[交易已經結束，下次早點來哦]]></item>
+				<item id="m_less_ext"><![CDATA[抱歉，您的金錢不夠！]]></item>
+				<item id="m_no_goods"><![CDATA[您來晚了，物品已經賣光了！]]></item>
+				<item id="undefine_error"><![CDATA[未知錯誤！]]></item>
+				<item id="m_not_owner"><![CDATA[對不起，您不是交易發起人，不能執行該操作]]></item>
+				<item id="m_no_perm"><![CDATA[對不起，您沒有權限進行此操作]]></item>
+				<item id="m_not_virtual"><![CDATA[該交易的物品類型不是虛擬物品]]></item>
+				<item id="msg_id"><![CDATA[編號]]></item>
+				<item id="msg_ct"><![CDATA[卡密]]></item>
+				<item id="msg_mb"><![CDATA[用戶]]></item>
+				<item id="msg_st"><![CDATA[狀態]]></item>
+				<item id="msg_st_0"><![CDATA[未發送]]></item>
+				<item id="msg_st_1"><![CDATA[已發送]]></item>
+				<item id="confirm"><![CDATA[確定]]></item>
+				<item id="rdl_reply_message"><![CDATA[說兩句]]></item>
+				<item id="ext_notice"><![CDATA[參與成功\後將扣除您相應的積分]]></item>
+				<item id="mobile_tips"><![CDATA[請留下您的手機號，物品領取過程中會用到]]></item>
+				<item id="contact"><![CDATA[手機]]></item>
+				<item id="maohao"><![CDATA[:]]></item>
+				<item id="info_tips"><![CDATA[請留下您的配送地址或者備注:]]></item>
+				<item id="list"><![CDATA[中獎記錄]]></item>
+				<item id="username"><![CDATA[用戶名]]></item>
+				<item id="dateline"><![CDATA[日期]]></item>
+				<item id="price"><![CDATA[價格]]></item>
+				<item id="status"><![CDATA[狀態]]></item>
+				<item id="info"><![CDATA[配送信息]]></item>
+				<item id="choujiang_yes"><![CDATA[中獎]]></item>
+				<item id="none"><![CDATA[暫無記錄]]></item>
+				<item id="rdl_message_ban"><![CDATA[此處不可修改]]></item>
+				<item id="rdl_cover_update"><![CDATA[點擊更新來更換交易的封面]]></item>
+				<item id="not_start_yet"><![CDATA[抽獎還未開始]]></item>
+				<item id="rdl_last_number"><![CDATA[剩余數量]]></item>
+				<item id="last"><![CDATA[剩余]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

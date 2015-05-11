@@ -1,0 +1,84 @@
+<!--{block return}-->
+<style type="text/css">
+.login-wrap{position:fixed;left:0;bottom:0;width:100%;_position:absolute;z-index:999;}
+.login-ie6-fixed{bottom:0;}
+.login-box{padding:18px 0 7px;border-top:1px solid #D2E0B1;border-bottom:1px solid #D2E0B1;box-shadow:2px 2px 6px #8CA226;background:#D9E6BB;opacity: 0.9; filter: alpha(opacity=90);}
+.login-user{position:relative;margin:0 auto;width:960px;height:70px;}
+.login-user a,.login-user a:visited{color:#666;}
+.login-user a:hover{color:#0657B2;}
+.login-user .txt{padding:3px;border:1px solid #D8D8D8;color:#333;}
+.login-user .txt:hover,.login-user .txt:focus{border-color:#7DBDE2;}
+.login-title,.login-cont,.login-ft{display:inline;position:relative;}
+.login-title{color:#8CA226;margin-bottom:14px;margin-right:10px;}
+.login-title h3{margin-top:3px;height:30px;font:400 24px/30px "Microsoft YaHei",SimHei;}
+.login-title .login-arrow{margin-top:13px;width:30px;height:12px;background:url(source/plugin/mpage_login/template/image/icon_common.png) no-repeat 0 0;}
+.login-cont{height:63px;}
+.login-cont .mg0{margin:0;}
+.login-cont .txt{float:left;margin-bottom:10px;width:130px;height:25px;line-height:25px;color:#999;font-size:14px;zoom:1;}
+.login-cont .login-captcha{width:112px;}
+.login-cont .login-captcha .txt{margin-bottom:0;}
+.login-cont ul{position:absolute;top:0;left:0;width:720px;}
+.login-cont li{display:inline;float:left;margin-right:10px;height:80px;overflow:hidden;}
+.login-cont .login-item{color:#666;clear:both;}
+.login-cont .login-item input{margin-top:-2px;}
+.login-cont .login-button,.login-cont .login-button:visited{display:block;float:left;width:64px;color:#fff;border:1px solid #b9c97d;border-radius:6px;font-size:14px;font-weight:700;height:33px;line-height:33px;margin-right:10px;text-align:center;background:#7f9c14;background:-moz-linear-gradient(top,#abbf42,#8ea423);background:-webkit-linear-gradient(top,#abbf42,#8ea423);}
+.login-cont .login-button:hover{border:1px solid #b9c97d;border-radius:6px;text-decoration:none;color:#fff;background-position:0 -108px;background:#a8b748;background:-moz-linear-gradient(top,#c4d323,#a8b748);background:-webkit-linear-gradient(top,#c4d323,#a8b748);}
+.login-cont .login-label{float:left;font-size:14px;width:112px;display:none;}
+.login-cont .login-qt{width:77px;height:60px;border-right:1px solid #B4C574;}
+#J_loginGuide .login-shortcut{margin-top:20px;}
+.close{position:absolute;top:4px;right:10px;padding-top:15px;width:15px;height:0;overflow:hidden;z-index:9;cursor:pointer;}
+.close:hover{background-position:4px -32px;}
+.box-close{top:10px;padding-top:19px;width:20px;background:url(source/plugin/mpage_login/template/image/icon_common.png) no-repeat 0 -12px;}
+.box-close:hover{background:url(source/plugin/mpage_login/template/image/icon_common.png) no-repeat 0 -31px;}
+.login-shortcut span{heiht:30px;line-height:30px;}
+.login-shortcut .account-qq,.login-shortcut .account-sina,.login-shortcut .account-taobao,.login-shortcut .account-qihoo{float:left;margin:3px 10px 0 0;padding-top:24px;width:24px;height:0;background:url(source/plugin/mpage_login/template/image/icon_common.png) 0 -50px no-repeat;overflow:hidden;}
+.login-shortcut .account-sina{background-position: 0 -74px;}
+.login-shortcut .account-taobao{background-position: 0 -98px;}
+.login-shortcut .account-qihoo{background-position: 0 -122px;}
+</style>
+<div id="J_loginGuide" class="login-wrap">
+	<div class="login-box">
+		<div class="login-user cl">
+			<div class="login-title z cl">
+				<h3 class="z">$this->title</h3>
+				<span class="login-arrow z"></span>
+			</div>
+			<div class="login-cont z">
+				<form method="post" action="member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes">
+					<input type="hidden" name="formhash" value="{FORMHASH}" />
+					<input type="hidden" name="quickforward" value="yes" />
+					<input type="hidden" name="handlekey" value="ls" />
+					<ul>
+						<li>
+							<input type="text" id="username_$loginhash" name="username" class="txt" tabindex="1" placeholder="{lang mpage_login:enter_username}">
+							<div class="login-item"><label><input type="checkbox" id="cookietime_$loginhash" name="cookietime" class="checkbox"  $cookietimecheck tabindex="4" value="2592000">&nbsp;{lang mpage_login:remember}</label></div>
+						</li>
+						<li>
+							<input type="password" id="password3_$loginhash" name="password" class="txt" tabindex="2" placeholder="{lang mpage_login:enter_password}">
+							<div class="login-item"><a href="javascript:;" onclick="showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')" title="{lang mpage_login:lostpw}">{lang mpage_login:lostpw}</a></div>
+						</li>
+						<li class="login-qt">
+							<button type="submit" id="J_loginBtn" class="login-button"><span>{lang mpage_login:login}</span></a></button>
+							<div class="login-item"><a href="member.php?mod={$_G[setting][regname]}" target="_blank">{lang mpage_login:register}</a></div>
+						</li>
+						<li class="login-shortcut color6">
+							<span class="z">{lang mpage_login:accounts}</span>
+							<a href="connect.php?mod=login&op=init&referer=$_G[siteurl]&statfrom=login" class="account-qq J_outsiteLogin" tabindex="7"">{lang mpage_login:account_qq}</a>
+							<!--{if $this->sina}-->
+							<a href="{$this->sina}" class="account-sina J_outsiteLogin" tabindex="8">{lang mpage_login:account_sina}</a>
+							<!--{/if}-->
+							<!--{if $this->taobao}-->
+							<a href="{$this->taobao}" class="account-taobao J_outsiteLogin" tabindex="9">{lang mpage_login:account_taobao}</a>
+							<!--{/if}-->
+							<!--{if $this->qihoo}-->
+							<a href="{$this->qihoo}" class="account-qihoo J_outsiteLogin" tabindex="10">{lang mpage_login:account_qihoo}</a>
+							<!--{/if}-->
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+		<a href="javascript:;" onclick="display('J_loginGuide')" class="close box-close" title="{lang mpage_login:close}">{lang mpage_login:close}</a>
+	</div>
+</div>
+<!--{/block}-->

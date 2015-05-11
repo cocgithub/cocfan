@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2013-05-12 15:13]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[智能N格]]></item>
+			<item id="identifier"><![CDATA[dxksst_n]]></item>
+			<item id="description"><![CDATA[ 独具智能推荐和历史的今天功能 推荐一栏会根用户所在地理位置 智能推荐内容 ]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[dxksst_n/]]></item>
+			<item id="copyright"><![CDATA[dxksst]]></item>
+			<item id="version"><![CDATA[1.2]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[dxksst]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[标题配置]]></item>
+				<item id="description"><![CDATA[每个格子的相应标题 用'|'隔开]]></item>
+				<item id="variable"><![CDATA[title]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[图片|智能推荐|最新|最热贴|精华帖|历史的今天|新会员]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[调用板块]]></item>
+				<item id="description"><![CDATA[N格内容提取哪些板块的内容 免费版只能选择一个 留空默认fid=2的板块]]></item>
+				<item id="variable"><![CDATA[forbide_fid]]></item>
+				<item id="type"><![CDATA[forum]]></item>
+				<item id="value"><![CDATA[36]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[缓存时间]]></item>
+				<item id="description"><![CDATA[多长时间更新一次帖子信息 单位 秒]]></item>
+				<item id="variable"><![CDATA[ltime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[历史今天单位]]></item>
+				<item id="description"><![CDATA[要设置一年前的今天就选'年'
+要设置一月前的今天就选'月' ....等等 类推]]></item>
+				<item id="variable"><![CDATA[today_type]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[day]]></item>
+				<item id="extra"><![CDATA[year=年
+month=月
+week=周
+day=天]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[历史今天描述]]></item>
+				<item id="description"><![CDATA[历史上今天帖子内容的组成形式[subject]代表帖子标题 [author]代表发帖者[time]代表发帖时间 支持html代码]]></item>
+				<item id="variable"><![CDATA[describe]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<font color='#FF00FF'>[time]</font> 【[author]】 发表：[subject]]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[地理设置]]></item>
+				<item id="description"><![CDATA[推荐一栏推荐的地理位置 省市都推荐 请选择省市 只推荐省 请选省 只推荐市 请选择市]]></item>
+				<item id="variable"><![CDATA[local_key]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[省s市]]></item>
+				<item id="extra"><![CDATA[省s市=省市
+省=省
+市=市]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[自定义地理提取]]></item>
+				<item id="description"><![CDATA[每个只能为2个字 最多两个 并用|隔开 
+根据ip获取的地理位置中如果含有此词语 则会提取出来作为推荐关键词]]></item>
+				<item id="variable"><![CDATA[local_my]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[学院|大学]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[板块颜色]]></item>
+				<item id="description"><![CDATA[帖子前板块的显示颜色]]></item>
+				<item id="variable"><![CDATA[fcolor]]></item>
+				<item id="type"><![CDATA[color]]></item>
+				<item id="value"><![CDATA[#0033FF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[图片显示数量]]></item>
+				<item id="description"><![CDATA[幻灯片的图片展示数量]]></item>
+				<item id="variable"><![CDATA[image_num]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

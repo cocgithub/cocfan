@@ -1,0 +1,25 @@
+<!--{template common/header}-->
+<script type="text/javascript" reload="1">
+var rungetcomment_by_kl3w_guisepost = null;
+var kl3w_guisepostcomurl = 'forum.php?mod=misc&action=comment&tid={$tid}&pid={$pid}';
+showWindow('comment', kl3w_guisepostcomurl, 'get', 0);
+function kl3w_guisepost_getcomment(){
+	if($('fctrl_comment')){
+		if(rungetcomment_by_kl3w_guisepost){
+			window.clearInterval(rungetcomment_by_kl3w_guisepost);
+		}
+		if($('commentsubmit')){
+			$('return_comment').innerHTML = '&#x9A6C;&#x7532;&#x70B9;&#x8BC4;'; 		
+			var h = '<span class="z"><button type="submit" id="commentsubmit" class="pn pnc z" value="true" name="commentsubmit" tabindex="3" style="height:32px;"><span>{lang publish}</span></button><span class="kl3w_guisepost">'+
+			'<a id="kl3w_guisepost" onmouseover="$(\'kl3w_guisepost\').id = \'kl3w_guisepost_comtmp\';this.id = \'kl3w_guisepost\';showMenu({\'ctrlid\':this.id})"><dl title="UID:{$GLOBALS[_G][uid]}"><dt class="z"></dt>'+
+			'<dd style="color:#000">&nbsp;&#x9ED8;&#x8BA4;&#x81EA;&#x5DF1;</dd><em>&nbsp;&#x8BF7;&#x9009;&#x62E9;&#x9A6C;&#x7532;</em></dl></a><div style="clear:both"></div>'+
+			'</span></span><span class="y">&#x8FD8;&#x53EF;&#x8F93;&#x5165; <strong id="checklen">200</strong> &#x4E2A;&#x5B57;&#x7B26;</span>'
+			var _temp=$('commentsubmit').parentNode;
+			_temp.innerHTML = h;
+		}
+	}
+}
+kl3w_guisepost_getcomment();
+rungetcomment_by_kl3w_guisepost = setInterval('kl3w_guisepost_getcomment()',100);
+</script>
+<!--{template common/footer}-->

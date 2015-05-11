@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X1.5,X2,X2.5]]></item>
+	<item id="Time"><![CDATA[2012-10-26 13:06]]></item>
+	<item id="From"><![CDATA[維清工作室 (http://www.weiqing.org/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[友情鏈接自助申請]]></item>
+			<item id="identifier"><![CDATA[wq_links]]></item>
+			<item id="description"><![CDATA[友情鏈接自助申請插件旨在方便站長之間交換友情鏈接。對方發起申請後，由站長進行審核，審核通過後會自動顯示並通告申請用戶！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[wq_links/]]></item>
+			<item id="copyright"><![CDATA[維清工作室]]></item>
+			<item id="version"><![CDATA[1.3]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[manage]]></item>
+					<item id="menu"><![CDATA[友情鏈接審核]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[main]]></item>
+					<item id="menu"><![CDATA[申請友鏈]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[23]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[managelog]]></item>
+					<item id="menu"><![CDATA[友情鏈接審核日志]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[5]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X1.5,X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否開啟插件]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[offset]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[是否允許游客申請]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[allow_nologin]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[是否允許圖文鏈接]]></item>
+				<item id="description"><![CDATA[允許用戶申請圖文鏈接，則用戶輸網站簡介時會自動將該鏈接作為圖文鏈接處理；否則不管用戶是否輸入網站簡介，都將作為圖片或文字鏈接處理。]]></item>
+				<item id="variable"><![CDATA[is_multi]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[是否允許圖片鏈接]]></item>
+				<item id="description"><![CDATA[允許用戶申請圖片鏈接，則用戶輸logo地址時會自動將該鏈接作為圖片鏈接處理；否則不管用戶是否輸入logo地址，都將作為文字鏈接處理。此選項在不允許用戶申請圖文鏈接時有效。]]></item>
+				<item id="variable"><![CDATA[is_pic]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[接收通知的管理員]]></item>
+				<item id="description"><![CDATA[用戶提交申請後，系統會給管理員發送審核提醒。請將要接收提醒的管理員uid填寫在這里，多個uid用英文半角逗號分隔。]]></item>
+				<item id="variable"><![CDATA[admins]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[站點名稱提示信息]]></item>
+				<item id="description"><![CDATA[可以修改為您的網站名稱。]]></item>
+				<item id="variable"><![CDATA[site_name]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[如︰維清工作室]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[站點地址提示信息]]></item>
+				<item id="description"><![CDATA[可以修改為您的網站地址。]]></item>
+				<item id="variable"><![CDATA[site_url]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[如︰http://www.weiqing.org]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[站點logo地址提示信息]]></item>
+				<item id="description"><![CDATA[可以修改為您的網站logo地址。]]></item>
+				<item id="variable"><![CDATA[site_logo]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[如︰http://www.weiqing.org/static/image/common/logo.png]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[頁面SEO優化之標題]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[title]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[申請友情鏈接]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[頁面SEO優化之關鍵字]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[keyword]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[友情鏈接,友鏈,自助,申請]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[頁面SEO優化之描述]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[content]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[自助申請友情鏈接]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[19]]></item>
+				<item id="title"><![CDATA[游客申請時提醒登陸提示語]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[nologin_notice]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[溫馨提示︰您還未登錄！您現在可以申請友情鏈接，但是無法跟蹤其審核結果，建議登陸後再申請！]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[20]]></item>
+				<item id="title"><![CDATA[溫馨提示內容]]></item>
+				<item id="description"><![CDATA[這里的內容將出現在前台頁面的右邊欄，主要用于提醒用戶一些注意事項。]]></item>
+				<item id="variable"><![CDATA[tips_contents]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<li><b>1.</b>帶有 <font color=red>*</font> 的為必填項，請認真填寫。</li>
+<li><b>2.</b>網站簡介和logo地址為選填項，但需注意，只有填寫了網站簡介才有機會申請圖文鏈接；只有填寫了logo地址才有機會申請圖片鏈接，但最終的鏈接類型還取決于本站的設置。</li>
+<li><b>3.</b>申請鏈接請先在貴站的首頁做好本站的友情鏈接。</li>
+<li><b>4.</b>本站只與PR>=2的網站交換鏈接，不符合條件者請勿提交。</li>
+]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[鏈接審核頁面顯示數量]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[manage_num]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[18]]></item>
+				<item id="title"><![CDATA[鏈接審核日志顯示數量]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[managelog_num]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="plugin_name"><![CDATA[友情鏈接自助申請]]></item>
+				<item id="tab_nav_apply"><![CDATA[友鏈申請]]></item>
+				<item id="tab_nav_log"><![CDATA[申請記錄]]></item>
+				<item id="offset1"><![CDATA[友情鏈接自助申請插件處于關閉狀態，請進入後台打開！]]></item>
+				<item id="passverify"><![CDATA[已通過]]></item>
+				<item id="nopassverify"><![CDATA[不通過]]></item>
+				<item id="unverify"><![CDATA[待審核]]></item>
+				<item id="validate"><![CDATA[通過]]></item>
+				<item id="delete"><![CDATA[刪除]]></item>
+				<item id="gotologin"><![CDATA[您還沒登陸，請先登陸]]></item>
+				<item id="links_apply"><![CDATA[友鏈申請]]></item>
+				<item id="needsitename"><![CDATA[網站名稱不能為空]]></item>
+				<item id="needsiteurl"><![CDATA[網址不能為空]]></item>
+				<item id="siteexist1"><![CDATA[您已經提交了網址為 <b>]]></item>
+				<item id="siteexist2"><![CDATA[</b> 的友鏈申請，請勿重復提交。]]></item>
+				<item id="pm_content1"><![CDATA[管理員好，我剛提交了新的友情鏈接申請，網址為 ]]></item>
+				<item id="pm_content2"><![CDATA[ ，請盡快審核，謝謝！]]></item>
+				<item id="tips_content"><![CDATA[友情鏈接申請成功\，請等待管理員審核。結果將會以站內消息告知您！]]></item>
+				<item id="tips_content_nologin"><![CDATA[友情鏈接申請成功\，請等待管理員審核。]]></item>
+				<item id="nologo"><![CDATA[無LOGO]]></item>
+				<item id="sitename"><![CDATA[網站名稱]]></item>
+				<item id="siteurl"><![CDATA[網站地址]]></item>
+				<item id="logo"><![CDATA[網站logo]]></item>
+				<item id="intro"><![CDATA[網站簡介]]></item>
+				<item id="applyer"><![CDATA[申請人]]></item>
+				<item id="updatetime"><![CDATA[審核時間]]></item>
+				<item id="status"><![CDATA[狀態]]></item>
+				<item id="dateline"><![CDATA[申請時間]]></item>
+				<item id="prseo"><![CDATA[PR/收錄]]></item>
+				<item id="pr"><![CDATA[PR查詢]]></item>
+				<item id="seo"><![CDATA[SEO綜合]]></item>
+				<item id="youke"><![CDATA[游客]]></item>
+				<item id="linksvalidate"><![CDATA[友情鏈接審核]]></item>
+				<item id="nolog"><![CDATA[暫無友情鏈接審核日志]]></item>
+				<item id="nodata"><![CDATA[暫無需要審核的友情鏈接]]></item>
+				<item id="validate_succeed"><![CDATA[友情鏈接審核成功\]]></item>
+				<item id="delete_succeed"><![CDATA[審核記錄刪除成功\]]></item>
+				<item id="noselect_deleteids"><![CDATA[請選擇您要刪除的審核記錄]]></item>
+				<item id="validate_pmcontent1"><![CDATA[您好，您申請的網址為 ]]></item>
+				<item id="validate_pmcontent2"><![CDATA[ 的友情鏈接已經通過審核，如果您還沒在首頁鏈接本站請盡快做好鏈接，謝謝！]]></item>
+				<item id="delete_pmcontent1"><![CDATA[您好，您申請的網址為 ]]></item>
+				<item id="delete_pmcontent2"><![CDATA[ 的友情鏈接沒有通過審核，歡迎您在網站權重符合我們的要求後再次提交申請，謝謝！]]></item>
+				<item id="select_all"><![CDATA[全選]]></item>
+				<item id="submit_url"><![CDATA[提交]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="plugin_name"><![CDATA[友情鏈接自助申請]]></item>
+				<item id="tab_apply"><![CDATA[友鏈申請]]></item>
+				<item id="tab_log"><![CDATA[申請記錄]]></item>
+				<item id="sitename"><![CDATA[網站名稱]]></item>
+				<item id="siteurl"><![CDATA[網站地址]]></item>
+				<item id="logo"><![CDATA[LOGO地址]]></item>
+				<item id="intro"><![CDATA[網站簡介]]></item>
+				<item id="submit"><![CDATA[提交申請]]></item>
+				<item id="reset"><![CDATA[重新填寫]]></item>
+				<item id="log_title1"><![CDATA[網站名稱]]></item>
+				<item id="log_title2"><![CDATA[網站地址]]></item>
+				<item id="log_title3"><![CDATA[網站LOGO]]></item>
+				<item id="log_title4"><![CDATA[網站簡介]]></item>
+				<item id="log_title5"><![CDATA[申請時間]]></item>
+				<item id="log_title6"><![CDATA[狀態]]></item>
+				<item id="viewintro"><![CDATA[查看簡介]]></item>
+				<item id="side_tips1"><![CDATA[溫馨提示]]></item>
+				<item id="side_tips2"><![CDATA[版權信息]]></item>
+				<item id="copyright"><![CDATA[8041641987]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+	</item>
+</root>

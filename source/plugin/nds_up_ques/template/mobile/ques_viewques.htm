@@ -1,0 +1,124 @@
+{subtemplate common/header}
+<script type="text/javascript">
+var timemm ='{$timemm}',timess ='{$timess}',timermm ='{$timermm}',timerss ='{$timerss}',  stopautotime = true, stoptimer = true, nds_js_no = '{lang nds_up_ques:nds_js_no}',nds_js_tk = '{lang nds_up_ques:nds_js_tk}', nds_js_jd = '{lang nds_up_ques:nds_js_jd}', nds_js_dx = '{lang nds_up_ques:nds_js_dx}', nds_js_tx = '{lang nds_up_ques:nds_js_tx}',   nds_js_min = '{lang nds_up_ques:nds_js_min}',   nds_js_min2  = '{lang nds_up_ques:nds_js_min2}', nds_js_max = '{lang nds_up_ques:nds_js_max}',nds_js_max2 = '{lang nds_up_ques:nds_js_max2}',nds_timeleft = '{lang nds_up_ques:nds_timeleft}',nds_timeout = '{lang nds_up_ques:nds_timeout}',nds_timeleft3m = '{lang nds_up_ques:nds_timeleft3m}';</script>
+<script src="$_G['siteurl']source/plugin/nds_up_ques/js/ques_viewques.js" type="text/javascript"></script>
+<script src="$_G['siteurl']source/plugin/nds_up_ques/js/ques_slider.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="$_G['siteurl']source/plugin/nds_up_ques/template/nds_ques.css" /> 
+<div  class="rightbarnew">
+ <!--{if $sysmode  == 2 && $questopic['timeleft'] > 1  && !$havedone}--> 
+     <div id="kssjCnt"></div>
+  <script type="text/javascript">
+        stopautotime = false;
+         AutoTime();
+  </script>		 
+  <!--{/if}-->
+ <!--{if $questopic['ndsright'] }--> 
+ <input id="EOVal" type="hidden" name="EOVal" value="0" isclass="">         
+<script type="text/javascript">
+    var ques = $nid;
+ 		  window.onerror=function (){return true}	
+		document.write ('<table class="nidtab" border="1" bordercolor="#7aaee3"  bgcolor="#fffff"  cellspacing="1" cellpadding="4" >')
+		for (ii = 1; ii < ques; ii++) 
+    	{
+			if ((ii%5)==1) {document.write ('<tr align="center" bgcolor="#FFFFFF">');}
+			document.write ('<td ID="EOV'+ii+'" class="ExamOrderViewWait" onclick="ViewEOTable('+ii+');scroller(\'tda'+ii+'\',1);">'+ii+'</td>');
+			if ((ii%5)==0) {document.write ('</tr>');}
+		}
+	document.write ('</tr></table>');
+   	</script>
+  <!--{/if}-->       
+</div>
+
+<div class="box">
+<a href="./" class="nvhm">$_G['setting']['bbname']</a><em> &gt; </em><a href="plugin.php?id=nds_up_ques"><!--{if !empty($ndsquesname)}-->$ndsquesname<!--{else}-->{lang nds_up_ques:ques}<!--{/if}--></a><em> &gt; </em>{lang nds_up_ques:action_3}
+</div>
+
+
+<div class="vt">
+    <div class="bm">
+
+
+<div class="tz mtn">
+<!--{if $havedone }-->
+   <a href="plugin.php?id=nds_up_ques&action=scan&topicid=$topicid&hook=2" target="_blank"  class="fa_myques">{lang nds_up_ques:vmyanswer}</a>
+<span class="pipe">|</span>
+<!--{/if}-->
+<!--{if !$secret || $questopic['authorid'] == $_G['uid'] || $_G['adminid'] == 1 || $_G['adminid'] == 2 }-->
+<a href="plugin.php?id=nds_up_ques&action=viewanswer&topicid=$topicid" class="fa_ques">{lang nds_up_ques:admin1}</a>
+<span class="pipe">|</span>
+<!--{/if}-->
+<a href="plugin.php?id=nds_up_ques&action=stats&topicid=$topicid" class="fa_stats">{lang nds_up_ques:admin3}</a>
+</div>
+
+<h2 class="xs2">
+{lang nds_up_ques:action_3}<span class="xs1 xw0 i"> ({lang nds_up_ques:expto}:{$questopic[exps]})<strong class="xi1">
+<!--{if empty($_G['uid']) && !$isguest}-->{lang nds_up_ques:notice8}
+<!--{elseif $havedone == 1}-->{lang nds_up_ques:noticesml}<!--{elseif !in_array($_G['groupid'] ,$allowsubmit)}-->{lang nds_up_ques:notice2}
+<!--{elseif !$questopic['person']}-->{lang nds_up_ques:notice3}
+<!--{elseif $questopic['stop']}-->{lang nds_up_ques:notice4}
+<!--{elseif $questopic['exp'] !=1 && $questopic['exp'] < $_G['timestamp']}-->{lang nds_up_ques:notice6}
+<!--{/if}-->
+</strong></span></h2>
+</div>
+</div>
+<div class="fl bm">
+<div class="bm bmw  cl">
+<div align="center" class="bm_h cl">
+<h2>$questopic['subject']</h2>
+</div>
+<div id="category_1" class="bm_c" style="">
+
+<form method="post" id="postques"onsubmit="return validate_form()"  action="plugin.php?id=nds_up_ques&action=viewques&topicid=$topicid">
+<input type="hidden" name="formhash" value="{FORMHASH}">
+<input type="hidden" name="viewquessubmit" value="True">
+	       <table cellspacing="0" cellpadding="0" class="fl_tb">         	
+              <thead><tr><td>
+ <div>             
+<h2>{lang nds_up_ques:hint}</h2> 
+           
+              <div class="pbm xg2">
+              $questopic['message']
+              </div>
+              <!--{if $sysmode  == 1 &&  $questopic['credit'] }--> 
+              <div style="color:#FF0000" >
+              {lang nds_up_ques:txt_jiangli} $questopic['qreward'] $_G['setting'][extcredits][$cvar][title] 
+              </div>
+              <!--{/if}-->
+             <!--{if $sysmode  == 2 }--> 
+             <div style="color:#FF0000;font-size:15px" >
+               <!--{if $questopic['timeleft'] > 1}--> 
+               {lang nds_up_ques:nds_settimeleft2}<b>{$questopic['timeleft']}</b> {lang nds_up_ques:nds_timeSS}&nbsp;&nbsp;&nbsp; 
+             <!--{/if}-->
+             {lang nds_up_ques:nds_timeright} <b id="timerid"></b> {lang nds_up_ques:nds_timeSS2}               
+              </div>
+              <input type="hidden" id="timerinput" name="timerinput" value="0"> 
+                <script type="text/javascript">
+				stoptimer = false;
+				var timerid = $('timerid'); 
+                 NDSTimeR();
+              </script>
+            <!--{/if}-->
+        {lang nds_up_ques:q_info}{lang nds_up_ques:author}:$questopic['author']  {lang nds_up_ques:dateline}:$questopic['dateline']<!--{if !empty($questopic['copyauthor']) && $questopic['copyauthor'] != 'Unknown' }--> , {lang nds_up_ques:copyauthor}: $questopic['copyauthor']  <!--{/if}-->  
+<!--{if  !empty($questopic['opcheckauthor']) && $questopic['opcheckauthor'] != 'Unknown' }--> , {lang nds_up_ques:q_checkath}: $questopic['opcheckauthor']<!--{/if}-->
+</div>
+
+              </td></tr></thead>
+                  $optionlist 
+           </table>
+            
+<div class="mtm mbm pnpost" 
+ <!--{if (empty($_G['uid']) && !$isguest)  || !in_array($_G['groupid'] ,$allowsubmit) || $havedone || !$questopic['person'] || $questopic['stop'] || ($questopic['exp'] != 1 && $questopic['exp'] < $_G['timestamp'])}-->disabled<!--{/if}-->><button type="submit" id="postsubmit" class="pn pnc" value="check" name="quessubmit" onclick =" return confirm('$mischeck2')"<!--{if !in_array($_G['groupid'] ,$allowsubmit) || $havedone || !$questopic['person'] || $questopic['stop'] || ($questopic['exp'] != 1 && $questopic['exp'] < $_G['timestamp'])}-->disabled<!--{/if}-->><span>{lang submit}</span></button>
+<!--{if empty($_G['uid']) && !$isguest }-->{lang nds_up_ques:notice8}
+<!--{elseif $havedone == 1}-->{lang nds_up_ques:noticesml}<!--{elseif !in_array($_G['groupid'] ,$allowsubmit)}-->{lang nds_up_ques:notice2}
+<!--{elseif !$questopic['person']}-->{lang nds_up_ques:notice3}
+<!--{elseif $questopic['stop']}-->{lang nds_up_ques:notice4}
+<!--{/if}--> 
+ </div> 
+</form>      
+ 
+    
+  </div>
+ </div>
+ </div>
+
+ {subtemplate common/footer}

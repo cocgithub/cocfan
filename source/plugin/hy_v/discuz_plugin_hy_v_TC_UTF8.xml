@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2012-06-02 10:53]]></item>
+	<item id="From"><![CDATA[笑話站 (http://www.xiaohuaz.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[視頻播放器]]></item>
+			<item id="identifier"><![CDATA[hy_v]]></item>
+			<item id="description"><![CDATA[視頻播放器 BY 何勇，未經授權，請勿修改和發行本插件，侵權必究！！]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[hy_v/]]></item>
+			<item id="copyright"><![CDATA[何勇]]></item>
+			<item id="version"><![CDATA[2.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[v]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[支持代碼]]></item>
+				<item id="description"><![CDATA[多個使用半角,或|隔開，自定義代碼請自己去編輯器配置，默認media,flash]]></item>
+				<item id="variable"><![CDATA[v_code]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[flash,media]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[播放器名稱]]></item>
+				<item id="description"><![CDATA[播放器名稱，右鍵菜單顯示，默認不填時顯示站點名稱]]></item>
+				<item id="variable"><![CDATA[v_name]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[播放器鏈接]]></item>
+				<item id="description"><![CDATA[右鍵播放器名稱的鏈接，默認站點首頁]]></item>
+				<item id="variable"><![CDATA[v_link]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[LOGO透明度]]></item>
+				<item id="description"><![CDATA[LOGO透明度，0到1之前的數，默認0.5]]></item>
+				<item id="variable"><![CDATA[v_logo_alpha]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0.5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[LOGO]]></item>
+				<item id="description"><![CDATA[播放器LOGO，默認會取模板設置的LOGO，可以是圖片或swf，使用過CMP4或查詢過的朋友可以使用{src:logo.jpg,xywh:[10L,10L,0,0]}這種語法設置，不懂就放張圖吧]]></item>
+				<item id="variable"><![CDATA[v_logo]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[自動播放]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[v_auto_play]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[0=不開啟（默認）
+1=開啟]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[默認寬度]]></item>
+				<item id="description"><![CDATA[當前台播放器沒有自定義播放器寬度時取此項，默認480]]></item>
+				<item id="variable"><![CDATA[v_width]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[480]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[默認高度]]></item>
+				<item id="description"><![CDATA[當前台播放器沒有自定義播放器高度時取此項，默認400]]></item>
+				<item id="variable"><![CDATA[v_height]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[400]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="license"><![CDATA[1、後台可以自定義播放器名稱，鏈接，LOGO，及默認大小；
+2、支持播放FLV/MP4；
+3、支持自定義解析標簽，不會玩者請忽略；
+4、當頁面多個視頻時，自定播放只對第一個視頻有效；
+5、插件擴展模式，需要更多功能，請安裝hy_v播放器擴展插件。
+
+相較以前版本︰
+1、去掉了默認支持優酷，土豆，改為擴展插件支持；
+2、去掉了廣告功能；
+3、去掉了分享功能；
+4、去掉了統計功能；
+5、去掉了門戶支持；
+不能接受新版刪除了原功能者，請勿升級！！
+]]></item>
+
+	</item>
+</root>

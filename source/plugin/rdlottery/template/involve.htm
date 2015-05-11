@@ -1,0 +1,34 @@
+<!--{template common/header}-->
+<style type="text/css">.auction_price{margin:10px;}.modprice{margin:0 5px;cursor:pointer;color:#666;}</style>
+<form id="auctionform" action="plugin.php?id=rdlottery:involve&tid={$rdlottery[tid]}&operation=join" method="post" name="auctionform" >
+<input type="hidden" name="formhash" value="{FORMHASH}">
+<div id="main_messaqge" style="width:400px;">
+	<h3 class="flb">
+		<em id="returnmessage">{lang rdlottery:rdl_join}</em>
+		<span>
+			<!--{if $_G['inajax']}--><a href="javascript:;" class="flbc" onclick="hideWindow('confirm')" title="{lang close}">{lang close}</a><!--{/if}-->
+		</span>
+	</h3>
+<!--{if empty($m_insufficient)}-->
+<!--{if $_G['uid']}--><p class="auction_price">{$m_type_tips_p}</p><!--{/if}-->
+<!--{if $rdlottery['isinfo']}-->
+<p class="auction_price" style="padding-top:5px;">{lang rdlottery:mobile_tips}</p>
+<p class="auction_price">{lang rdlottery:contact}{lang rdlottery:maohao} <input type="text" name="mobile" id="mobile" class="px" style="width:100px" value="$mobile" /><span id="mb_check"></span></p>
+<p class="auction_price" style="padding-top:5px;">{lang rdlottery:info_tips}
+<textarea name="info" id="" class="pt" rows="3" cols="56" tabindex="">{$info}</textarea></p>
+<!--{/if}-->
+<!--{if $_G['cache']['plugin']['rdlottery']['rdl_reply']}-->
+<p class="auction_price" style="padding-top:5px;">{lang rdlottery:rdl_reply_message}<br/>
+<textarea name="rdl_reply_message" id="" class="pt" rows="3" cols="56" tabindex="">{$reply_message}</textarea></p>
+<!--{/if}-->
+
+<p class="o pns"><span class="z xg1">{lang rdlottery:ext_notice}</span><button id="confirmsubmit" name="confirmsubmit" value="true" class="pn pnc" type="submit"><strong>{lang rdlottery:confirm}</strong></button></p>
+</div>
+</form>
+<!--{else}-->
+<p class="auction_price">
+$m_insufficient</p>
+<p class="o pns"><span class="z xg1">&nbsp;</span><button id="confirmsubmit" name="confirmsubmit" value="true" class="pn pnc" type="submit" onclick="hideWindow('confirm')"><strong>{lang rdlottery:confirm}</strong></button></p>
+</form>
+<!--{/if}-->
+<!--{template common/footer}-->

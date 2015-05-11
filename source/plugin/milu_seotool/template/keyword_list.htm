@@ -1,0 +1,134 @@
+<!--{template milu_seotool:header}-->
+<style>
+.keyword_show { height:auto; line-height:20px; border-bottom:1px dashed #FCF;width:100%; word-wrap:break-word; overflow:hidden; max-width:350px; margin:0 auto;}
+.keyword_show span{ width:100%; float:left; display:block; text-align:center; height:22px;}
+.keyword_show .keyword{  text-align:left; width:100%;}
+.k_count,.k_density,.k_ranking,.k_trend{ 
+	  height:22px;
+}
+.keyword_show .k_ranking{ width:100%;}
+.keyword_show .no_loading{ background:none; height:auto;}
+.keyword_show .k_density{ width:100%; }
+caption, th{ text-align:center}
+.keyword_show .query_keyword{ width:100%; height:22px; display:block; }
+.keyword_show .loading{ background: url("{$_G[siteurl]}static/image/common/loading.gif") no-repeat center 2px;}
+.keyword_show span font{ line-height:none}
+</style>
+<script type="text/javascript" language="javascript">
+
+function get_keyword_rank_trend(keyword){
+	showWindow('keyword_trend', PLUGIN_URL+'keyword&myac=trend_data_count&keyword='+keyword);
+}
+
+jq(document).ready(function(){
+	jq(".keyword_show span a.query_keyword").click(function(){
+		var keyword = jq(this).attr('kw');
+		var catid = jq(this).attr('catid');
+		var key_id = jq(this).attr('key_id');
+		jq("a[key_id="+key_id+"]").addClass('loading');
+		jq("a[key_id="+key_id+"]").html('');
+		keyword_ajax(catid, keyword, key_id);
+	});
+});
+
+function keyword_ajax_bat(args_str){
+	var arr = args_arr = new Array(); //定义一数组
+	arr = args_str.split("@"); //字符分割      
+	for (i=0;i<arr.length ;i++ ){    
+        args_arr = arr[i].split("|"); //字符分割
+		var catid = args_arr[0];
+		var key_id = args_arr[1];
+		var keyword = args_arr[2];
+		jq("a[key_id="+key_id+"]").addClass('loading');
+		jq("a[key_id="+key_id+"]").html('');
+		keyword_ajax(catid, keyword, key_id);
+    } 
+}
+function keyword_ajax(catid, keyword, key_id){
+	jq.post(PLUGIN_URL+'keyword&myac=seotool_ajax_func&af=st_ajax_keyword&catid='+catid+'&data_type={$info[data_type]}&keyword='+st_format_url(keyword)+'&inajax=1&tpl=no&xml=0',null,function (msg) {
+		  var obj = eval( "(" + msg + ")" );//转换后的JSON对象
+		  if(obj != null){
+			  jq('#count'+key_id).html(obj.count);
+			  show_status = obj.status == 1 ? '<img name="" src="{PLUGIN_URL}static/image/s1.gif"  alt="" /> ' : '';
+			  jq('#density'+key_id).html(show_status+obj.density);	
+			  if(obj.zhishu < 0){jq('#zhishu'+key_id).html('<a href="'+PLUGIN_URL+'keyword&myac=seotool_ajax_func&af=st_redirect_zhishu&keyword='+st_format_url(keyword)+'" target="_blank">{lang milu_seotool:view}</a>');}else{jq('#zhishu'+key_id).html('<a href="'+PLUGIN_URL+'keyword&myac=seotool_ajax_func&af=st_redirect_zhishu&keyword='+st_format_url(keyword)+'" target="_blank">'+obj.zhishu+'</a>');}		  
+			  if(!obj.rank) obj.rank = '<strong>-</strong>';
+			  jq('#rank'+key_id).html('<a href="http://www.baidu.com/s?wd='+keyword+'" target="_brank">'+obj.rank+'</a>');	
+			  
+			  var img_type = 'noupdown';
+			  var num = '';
+			  if(obj.trend > 0 || obj.trend == '+'){
+				  img_type = 'up';
+				  if(obj.trend != '+') num = Math.abs(obj.trend);
+			  }else if(obj.trend < 0 || obj.trend == '-'){
+				  img_type = 'down';
+				  if(obj.trend != '-') num = Math.abs(obj.trend);
+			  }
+			  var reg = new RegExp("'",'g');
+			  keyword = keyword.replace(reg, "\\'");
+			  trend = '<a onclick="get_keyword_rank_trend(\''+keyword+'\')" href="javascript:void(0)"><img style=" margin-top:5px;" name="" src="{PLUGIN_URL}static/image/'+img_type+'.gif"  alt="" />'+num+'</a> ';
+			  jq('#trend'+key_id).html(trend);	  	
+		  }else{
+			  
+		  }
+		  
+	  });
+}
+</script>          
+            
+ <table class="tb tb2 ">
+<tbody id="hidden_system_category_stat" class="sub">
+
+<tr>
+  <td colspan="2">
+<table class="tb tb2 ">
+  <tbody><tr class="header">
+    <!-- <th></th>--> 
+    <th width="280">{lang milu_seotool:cat_name}<font style="font-weight:normal"> {lang milu_seotool:if_modify_hits} <a href="?{PLUGIN_GO}{$submit_pmod}&myac={$submit_action}&update=1">{lang milu_seotool:update_data}</a> </font></th>
+     <th width="60"></th>
+     <th width="230"><span class="keyword">{lang milu_seotool:keyword} <font style="font-weight:normal"> <a href="admin.php?frames=yes&action=setting&operation=seo" target="_blank">{lang milu_seotool:modify}</a> </font></span> </th>
+     <th width="65"> <span>{lang milu_seotool:baidu_zhishu}</span></th>
+     <th width="65"> <span>{lang milu_seotool:view_pinlv}</span></th>
+     <th width="100"> <span>{lang milu_seotool:_midu}</span></th>
+     <th width="300"> <span>{lang milu_seotool:_rank}</span></th>
+     <th width="65"> <span>{lang milu_seotool:rank_change}</span></th>
+     </tr>
+  </tbody>
+  <!--{loop $info['cat_arr'] $key_c $rs_c}-->  
+  {if $rs_c['upid'] == 0}
+  <tr class="hover">
+   <!-- <td class="td25" onclick="toggle_group('{$key_c}')"><a href="javascript:;" id="a_group_{$key_c}"></a></td>--> 
+   {eval $keyword_info = show_keyword($info['cat_arr'][$rs_c]['keywords'], $rs_c)}
+    <td width="280"><div class="parentboard"><a href="{$rs_c['caturl']}" target="_blank">{$rs_c['catname']}</a></div></td>
+    {eval echo show_keyword_info_tr($keyword_info);}
+      </tr>
+  <tbody class="group_show" id="group_1">
+  {if $rs_c['children']}
+  <!--{loop $rs_c['children'] $key_c2 $rs_c2}-->  
+  {eval $keyword_info = show_keyword($info['cat_arr'][$rs_c2]['keywords'], $rs_c2)}
+   <tr class="hover">
+    <!-- <td class="td25">&nbsp;</td>--> 
+      <td width="280"><div class="board"><a href="{$info['cat_arr'][$rs_c2]['caturl']}" target="_blank">{$info['cat_arr'][$rs_c2][catname]}</a></div></td>
+      {eval echo show_keyword_info_tr($keyword_info);}
+       </tr>
+        {if $info['cat_arr'][$rs_c2]['children']}
+      <!--{loop $info['cat_arr'][$rs_c2]['children'] $key_c3 $rs_c3}-->  
+      {eval $keyword_info = show_keyword($info['cat_arr'][$rs_c3]['keywords'], $rs_c3)}
+       <tr class="hover">
+         <!--<td class="td25">&nbsp;</td>--> 
+          <td width="280"><div class="lastchildboard"><a href="{$info['cat_arr'][$rs_c3]['caturl']}" target="_blank">{$info['cat_arr'][$rs_c3][catname]}</a> </div></td>
+         {eval echo show_keyword_info_tr($keyword_info);}
+        </tr>
+        
+         <!--{/loop}-->
+         {/if}
+    
+     <!--{/loop}-->
+     {/if}
+	</tbody> 
+    {/if}
+     <!--{/loop}-->
+  
+  </table>
+</td></tr>
+</tbody></table>        

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5]]></item>
+	<item id="Time"><![CDATA[2012-10-18 09:56]]></item>
+	<item id="From"><![CDATA[业主社区 (http://bbs.aqfdc.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[主题列表封面图片显示]]></item>
+			<item id="identifier"><![CDATA[showimg_dzx]]></item>
+			<item id="description"><![CDATA[在论坛主题列表中，如果贴子设置了封面图片就在主题前面显示。还可以设置为图片瀑布流显示模示]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[showimg_dzx/]]></item>
+			<item id="copyright"><![CDATA[逍遥设计]]></item>
+			<item id="version"><![CDATA[4.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[forum_setting_cp]]></item>
+					<item id="menu"><![CDATA[版块设置]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[Rebuild_Cover]]></item>
+					<item id="menu"><![CDATA[重建封面]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[showimg]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[copy_template]]></item>
+					<item id="menu"><![CDATA[同步模板]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[主题列表页设置]]></item>
+				<item id="description"><![CDATA[请勿更改此设置！]]></item>
+				<item id="variable"><![CDATA[forum_setting]]></item>
+				<item id="type"><![CDATA[forum_textarea]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="33"><![CDATA[]]></item>
+					<item id="34"><![CDATA[]]></item>
+					<item id="44"><![CDATA[]]></item>
+					<item id="41"><![CDATA[]]></item>
+					<item id="43"><![CDATA[]]></item>
+					<item id="36"><![CDATA[]]></item>
+					<item id="6"><![CDATA[]]></item>
+					<item id="__2">
+						<item id="forum_type"><![CDATA[2]]></item>
+						<item id="content_show">
+							<item id="0"><![CDATA[0]]></item>
+							<item id="1"><![CDATA[1]]></item>
+							<item id="2"><![CDATA[2]]></item>
+							<item id="3"><![CDATA[4]]></item>
+							<item id="4"><![CDATA[5]]></item>
+						</item>
+						<item id="pic_width"><![CDATA[]]></item>
+						<item id="pic_height"><![CDATA[]]></item>
+						<item id="digest_len"><![CDATA[150]]></item>
+					</item>
+					<item id="__37">
+						<item id="forum_type"><![CDATA[3]]></item>
+						<item id="content_show">
+							<item id="0"><![CDATA[0]]></item>
+							<item id="1"><![CDATA[1]]></item>
+							<item id="2"><![CDATA[2]]></item>
+							<item id="3"><![CDATA[4]]></item>
+							<item id="4"><![CDATA[5]]></item>
+						</item>
+						<item id="pic_width"><![CDATA[200]]></item>
+						<item id="pic_height"><![CDATA[]]></item>
+						<item id="digest_len"><![CDATA[100]]></item>
+					</item>
+					<item id="__40">
+						<item id="forum_type"><![CDATA[4]]></item>
+						<item id="content_show">
+							<item id="0"><![CDATA[0]]></item>
+							<item id="1"><![CDATA[1]]></item>
+							<item id="2"><![CDATA[2]]></item>
+							<item id="3"><![CDATA[4]]></item>
+							<item id="4"><![CDATA[5]]></item>
+						</item>
+						<item id="pic_width"><![CDATA[200]]></item>
+						<item id="pic_height"><![CDATA[160]]></item>
+						<item id="digest_len"><![CDATA[100]]></item>
+					</item>
+					<item id="__62">
+						<item id="forum_type"><![CDATA[2]]></item>
+						<item id="content_show"><![CDATA[]]></item>
+						<item id="digest_len"><![CDATA[]]></item>
+					</item>
+				</item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[开启顶部图片展示的版块]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[toplist_forums]]></item>
+				<item id="type"><![CDATA[forums]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[62]]></item>
+					<item id="1"><![CDATA[61]]></item>
+				</item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[顶部图片展示调用数据]]></item>
+				<item id="description"><![CDATA[选择调用哪些贴子]]></item>
+				<item id="variable"><![CDATA[toplist_class]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[0=全部
+1=精华1
+2=精华2
+3=精华3]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[0]]></item>
+				</item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[顶部图片展示调用贴子数]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[toplist_number]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[13]]></item>
+				<item id="title"><![CDATA[是否显示贴子标题]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[toplist_title_radio]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[开启首页顶部图片展示]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[toplist_index_radio]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="tprs"><![CDATA[投票人数]]></item>
+				<item id="hdsj"><![CDATA[活动时间]]></item>
+				<item id="mysx"><![CDATA[没有时限]]></item>
+				<item id="yjs"><![CDATA[已结束]]></item>
+				<item id="day"><![CDATA[天]]></item>
+				<item id="hours"><![CDATA[小时]]></item>
+				<item id="sysj"><![CDATA[剩余时间]]></item>
+				<item id="spmc"><![CDATA[商品名称]]></item>
+				<item id="bmrs"><![CDATA[报名人数]]></item>
+				<item id="syme"><![CDATA[剩余名额]]></item>
+				<item id="ren"><![CDATA[人]]></item>
+				<item id="jzsysj"><![CDATA[截止剩余时间]]></item>
+				<item id="zf"><![CDATA[正方]]></item>
+				<item id="ff"><![CDATA[反方]]></item>
+				<item id="jg"><![CDATA[价格]]></item>
+				<item id="yuan"><![CDATA[元]]></item>
+				<item id="wltp"><![CDATA[外链图片]]></item>
+				<item id="swfm"><![CDATA[设为封片]]></item>
+				<item id="mbtbwc"><![CDATA[模板同步完成！]]></item>
+				<item id="sl"><![CDATA[数量]]></item>
+				<item id="wzms"><![CDATA[文字模式]]></item>
+				<item id="tpms"><![CDATA[图片模式]]></item>
+				<item id="bkxz"><![CDATA[版块选择]]></item>
+				<item id="ptms"><![CDATA[普通模式]]></item>
+				<item id="tplbys"><![CDATA[图片列表样式]]></item>
+				<item id="pttzzy"><![CDATA[普通贴摘要]]></item>
+				<item id="bkztlbxsfs"><![CDATA[版块主题列表显示方式]]></item>
+				<item id="bktzlrzsfs"><![CDATA[版块贴子内容展示方式]]></item>
+				<item id="tzzycd"><![CDATA[贴子摘要长度]]></item>
+				<item id="save"><![CDATA[保存]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="mgxhgxsl"><![CDATA[每个循环更新数量：]]></item>
+				<item id="qxz"><![CDATA[请选择]]></item>
+				<item id="bk"><![CDATA[版块：]]></item>
+				<item id="ztzhhfsjfw"><![CDATA[（主题最后回复时间范围）]]></item>
+				<item id="tj"><![CDATA[提交]]></item>
+				<item id="new"><![CDATA[最新]]></item>
+				<item id="like"><![CDATA[喜欢]]></item>
+				<item id="next"><![CDATA[下一页]]></item>
+				<item id="wzms"><![CDATA[文字模式]]></item>
+				<item id="fby"><![CDATA[发表与]]></item>
+				<item id="sc"><![CDATA[收藏]]></item>
+				<item id="hf"><![CDATA[回复]]></item>
+				<item id="ck"><![CDATA[查看]]></item>
+			</item>
+		</item>
+	</item>
+</root>

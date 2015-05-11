@@ -1,0 +1,58 @@
+<!--{block return}-->
+<div class="rfm">
+<table>
+<tr>
+<th><span class="rq">*</span><label for="{$cvar[name]}">{$cvar[title]}:</label></th>
+<td width="240px"><span id="sec">{lang yy_killreg:creatkey}{$cvar[title]}{lang yy_killreg:creatkeytime}</span><span id="secinput" style="display:none"><input type="text" id="{$cvar[name]}" name="{$cvar[name]}" class="px" value="" readonly/></span></td>
+<td class="tipcol"><a href="javascript:;" onclick="yy_regkillretry();">{lang yy_killreg:retrykey}{$cvar[title]}</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript">
+tstr = $("sec").innerHTML;
+getseckey();
+yytid;
+function getseckey(){
+	stime={$cvar[time]};
+	$("sec").innerHTML = tstr.replace('%d', stime);
+	yytid = setInterval(function() {
+		stime--;
+		if (stime <= 0) {
+			clearInterval(yytid);
+			var ysec = new Ajax();
+			ysec.get('plugin.php?id=yy_killreg:seckey&infloat=yes&handlekey=yy_killreg&inajax=1&ajaxtarget=fwin_content_yy_killreg', function(s) {
+				secmessage(s);
+			});
+			return;
+		}
+		$("sec").innerHTML = tstr.replace('%d', stime);
+	}, 1000);
+}
+function secmessage(m){
+	m = !m ? '' : m;
+	var msg=m.split('|');
+	if(msg[0] == 'succeed') {
+		$("sec").innerHTML = "{lang yy_killreg:creatkeysucceed},<a href=\"javascript:;\" onclick=\"shurusec('"+msg[1]+"')\">{lang yy_killreg:shurukey}</a>";
+	}else{
+		$("sec").innerHTML = "{lang yy_killreg:creatkeyerror},{lang yy_killreg:recreatkey}";
+	}
+
+}
+function shurusec(str){
+	$("sec").innerHTML="";
+	$("secinput").style.display="";
+	$("{$cvar[name]}").value=str;
+}
+function yy_regkillretry(){
+	clearInterval(yytid);
+	var ysec = new Ajax();
+	ysec.get('plugin.php?id=yy_killreg:seckey&infloat=yes&handlekey=yy_killreg&sh=retry&inajax=1&ajaxtarget=fwin_content_yy_killreg', function(s) {
+		if(s=='succeed'){
+			$("secinput").style.display="none";
+			getseckey();
+			return;
+		}
+	});
+}
+</script>
+<!--{/block}-->
